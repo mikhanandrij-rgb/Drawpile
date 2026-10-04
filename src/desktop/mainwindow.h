@@ -145,6 +145,10 @@ public:
 	void showPopupMessage(const QString &message);
 	void showPermissionDeniedMessage(int feature);
 
+	// Drawpile Mobile (fork): accessors used by the mobile interface.
+	bool isSmallScreenMode() const { return m_smallScreenMode; }
+	view::CanvasWrapper *canvasWrapper() const { return m_canvasView; }
+
 	bool notificationsMuted() const { return m_notificationsMuted; }
 	bool isInitialCatchup() const { return m_initialCatchup; }
 

@@ -45,6 +45,7 @@ extern "C" {
 #include "desktop/filewrangler.h"
 #include "desktop/main.h"
 #include "desktop/mainwindow.h"
+#include "desktop/mobile/mobileui.h" // Drawpile Mobile (fork)
 #include "desktop/notifications.h"
 #include "desktop/scene/actionbaritem.h"
 #include "desktop/scene/hudhandler.h"
@@ -732,6 +733,9 @@ MainWindow::MainWindow(bool restoreWindowPosition, bool singleSession)
 	} else if(!m_chatbox->isCollapsed()) {
 		getAction("togglechat")->trigger();
 	}
+
+	// Drawpile Mobile (fork): attach the mobile interface controller.
+	mobile::attach(this);
 
 	DRAWPILE_FS_PERSIST();
 }
@@ -2572,6 +2576,10 @@ bool MainWindow::event(QEvent *event)
 
 dialogs::StartDialog *MainWindow::showStartDialogOnPage(int page)
 {
+	// Drawpile Mobile (fork): the project hub replaces the landing pages.
+	if(mobile::interceptStartPage(this, page)) {
+		return nullptr;
+	}
 	dialogs::StartDialog *dlg =
 		new dialogs::StartDialog(m_smallScreenMode, this);
 	dlg->setObjectName(QStringLiteral("startdialog"));
@@ -9649,6 +9657,9 @@ bool MainWindow::shouldUseSmallScreenMode()
 
 void MainWindow::switchInterfaceMode(bool smallScreenMode)
 {
+	// Drawpile Mobile (fork): let the mobile interface give back the docks and
+	// tool bars it borrowed before the layout gets rearranged.
+	mobile::beforeInterfaceModeChange(this, smallScreenMode);
 	setUpdatesEnabled(false);
 	finishArrangingDocks();
 	saveSplitterState();

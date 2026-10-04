@@ -508,6 +508,9 @@ target_sources(drawpile PRIVATE
 	widgets/zoomslider.h
 )
 
+# Drawpile Mobile (fork): touch-first interface used in small-screen mode.
+include(mobile/mobileui.cmake)
+
 target_link_libraries(drawpile PRIVATE
 	cmake-config
 	dpshared
