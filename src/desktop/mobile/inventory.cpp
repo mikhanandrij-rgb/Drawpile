@@ -77,6 +77,48 @@ bool isMobileChrome(QObject *object)
 	return false;
 }
 
+QList<QObject *> associated(QAction *action)
+{
+	QList<QObject *> result;
+#if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
+	for(QObject *o : action->associatedObjects()) {
+		result.append(o);
+	}
+#else
+	for(QWidget *w : action->associatedWidgets()) {
+		result.append(w);
+	}
+#endif
+	return result;
+}
+
+// Finds docks and other widgets an action is shown in, following menus up
+// to the buttons or menus they are attached to.
+void findHosts(
+	QAction *action, QStringList &docks, bool &canvas, QSet<QAction *> &seen)
+{
+	if(seen.contains(action)) {
+		return;
+	}
+	seen.insert(action);
+	for(QObject *o : associated(action)) {
+		if(QMenu *menu = qobject_cast<QMenu *>(o)) {
+			if(docks::DockBase *dock = dockAncestor(menu)) {
+				docks.append(dock->windowTitle());
+			}
+			findHosts(menu->menuAction(), docks, canvas, seen);
+		} else if(QWidget *w = qobject_cast<QWidget *>(o)) {
+			if(docks::DockBase *dock = dockAncestor(w)) {
+				docks.append(dock->windowTitle());
+			} else if(w->inherits("QAbstractScrollArea") ||
+					  w->inherits("QGraphicsView") ||
+					  w->inherits("widgets::CanvasFrame")) {
+				canvas = true;
+			}
+		}
+	}
+}
+
 }
 
 void Shell::dumpInventory(const QString &path)
@@ -181,10 +223,22 @@ void Shell::dumpInventory(const QString &path)
 			original.append(tr("Tool bar: %1").arg(t));
 		}
 		docks::DockBase *dock = dockAncestor(action);
+		QStringList hostDocks;
+		bool onCanvas = false;
+		QSet<QAction *> seenHosts;
+		findHosts(action, hostDocks, onCanvas, seenHosts);
 		if(dock) {
-			original.append(tr("Dock: %1").arg(dock->windowTitle()));
+			hostDocks.prepend(dock->windowTitle());
+		}
+		hostDocks.removeDuplicates();
+		for(const QString &title : hostDocks) {
+			original.append(tr("Dock: %1").arg(title));
+		}
+		if(onCanvas) {
+			original.append(tr("Canvas notice / on-canvas control"));
 		}
 		bool shortcut = !action->shortcuts().isEmpty();
+		bool shortcutOnly = original.isEmpty() && shortcut;
 		if(original.isEmpty()) {
 			original.append(
 				shortcut ? tr("Keyboard shortcut only (%1)")
@@ -201,20 +255,22 @@ void Shell::dumpInventory(const QString &path)
 			}
 		}
 		mobile.append(mobileDirect.value(name));
-		if(dock) {
+		for(const QString &title : hostDocks) {
 			for(const HostedDock &hd : m_docks) {
-				if(hd.dock == dock) {
-					mobile.append(tr("%1 panel (%2)").arg(
-						hd.panelId, dock->windowTitle()));
+				if(hd.dock && hd.dock->windowTitle() == title) {
+					mobile.append(tr("%1 panel (%2)").arg(hd.panelId, title));
 				}
 			}
 		}
-		if(mobile.isEmpty() && original.size() == 1 &&
-		   original.first().startsWith(tr("Keyboard shortcut only").left(8))) {
+		if(onCanvas) {
+			mobile.append(tr("Canvas notice / on-canvas control (unchanged)"));
+		}
+		if(mobile.isEmpty() && shortcutOnly) {
 			mobile.append(tr("Keyboard shortcut (unchanged)"));
 		}
 		if(mobile.isEmpty() && !shortcut && menuPaths.value(action).isEmpty() &&
-		   toolBarNames.value(action).isEmpty() && !dock) {
+		   toolBarNames.value(action).isEmpty() && hostDocks.isEmpty() &&
+		   !onCanvas) {
 			mobile.append(tr("Internal / shortcut-configurable (unchanged)"));
 		}
 		if(hidden.contains(name)) {

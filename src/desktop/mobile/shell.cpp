@@ -24,6 +24,7 @@
 #include <QApplication>
 #include <QBoxLayout>
 #include <QKeyEvent>
+#include <QMenu>
 #include <QMenuBar>
 #include <QMessageBox>
 #include <QScopedValueRollback>
@@ -34,6 +35,7 @@
 #include <QToolBar>
 #include <QToolButton>
 #include <QVBoxLayout>
+#include <functional>
 
 namespace mobile {
 
@@ -114,6 +116,8 @@ Shell::Shell(MainWindow *mw)
 	if(mw->isSmallScreenMode()) {
 		handleSmallScreenModeChanged(true);
 	}
+	addInterfaceToggle();
+	startTestDriver(mw);
 	QByteArray inventoryPath = qgetenv("DRAWPILE_MOBILE_INVENTORY");
 	if(!inventoryPath.isEmpty()) {
 		QTimer::singleShot(3000, this, [this, inventoryPath] {
@@ -167,6 +171,13 @@ void Shell::openPanel(const QString &panelId, const QString &tabId)
 {
 	if(m_sheet) {
 		m_sheet->open(panelId, tabId);
+	}
+}
+
+void Shell::closePanel()
+{
+	if(m_sheet) {
+		m_sheet->close();
 	}
 }
 
@@ -291,6 +302,59 @@ bool Shell::eventFilter(QObject *watched, QEvent *event)
 		}
 	}
 	return QObject::eventFilter(watched, event);
+}
+
+void Shell::addInterfaceToggle()
+{
+	// A switch in the View menu, next to upstream's small-screen options, so
+	// the classic layout can be turned back on (and off again) by the user.
+	QAction *lefty = action("smallscreenleftymode");
+	if(!lefty || !m_mw) {
+		return;
+	}
+	QMenu *viewMenu = nullptr;
+	std::function<QMenu *(QMenu *)> find = [&](QMenu *menu) -> QMenu * {
+		for(QAction *a : menu->actions()) {
+			if(a == lefty) {
+				return menu;
+			} else if(a->menu()) {
+				if(QMenu *found = find(a->menu())) {
+					return found;
+				}
+			}
+		}
+		return nullptr;
+	};
+	for(QAction *top : m_mw->menuBar()->actions()) {
+		if(top->menu() && (viewMenu = find(top->menu()))) {
+			break;
+		}
+	}
+	if(!viewMenu) {
+		return;
+	}
+	QAction *toggle = new QAction(tr("Drawpile Mobile interface"), m_mw);
+	toggle->setObjectName(QStringLiteral("mobileuitoggle"));
+	toggle->setCheckable(true);
+	toggle->setChecked(
+		!QSettings().value(QStringLiteral("mobileui/classic"), false).toBool());
+	toggle->setStatusTip(
+		tr("Use the touch-friendly interface of this fork in small-screen "
+		   "mode. Takes effect after restarting Drawpile."));
+	QList<QAction *> actions = viewMenu->actions();
+	int index = actions.indexOf(lefty);
+	QAction *before = actions.value(index + 1, nullptr);
+	viewMenu->insertAction(before, toggle);
+	auto sync = [toggle, lefty] {
+		toggle->setVisible(lefty->isVisible());
+		toggle->setEnabled(lefty->isEnabled());
+	};
+	sync();
+	connect(lefty, &QAction::changed, toggle, sync);
+	connect(toggle, &QAction::triggered, this, [this](bool checked) {
+		QSettings().setValue(QStringLiteral("mobileui/classic"), !checked);
+		showMessage(tr("Restart Drawpile to switch the interface."));
+	});
 }
 
 void Shell::handleSmallScreenModeChanged(bool smallScreenMode)
@@ -466,6 +530,7 @@ void Shell::createChrome()
 		new ChromeButton(QStringLiteral("fullscreen"), tr("Show interface"), mw);
 	restore->setStyleSheet(styleSheet);
 	restore->setAutoFillBackground(false);
+	restore->setFloating(true);
 	restore->hide();
 	connect(restore, &ChromeButton::clicked, this, [this] {
 		setInterfaceHidden(false);
@@ -959,8 +1024,7 @@ void Shell::buildMorePanel()
 			m_mw, tr("Classic layout"),
 			tr("Switch back to Drawpile's classic small-screen layout? This "
 			   "takes effect after restarting Drawpile. You can switch back "
-			   "via Preferences or by clearing the \"mobileui/classic\" "
-			   "setting."));
+			   "in the View menu."));
 		connect(box, &QMessageBox::accepted, this, [] {
 			QSettings().setValue(QStringLiteral("mobileui/classic"), true);
 		});
@@ -1058,10 +1122,10 @@ void Shell::updateLayout()
 	int slotCount;
 	if(landscape) {
 		int length = mw->height() - m_topBar->sizeHint().height() - dp(8);
-		slotCount = (length - button) / button;
+		slotCount = (length - button) / dp(44);
 	} else {
 		int length = mw->width() - dp(8);
-		slotCount = (length - button * 4 - dp(9)) / button;
+		slotCount = (length - button * 4 - dp(9)) / dp(44);
 	}
 	m_rail->setSlotCount(qBound(2, slotCount, 8));
 
@@ -1073,9 +1137,10 @@ void Shell::updateLayout()
 
 void Shell::updateOverlays()
 {
-	if(!m_active || !m_mw || !m_sheet) {
+	if(!m_active || !m_mw || !m_sheet || m_updatingOverlays) {
 		return;
 	}
+	QScopedValueRollback<bool> rollback(m_updatingOverlays, true);
 	MainWindow *mw = m_mw;
 	QWidget *central = mw->centralWidget();
 	if(!central) {

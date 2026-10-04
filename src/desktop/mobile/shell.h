@@ -30,6 +30,9 @@ class ToolRail;
 class TopBar;
 class ValueBubble;
 
+// Starts the scripted test driver if DRAWPILE_MOBILE_TEST_SCRIPT is set.
+void startTestDriver(MainWindow *mw);
+
 class Shell final : public QObject {
 	Q_OBJECT
 public:
@@ -47,6 +50,7 @@ public:
 
 	// Opens a panel in the sheet.
 	void openPanel(const QString &panelId, const QString &tabId = QString());
+	void closePanel();
 
 	void beforeInterfaceModeChange(bool smallScreenMode);
 
@@ -70,6 +74,7 @@ private:
 		bool visible;
 	};
 
+	void addInterfaceToggle();
 	void handleSmallScreenModeChanged(bool smallScreenMode);
 	void activate();
 	void deactivate();
@@ -107,6 +112,7 @@ private:
 	bool m_internalChange = false;
 	bool m_interfaceHidden = false;
 	bool m_dockCheckPending = false;
+	bool m_updatingOverlays = false;
 
 	QPointer<QToolBar> m_topHolder;
 	QPointer<QToolBar> m_railHolder;

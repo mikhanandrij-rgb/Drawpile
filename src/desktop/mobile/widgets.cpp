@@ -26,6 +26,7 @@ ChromeButton::ChromeButton(QWidget *parent)
 {
 	setFocusPolicy(Qt::NoFocus);
 	setProperty("mobileChrome", true);
+	setSizePolicy(QSizePolicy::Preferred, QSizePolicy::Preferred);
 	m_longPressTimer.setSingleShot(true);
 	m_longPressTimer.setInterval(450);
 	connect(&m_longPressTimer, &QTimer::timeout, this, [this] {
@@ -89,6 +90,12 @@ void ChromeButton::setShowLabel(bool showLabel)
 	update();
 }
 
+void ChromeButton::setFloating(bool floating)
+{
+	m_floating = floating;
+	update();
+}
+
 void ChromeButton::bindAction(QAction *action)
 {
 	if(m_action) {
@@ -129,7 +136,13 @@ QSize ChromeButton::sizeHint() const
 
 QSize ChromeButton::minimumSizeHint() const
 {
-	return sizeHint();
+	// Allow bars to squeeze buttons a bit on very narrow screens (or with a
+	// large interface scale) instead of overflowing the window.
+	if(m_showLabel) {
+		return sizeHint();
+	}
+	int s = qMin(dp(m_sizeDp), dp(36));
+	return QSize(s, s);
 }
 
 void ChromeButton::paintEvent(QPaintEvent *)
@@ -142,7 +155,16 @@ void ChromeButton::paintEvent(QPaintEvent *)
 	QRect iconArea = m_showLabel ? QRect((width() - s) / 2, 0, s, s) : rect();
 	QRectF bg = QRectF(iconArea).adjusted(dp(4), dp(4), -dp(4), -dp(4));
 	qreal radius = dp(12);
-	if(isDown()) {
+	if(m_floating) {
+		QColor backdrop = isChecked() ? t.accentSoft : t.surface;
+		backdrop.setAlphaF(0.94);
+		painter.setPen(QPen(t.outline, 1.0));
+		painter.setBrush(isDown() ? t.surface3 : backdrop);
+		qreal d = qMin(iconArea.width(), iconArea.height()) - dp(4);
+		painter.drawEllipse(QRectF(
+			QRectF(iconArea).center().x() - d / 2.0,
+			QRectF(iconArea).center().y() - d / 2.0, d, d));
+	} else if(isDown()) {
 		painter.setPen(Qt::NoPen);
 		painter.setBrush(t.surface3);
 		painter.drawRoundedRect(bg, radius, radius);
@@ -388,11 +410,27 @@ void ActionCard::paintEvent(QPaintEvent *)
 		int is = dp(26);
 		QRect iconRect((width() - is) / 2, dp(14), is, is);
 		ic.paint(&painter, iconRect, Qt::AlignCenter, mode);
+		// Fit the label into two lines: shrink the font if a single word is
+		// too long, then elide words that still don't fit.
+		QRectF textRect(dp(4), dp(46), width() - dp(8), height() - dp(48));
+		QStringList words = text().split(QLatin1Char(' '), Qt::SkipEmptyParts);
+		QFontMetrics fm(titleFont);
+		int longest = 0;
+		for(const QString &word : words) {
+			longest = qMax(longest, fm.horizontalAdvance(word));
+		}
+		if(longest > textRect.width()) {
+			titleFont.setPixelSize(fontPixelSize(TextRole::Caption));
+			fm = QFontMetrics(titleFont);
+		}
+		for(QString &word : words) {
+			word = fm.elidedText(word, Qt::ElideRight, int(textRect.width()));
+		}
 		painter.setFont(titleFont);
 		painter.setPen(isEnabled() ? t.text : t.textDim);
 		painter.drawText(
-			QRectF(dp(4), dp(46), width() - dp(8), height() - dp(48)),
-			Qt::AlignHCenter | Qt::AlignTop | Qt::TextWordWrap, text());
+			textRect, Qt::AlignHCenter | Qt::AlignTop | Qt::TextWordWrap,
+			words.join(QLatin1Char(' ')));
 	} else {
 		int is = dp(24);
 		QRect iconRect(dp(16), (height() - is) / 2, is, is);

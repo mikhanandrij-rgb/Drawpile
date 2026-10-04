@@ -615,6 +615,7 @@ QuickSliders::QuickSliders(QAction *picker, QWidget *parent)
 
 	m_picker = new ChromeButton(QStringLiteral("eyedropper"), tr("Eyedropper"));
 	m_picker->setButtonSize(44);
+	m_picker->setFloating(true);
 	if(picker) {
 		m_picker->bindAction(picker);
 	}

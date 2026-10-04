@@ -1238,6 +1238,8 @@ add_resources(drawpile
 
 if(${QT_PACKAGE_NAME}LinguistTools_FOUND)
 	add_subdirectory(i18n)
+	# Drawpile Mobile (fork): mobile interface translations, bundled last.
+	add_subdirectory(mobile/i18n)
 
 	include(DrawpileTranslations)
 	if(WIN32)
@@ -1245,14 +1247,14 @@ if(${QT_PACKAGE_NAME}LinguistTools_FOUND)
 			NAME all
 			OUTPUT_LOCATION i18n-bundle
 			QT qtbase
-			TARGETS dpclient drawpile
+			TARGETS dpclient drawpile drawpile_mobileui_i18n
 		)
 	else()
 		bundle_translations(bundle_files
 			NAME all
 			OUTPUT_LOCATION i18n-bundle
 			QT qtbase
-			TARGETS dpclient drawpile
+			TARGETS dpclient drawpile drawpile_mobileui_i18n
 		)
 	endif()
 

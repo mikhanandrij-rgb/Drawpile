@@ -294,10 +294,12 @@ void Sheet::setArea(const QRect &area, Placement placement, bool leftSide)
 	if(placementChanged) {
 		m_handle->setVisible(placement == Placement::Bottom);
 	}
-	if(m_open) {
-		m_animation->stop();
-		setGeometry(openGeometry());
-		emit coveredRectChanged();
+	if(m_open && !m_dragging) {
+		QRect target = openGeometry();
+		if(target != geometry() && m_animation->state() != QAbstractAnimation::Running) {
+			setGeometry(target);
+			emit coveredRectChanged();
+		}
 	}
 	update();
 }

@@ -16,6 +16,7 @@ target_sources(drawpile PRIVATE
 	mobile/panels.cpp
 	mobile/panels.h
 	mobile/sheet.cpp
+	mobile/testdriver.cpp
 	mobile/sheet.h
 	mobile/shell.cpp
 	mobile/shell.h

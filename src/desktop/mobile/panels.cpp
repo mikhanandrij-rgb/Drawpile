@@ -162,8 +162,10 @@ void CardSection::reflow()
 	for(int i = 0; i < m_cards.size(); ++i) {
 		m_grid->addWidget(m_cards[i], i / columns, i % columns);
 	}
-	for(int c = 0; c < columns; ++c) {
-		m_grid->setColumnStretch(c, 1);
+	// Empty columns with a stretch factor would still take up space, so
+	// reset the ones left over from a previous, wider layout.
+	for(int c = 0; c < 8; ++c) {
+		m_grid->setColumnStretch(c, c < columns ? 1 : 0);
 	}
 }
 

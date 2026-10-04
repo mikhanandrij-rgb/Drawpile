@@ -419,6 +419,11 @@ Hub::Hub(MainWindow *mw, QWidget *parent)
 			}
 		};
 		connect(doc, &Document::canvasChanged, this, loaded);
+		connect(doc, &Document::canvasChanged, this, [this] {
+			if(isVisible()) {
+				QTimer::singleShot(250, this, &Hub::refreshContinueCard);
+			}
+		});
 		connect(doc, &Document::serverConnected, this, loaded);
 		// Remember what saved files look like for the recent grid.
 		connect(
@@ -492,6 +497,9 @@ void Hub::showEvent(QShowEvent *event)
 {
 	QWidget::showEvent(event);
 	refreshContinueCard();
+	// At startup the canvas may still be loading.
+	QTimer::singleShot(500, this, &Hub::refreshContinueCard);
+	QTimer::singleShot(1500, this, &Hub::refreshContinueCard);
 	refreshRecents();
 	refreshRecoveryBadge();
 	reflowGrids();
@@ -527,6 +535,8 @@ QWidget *Hub::buildMainPage()
 		tr("Mobile interface (unofficial fork) · %1")
 			.arg(QString::fromUtf8(cmake_config::version())));
 	subtitle->setProperty("mobileRole", QStringLiteral("dim"));
+	subtitle->setWordWrap(true);
+	subtitle->setSizePolicy(QSizePolicy::Ignored, QSizePolicy::Preferred);
 	applyFont(subtitle, TextRole::Caption);
 	titles->addWidget(subtitle);
 	header->addLayout(titles, 1);
@@ -599,10 +609,12 @@ QWidget *Hub::buildMainPage()
 	continueText->addWidget(continueHeading);
 	m_continueTitle = new QLabel;
 	m_continueTitle->setProperty("mobileRole", QStringLiteral("title"));
+	m_continueTitle->setSizePolicy(QSizePolicy::Ignored, QSizePolicy::Preferred);
 	applyFont(m_continueTitle, TextRole::Subtitle, true);
 	continueText->addWidget(m_continueTitle);
 	m_continueMeta = new QLabel;
 	m_continueMeta->setProperty("mobileRole", QStringLiteral("dim"));
+	m_continueMeta->setSizePolicy(QSizePolicy::Ignored, QSizePolicy::Preferred);
 	applyFont(m_continueMeta, TextRole::Caption);
 	continueText->addWidget(m_continueMeta);
 	continueText->addStretch(1);
@@ -959,7 +971,7 @@ void Hub::refreshContinueCard()
 	title.remove(QStringLiteral("[*]"));
 	m_continueTitle->setText(title.trimmed());
 	QStringList parts;
-	if(meta.size.isValid()) {
+	if(meta.size.isValid() && !meta.size.isEmpty()) {
 		parts.append(
 			QStringLiteral("%1×%2").arg(meta.size.width()).arg(meta.size.height()));
 	}

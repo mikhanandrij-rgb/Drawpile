@@ -303,7 +303,7 @@ void CommandBrowser::showRoot()
 		QGridLayout *gridLayout = new QGridLayout(grid);
 		gridLayout->setContentsMargins(dp(16), dp(4), dp(16), dp(8));
 		gridLayout->setSpacing(dp(8));
-		int columns = 4;
+		int columns = qBound(3, (width() - dp(32)) / dp(100), 6);
 		for(int i = 0; i < quick.size(); ++i) {
 			QAction *action = quick[i];
 			ActionCard *card = new ActionCard(

@@ -322,8 +322,13 @@ QImage renderCanvas(canvas::CanvasModel *canvas, ProjectMeta *outMeta)
 	if(!canvas) {
 		return QImage();
 	}
-	drawdance::CanvasState cs = canvas->paintEngine()->viewCanvasState();
-	if(cs.isNull()) {
+	// The history state is updated as soon as messages arrive, the view
+	// state only after the next render tick, so prefer the former.
+	drawdance::CanvasState cs = canvas->paintEngine()->historyCanvasState();
+	if(cs.isNull() || cs.width() <= 0) {
+		cs = canvas->paintEngine()->viewCanvasState();
+	}
+	if(cs.isNull() || cs.width() <= 0 || cs.height() <= 0) {
 		return QImage();
 	}
 	if(outMeta) {

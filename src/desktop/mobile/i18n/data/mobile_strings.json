@@ -1,0 +1,928 @@
+[
+ {
+  "context": "mobile::CommandBrowser",
+  "source": "Search commands",
+  "ru_RU": "Поиск команд",
+  "uk_UA": "Пошук команд"
+ },
+ {
+  "context": "mobile::CommandBrowser",
+  "source": "No matching commands.",
+  "ru_RU": "Команды не найдены.",
+  "uk_UA": "Команд не знайдено."
+ },
+ {
+  "context": "mobile::CommandBrowser",
+  "source": "Back",
+  "ru_RU": "Назад",
+  "uk_UA": "Назад"
+ },
+ {
+  "context": "mobile::CommandBrowser",
+  "source": "Show classic menu",
+  "ru_RU": "Показать классическое меню",
+  "uk_UA": "Показати класичне меню"
+ },
+ {
+  "context": "mobile::CommandBrowser",
+  "source": "Nothing here right now.",
+  "ru_RU": "Сейчас здесь пусто.",
+  "uk_UA": "Зараз тут порожньо."
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "▶ %1 fps",
+  "ru_RU": "▶ %1 кадр/с",
+  "uk_UA": "▶ %1 кадр/с"
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "▶ Animation",
+  "ru_RU": "▶ Анимация",
+  "uk_UA": "▶ Анімація"
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "Mobile interface (unofficial fork) · %1",
+  "ru_RU": "Мобильный интерфейс (неофициальный форк) · %1",
+  "uk_UA": "Мобільний інтерфейс (неофіційний форк) · %1"
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "Preferences",
+  "ru_RU": "Параметры",
+  "uk_UA": "Налаштування"
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "More",
+  "ru_RU": "Ещё",
+  "uk_UA": "Більше"
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "Welcome, news and links",
+  "ru_RU": "Приветствие, новости и ссылки",
+  "uk_UA": "Вітання, новини й посилання"
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "Open recording or player…",
+  "ru_RU": "Открыть запись или проигрыватель…",
+  "uk_UA": "Відкрити запис або програвач…"
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "About Drawpile",
+  "ru_RU": "О Drawpile",
+  "uk_UA": "Про Drawpile"
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "Quit",
+  "ru_RU": "Выход",
+  "uk_UA": "Вийти"
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "Continue drawing",
+  "ru_RU": "Продолжить рисование",
+  "uk_UA": "Продовжити малювання"
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "Open",
+  "ru_RU": "Открыть",
+  "uk_UA": "Відкрити"
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "Start",
+  "ru_RU": "Начать",
+  "uk_UA": "Почати"
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "New canvas",
+  "ru_RU": "Новый холст",
+  "uk_UA": "Нове полотно"
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "Presets & custom size",
+  "ru_RU": "Шаблоны и свой размер",
+  "uk_UA": "Шаблони та власний розмір"
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "Open file",
+  "ru_RU": "Открыть файл",
+  "uk_UA": "Відкрити файл"
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "Projects and images",
+  "ru_RU": "Проекты и изображения",
+  "uk_UA": "Проєкти та зображення"
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "Import image",
+  "ru_RU": "Импорт изображения",
+  "uk_UA": "Імпорт зображення"
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "Start a canvas from a picture",
+  "ru_RU": "Холст из картинки",
+  "uk_UA": "Полотно з картинки"
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "Recover",
+  "ru_RU": "Восстановить",
+  "uk_UA": "Відновити"
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "Autosaved work",
+  "ru_RU": "Автосохранённые работы",
+  "uk_UA": "Автозбережені роботи"
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "Join session",
+  "ru_RU": "Подключиться к сессии",
+  "uk_UA": "Під'єднатися до сеансу"
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "Invite link or address",
+  "ru_RU": "Ссылка-приглашение или адрес",
+  "uk_UA": "Посилання-запрошення або адреса"
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "Browse sessions",
+  "ru_RU": "Обзор сессий",
+  "uk_UA": "Огляд сеансів"
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "Public sessions",
+  "ru_RU": "Публичные сессии",
+  "uk_UA": "Публічні сеанси"
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "Host session",
+  "ru_RU": "Провести сессию",
+  "uk_UA": "Провести сеанс"
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "Share the open canvas",
+  "ru_RU": "Поделиться открытым холстом",
+  "uk_UA": "Поділитися відкритим полотном"
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "Recent",
+  "ru_RU": "Недавние",
+  "uk_UA": "Нещодавні"
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "Files you open or save show up here.",
+  "ru_RU": "Здесь появятся файлы, которые вы открываете или сохраняете.",
+  "uk_UA": "Тут з'являться файли, які ви відкриваєте або зберігаєте."
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "Back",
+  "ru_RU": "Назад",
+  "uk_UA": "Назад"
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "Phone portrait",
+  "ru_RU": "Телефон, портрет",
+  "uk_UA": "Телефон, портрет"
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "Phone landscape",
+  "ru_RU": "Телефон, ландшафт",
+  "uk_UA": "Телефон, ландшафт"
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "Square",
+  "ru_RU": "Квадрат",
+  "uk_UA": "Квадрат"
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "A4, 300 dpi",
+  "ru_RU": "A4, 300 dpi",
+  "uk_UA": "A4, 300 dpi"
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "Animation 1080p",
+  "ru_RU": "Анимация 1080p",
+  "uk_UA": "Анімація 1080p"
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "Animation 720p",
+  "ru_RU": "Анимация 720p",
+  "uk_UA": "Анімація 720p"
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "Presets",
+  "ru_RU": "Шаблоны",
+  "uk_UA": "Шаблони"
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "Frame rate",
+  "ru_RU": "Частота кадров",
+  "uk_UA": "Частота кадрів"
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "%1 fps",
+  "ru_RU": "%1 кадр/с",
+  "uk_UA": "%1 кадр/с"
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "The frame rate and range can be changed later in the animation panel.",
+  "ru_RU": "Частоту и диапазон кадров можно изменить позже на панели анимации.",
+  "uk_UA": "Частоту й діапазон кадрів можна змінити пізніше на панелі анімації."
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "Size in pixels",
+  "ru_RU": "Размер в пикселях",
+  "uk_UA": "Розмір у пікселях"
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "Width",
+  "ru_RU": "Ширина",
+  "uk_UA": "Ширина"
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "Height",
+  "ru_RU": "Высота",
+  "uk_UA": "Висота"
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "Swap width and height",
+  "ru_RU": "Поменять ширину и высоту",
+  "uk_UA": "Поміняти ширину й висоту"
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "Background",
+  "ru_RU": "Фон",
+  "uk_UA": "Тло"
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "White",
+  "ru_RU": "Белый",
+  "uk_UA": "Білий"
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "Transparent",
+  "ru_RU": "Прозрачный",
+  "uk_UA": "Прозорий"
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "Black",
+  "ru_RU": "Чёрный",
+  "uk_UA": "Чорний"
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "Custom…",
+  "ru_RU": "Свой…",
+  "uk_UA": "Власний…"
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "Create canvas",
+  "ru_RU": "Создать холст",
+  "uk_UA": "Створити полотно"
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "%n key frame(s)",
+  "ru_RU": [
+   "%n ключевой кадр",
+   "%n ключевых кадра",
+   "%n ключевых кадров"
+  ],
+  "uk_UA": [
+   "%n ключовий кадр",
+   "%n ключові кадри",
+   "%n ключових кадрів"
+  ]
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "in a session",
+  "ru_RU": "в сессии",
+  "uk_UA": "у сеансі"
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "unsaved changes",
+  "ru_RU": "есть несохранённые изменения",
+  "uk_UA": "є незбережені зміни"
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "Unsaved work can be recovered",
+  "ru_RU": "Можно восстановить несохранённую работу",
+  "uk_UA": "Можна відновити незбережену роботу"
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "Rename…",
+  "ru_RU": "Переименовать…",
+  "uk_UA": "Перейменувати…"
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "Duplicate",
+  "ru_RU": "Дублировать",
+  "uk_UA": "Дублювати"
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "Save a copy as…",
+  "ru_RU": "Сохранить копию как…",
+  "uk_UA": "Зберегти копію як…"
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "Remove from list",
+  "ru_RU": "Убрать из списка",
+  "uk_UA": "Прибрати зі списку"
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "Delete file…",
+  "ru_RU": "Удалить файл…",
+  "uk_UA": "Видалити файл…"
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "Rename",
+  "ru_RU": "Переименование",
+  "uk_UA": "Перейменування"
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "New name:",
+  "ru_RU": "Новое имя:",
+  "uk_UA": "Нова назва:"
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "A file with that name already exists.",
+  "ru_RU": "Файл с таким именем уже существует.",
+  "uk_UA": "Файл із такою назвою вже існує."
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "This file is currently open. Close it or save it under a new name instead.",
+  "ru_RU": "Этот файл сейчас открыт. Закройте его или сохраните под новым именем.",
+  "uk_UA": "Цей файл зараз відкритий. Закрийте його або збережіть під новою назвою."
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "Could not rename the file.",
+  "ru_RU": "Не удалось переименовать файл.",
+  "uk_UA": "Не вдалося перейменувати файл."
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "%1 copy",
+  "ru_RU": "%1 копия",
+  "uk_UA": "%1 копія"
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "%1 copy %2",
+  "ru_RU": "%1 копия %2",
+  "uk_UA": "%1 копія %2"
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "Could not copy the file.",
+  "ru_RU": "Не удалось скопировать файл.",
+  "uk_UA": "Не вдалося скопіювати файл."
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "Delete file",
+  "ru_RU": "Удаление файла",
+  "uk_UA": "Видалення файлу"
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "Delete \"%1\" permanently? This cannot be undone.",
+  "ru_RU": "Удалить «%1» навсегда? Это нельзя отменить.",
+  "uk_UA": "Видалити «%1» назавжди? Це не можна скасувати."
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "This file is currently open and can't be deleted.",
+  "ru_RU": "Этот файл сейчас открыт, его нельзя удалить.",
+  "uk_UA": "Цей файл зараз відкритий, його не можна видалити."
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "Could not delete the file.",
+  "ru_RU": "Не удалось удалить файл.",
+  "uk_UA": "Не вдалося видалити файл."
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "Save a copy",
+  "ru_RU": "Сохранение копии",
+  "uk_UA": "Збереження копії"
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "Could not write the copy.",
+  "ru_RU": "Не удалось записать копию.",
+  "uk_UA": "Не вдалося записати копію."
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "%1 × %2 pixels",
+  "ru_RU": "%1 × %2 пикселей",
+  "uk_UA": "%1 × %2 пікселів"
+ },
+ {
+  "context": "mobile::Hub",
+  "source": "This is a very large canvas and may be slow or run out of memory on a phone.",
+  "ru_RU": "Это очень большой холст: на телефоне он может тормозить или не поместиться в память.",
+  "uk_UA": "Це дуже велике полотно: на телефоні воно може гальмувати або не вміститися в пам'ять."
+ },
+ {
+  "context": "mobile::QuickSlider",
+  "source": "Brush size",
+  "ru_RU": "Размер кисти",
+  "uk_UA": "Розмір пензля"
+ },
+ {
+  "context": "mobile::QuickSlider",
+  "source": "Opacity",
+  "ru_RU": "Непрозрачность",
+  "uk_UA": "Непрозорість"
+ },
+ {
+  "context": "mobile::QuickSlider",
+  "source": "Size %1",
+  "ru_RU": "Размер %1",
+  "uk_UA": "Розмір %1"
+ },
+ {
+  "context": "mobile::QuickSlider",
+  "source": "Opacity %1",
+  "ru_RU": "Непрозрачность %1",
+  "uk_UA": "Непрозорість %1"
+ },
+ {
+  "context": "mobile::QuickSliders",
+  "source": "Eyedropper",
+  "ru_RU": "Пипетка",
+  "uk_UA": "Піпетка"
+ },
+ {
+  "context": "mobile::Sheet",
+  "source": "Close",
+  "ru_RU": "Закрыть",
+  "uk_UA": "Закрити"
+ },
+ {
+  "context": "mobile::Shell",
+  "source": "Top bar",
+  "ru_RU": "Верхняя панель",
+  "uk_UA": "Верхня панель"
+ },
+ {
+  "context": "mobile::Shell",
+  "source": "Quick sliders (eyedropper)",
+  "ru_RU": "Быстрые ползунки (пипетка)",
+  "uk_UA": "Швидкі повзунки (піпетка)"
+ },
+ {
+  "context": "mobile::Shell",
+  "source": "Color button (long press)",
+  "ru_RU": "Кнопка цвета (долгое нажатие)",
+  "uk_UA": "Кнопка кольору (довге натискання)"
+ },
+ {
+  "context": "mobile::Shell",
+  "source": "Tool bar / tool drawer",
+  "ru_RU": "Панель инструментов / ящик инструментов",
+  "uk_UA": "Панель інструментів / шухляда інструментів"
+ },
+ {
+  "context": "mobile::Shell",
+  "source": "More panel",
+  "ru_RU": "Панель «Ещё»",
+  "uk_UA": "Панель «Більше»"
+ },
+ {
+  "context": "mobile::Shell",
+  "source": "Session panel",
+  "ru_RU": "Панель «Сессия»",
+  "uk_UA": "Панель «Сеанс»"
+ },
+ {
+  "context": "mobile::Shell",
+  "source": "Menu › quick actions",
+  "ru_RU": "Меню › быстрые действия",
+  "uk_UA": "Меню › швидкі дії"
+ },
+ {
+  "context": "mobile::Shell",
+  "source": "Projects hub › More",
+  "ru_RU": "Экран проектов › Ещё",
+  "uk_UA": "Екран проєктів › Більше"
+ },
+ {
+  "context": "mobile::Shell",
+  "source": "Menu: %1",
+  "ru_RU": "Меню: %1",
+  "uk_UA": "Меню: %1"
+ },
+ {
+  "context": "mobile::Shell",
+  "source": "Tool bar: %1",
+  "ru_RU": "Панель: %1",
+  "uk_UA": "Панель: %1"
+ },
+ {
+  "context": "mobile::Shell",
+  "source": "Dock: %1",
+  "ru_RU": "Док: %1",
+  "uk_UA": "Док: %1"
+ },
+ {
+  "context": "mobile::Shell",
+  "source": "Keyboard shortcut only (%1)",
+  "ru_RU": "Только сочетание клавиш (%1)",
+  "uk_UA": "Лише сполучення клавіш (%1)"
+ },
+ {
+  "context": "mobile::Shell",
+  "source": "Internal / shortcut-configurable",
+  "ru_RU": "Внутреннее / настраиваемое сочетание",
+  "uk_UA": "Внутрішнє / налаштовуване сполучення"
+ },
+ {
+  "context": "mobile::Shell",
+  "source": "Menu sheet › %1",
+  "ru_RU": "Меню › %1",
+  "uk_UA": "Меню › %1"
+ },
+ {
+  "context": "mobile::Shell",
+  "source": "%1 panel (%2)",
+  "ru_RU": "Панель %1 (%2)",
+  "uk_UA": "Панель %1 (%2)"
+ },
+ {
+  "context": "mobile::Shell",
+  "source": "Keyboard shortcut only",
+  "ru_RU": "Только сочетание клавиш",
+  "uk_UA": "Лише сполучення клавіш"
+ },
+ {
+  "context": "mobile::Shell",
+  "source": "Keyboard shortcut (unchanged)",
+  "ru_RU": "Сочетание клавиш (без изменений)",
+  "uk_UA": "Сполучення клавіш (без змін)"
+ },
+ {
+  "context": "mobile::Shell",
+  "source": "Internal / shortcut-configurable (unchanged)",
+  "ru_RU": "Внутреннее / настраиваемое сочетание (без изменений)",
+  "uk_UA": "Внутрішнє / налаштовуване сполучення (без змін)"
+ },
+ {
+  "context": "mobile::Shell",
+  "source": "Not applicable: classic layout option",
+  "ru_RU": "Неприменимо: параметр классической раскладки",
+  "uk_UA": "Не застосовується: параметр класичного компонування"
+ },
+ {
+  "context": "mobile::Shell",
+  "source": "Desktop mode only (hidden in upstream mobile mode as well)",
+  "ru_RU": "Только в режиме рабочего стола (скрыто и в исходном мобильном режиме)",
+  "uk_UA": "Лише в режимі робочого столу (приховано й у вихідному мобільному режимі)"
+ },
+ {
+  "context": "mobile::Shell",
+  "source": "Show interface",
+  "ru_RU": "Показать интерфейс",
+  "uk_UA": "Показати інтерфейс"
+ },
+ {
+  "context": "mobile::Shell",
+  "source": "Brush",
+  "ru_RU": "Кисть",
+  "uk_UA": "Пензель"
+ },
+ {
+  "context": "mobile::Shell",
+  "source": "Color",
+  "ru_RU": "Цвет",
+  "uk_UA": "Колір"
+ },
+ {
+  "context": "mobile::Shell",
+  "source": "Layers",
+  "ru_RU": "Слои",
+  "uk_UA": "Шари"
+ },
+ {
+  "context": "mobile::Shell",
+  "source": "Animation",
+  "ru_RU": "Анимация",
+  "uk_UA": "Анімація"
+ },
+ {
+  "context": "mobile::Shell",
+  "source": "Navigator & reference",
+  "ru_RU": "Навигатор и референсы",
+  "uk_UA": "Навігатор і референси"
+ },
+ {
+  "context": "mobile::Shell",
+  "source": "Chat",
+  "ru_RU": "Чат",
+  "uk_UA": "Чат"
+ },
+ {
+  "context": "mobile::Shell",
+  "source": "Tools",
+  "ru_RU": "Инструменты",
+  "uk_UA": "Інструменти"
+ },
+ {
+  "context": "mobile::Shell",
+  "source": "Menu",
+  "ru_RU": "Меню",
+  "uk_UA": "Меню"
+ },
+ {
+  "context": "mobile::Shell",
+  "source": "More",
+  "ru_RU": "Ещё",
+  "uk_UA": "Більше"
+ },
+ {
+  "context": "mobile::Shell",
+  "source": "Session",
+  "ru_RU": "Сессия",
+  "uk_UA": "Сеанс"
+ },
+ {
+  "context": "mobile::Shell",
+  "source": "Panels",
+  "ru_RU": "Панели",
+  "uk_UA": "Панелі"
+ },
+ {
+  "context": "mobile::Shell",
+  "source": "Brushes",
+  "ru_RU": "Кисти",
+  "uk_UA": "Пензлі"
+ },
+ {
+  "context": "mobile::Shell",
+  "source": "Tool settings",
+  "ru_RU": "Настройки инструмента",
+  "uk_UA": "Налаштування інструмента"
+ },
+ {
+  "context": "mobile::Shell",
+  "source": "Navigator",
+  "ru_RU": "Навигатор",
+  "uk_UA": "Навігатор"
+ },
+ {
+  "context": "mobile::Shell",
+  "source": "Reference",
+  "ru_RU": "Референсы",
+  "uk_UA": "Референси"
+ },
+ {
+  "context": "mobile::Shell",
+  "source": "Onion skin",
+  "ru_RU": "Калька",
+  "uk_UA": "Калька"
+ },
+ {
+  "context": "mobile::Shell",
+  "source": "View",
+  "ru_RU": "Вид",
+  "uk_UA": "Вигляд"
+ },
+ {
+  "context": "mobile::Shell",
+  "source": "Hide interface",
+  "ru_RU": "Скрыть интерфейс",
+  "uk_UA": "Сховати інтерфейс"
+ },
+ {
+  "context": "mobile::Shell",
+  "source": "Interface",
+  "ru_RU": "Интерфейс",
+  "uk_UA": "Інтерфейс"
+ },
+ {
+  "context": "mobile::Shell",
+  "source": "Smaller interface",
+  "ru_RU": "Мельче интерфейс",
+  "uk_UA": "Дрібніший інтерфейс"
+ },
+ {
+  "context": "mobile::Shell",
+  "source": "Restart Drawpile to apply the new interface size.",
+  "ru_RU": "Перезапустите Drawpile, чтобы применить новый размер интерфейса.",
+  "uk_UA": "Перезапустіть Drawpile, щоб застосувати новий розмір інтерфейсу."
+ },
+ {
+  "context": "mobile::Shell",
+  "source": "Larger interface",
+  "ru_RU": "Крупнее интерфейс",
+  "uk_UA": "Більший інтерфейс"
+ },
+ {
+  "context": "mobile::Shell",
+  "source": "Animations",
+  "ru_RU": "Анимации",
+  "uk_UA": "Анімації"
+ },
+ {
+  "context": "mobile::Shell",
+  "source": "Classic layout",
+  "ru_RU": "Классическая раскладка",
+  "uk_UA": "Класичне компонування"
+ },
+ {
+  "context": "mobile::Shell",
+  "source": "Online",
+  "ru_RU": "В сети",
+  "uk_UA": "У мережі"
+ },
+ {
+  "context": "mobile::Shell",
+  "source": "Connected to a session.",
+  "ru_RU": "Подключено к сессии.",
+  "uk_UA": "Під'єднано до сеансу."
+ },
+ {
+  "context": "mobile::Shell",
+  "source": "Not connected. Host or join a session from the projects screen or the Session menu.",
+  "ru_RU": "Нет подключения. Проведите сессию или подключитесь к ней на экране проектов или в меню «Сессия».",
+  "uk_UA": "Немає під'єднання. Проведіть сеанс або під'єднайтеся до нього на екрані проєктів чи в меню «Сеанс»."
+ },
+ {
+  "context": "mobile::StatusPanel",
+  "source": "Session",
+  "ru_RU": "Сессия",
+  "uk_UA": "Сеанс"
+ },
+ {
+  "context": "mobile::ToolDrawer",
+  "source": "Tap a tool to use it. Tap the active tool in the bar again, or long-press any tool, to open its settings.",
+  "ru_RU": "Коснитесь инструмента, чтобы выбрать его. Чтобы открыть настройки, коснитесь активного инструмента на панели ещё раз или удерживайте любой инструмент.",
+  "uk_UA": "Торкніться інструмента, щоб вибрати його. Щоб відкрити налаштування, торкніться активного інструмента на панелі ще раз або утримуйте будь-який інструмент."
+ },
+ {
+  "context": "mobile::ToolRail",
+  "source": "All tools",
+  "ru_RU": "Все инструменты",
+  "uk_UA": "Усі інструменти"
+ },
+ {
+  "context": "mobile::ToolRail",
+  "source": "Layers",
+  "ru_RU": "Слои",
+  "uk_UA": "Шари"
+ },
+ {
+  "context": "mobile::ToolRail",
+  "source": "Animation",
+  "ru_RU": "Анимация",
+  "uk_UA": "Анімація"
+ },
+ {
+  "context": "mobile::ToolRail",
+  "source": "Color",
+  "ru_RU": "Цвет",
+  "uk_UA": "Колір"
+ },
+ {
+  "context": "mobile::TopBar",
+  "source": "Projects",
+  "ru_RU": "Проекты",
+  "uk_UA": "Проєкти"
+ },
+ {
+  "context": "mobile::TopBar",
+  "source": "Menu",
+  "ru_RU": "Меню",
+  "uk_UA": "Меню"
+ },
+ {
+  "context": "mobile::TopBar",
+  "source": "Undo",
+  "ru_RU": "Отменить",
+  "uk_UA": "Скасувати"
+ },
+ {
+  "context": "mobile::TopBar",
+  "source": "Redo",
+  "ru_RU": "Повторить",
+  "uk_UA": "Повторити"
+ },
+ {
+  "context": "mobile::TopBar",
+  "source": "Layers",
+  "ru_RU": "Слои",
+  "uk_UA": "Шари"
+ },
+ {
+  "context": "mobile::TopBar",
+  "source": "Animation",
+  "ru_RU": "Анимация",
+  "uk_UA": "Анімація"
+ },
+ {
+  "context": "mobile::TopBar",
+  "source": "Color",
+  "ru_RU": "Цвет",
+  "uk_UA": "Колір"
+ },
+ {
+  "context": "mobile::TopBar",
+  "source": "More",
+  "ru_RU": "Ещё",
+  "uk_UA": "Більше"
+ },
+ {
+  "context": "mobile::Shell",
+  "source": "Switch back to Drawpile's classic small-screen layout? This takes effect after restarting Drawpile. You can switch back in the View menu.",
+  "ru_RU": "Вернуть классическую раскладку Drawpile для маленьких экранов? Изменение вступит в силу после перезапуска Drawpile. Вернуться обратно можно в меню «Вид».",
+  "uk_UA": "Повернути класичне компонування Drawpile для малих екранів? Зміна набуде чинності після перезапуску Drawpile. Повернутися назад можна в меню «Вигляд»."
+ },
+ {
+  "context": "mobile::Shell",
+  "source": "Drawpile Mobile interface",
+  "ru_RU": "Интерфейс Drawpile Mobile",
+  "uk_UA": "Інтерфейс Drawpile Mobile"
+ },
+ {
+  "context": "mobile::Shell",
+  "source": "Use the touch-friendly interface of this fork in small-screen mode. Takes effect after restarting Drawpile.",
+  "ru_RU": "Использовать сенсорный интерфейс этого форка в режиме маленького экрана. Вступает в силу после перезапуска Drawpile.",
+  "uk_UA": "Використовувати сенсорний інтерфейс цього форку в режимі малого екрана. Набуває чинності після перезапуску Drawpile."
+ },
+ {
+  "context": "mobile::Shell",
+  "source": "Restart Drawpile to switch the interface.",
+  "ru_RU": "Перезапустите Drawpile, чтобы сменить интерфейс.",
+  "uk_UA": "Перезапустіть Drawpile, щоб змінити інтерфейс."
+ },
+ {
+  "context": "mobile::Shell",
+  "source": "Canvas notice / on-canvas control",
+  "ru_RU": "Уведомление на холсте / элемент на холсте",
+  "uk_UA": "Сповіщення на полотні / елемент на полотні"
+ },
+ {
+  "context": "mobile::Shell",
+  "source": "Canvas notice / on-canvas control (unchanged)",
+  "ru_RU": "Уведомление на холсте / элемент на холсте (без изменений)",
+  "uk_UA": "Сповіщення на полотні / елемент на полотні (без змін)"
+ }
+]

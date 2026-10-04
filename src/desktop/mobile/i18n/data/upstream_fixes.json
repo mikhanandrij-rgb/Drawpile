@@ -1,0 +1,6234 @@
+[
+ {
+  "context": "CanvasShortcutDialog",
+  "source": "Change…",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Изменить…",
+  "uk_UA": "Змінити…"
+ },
+ {
+  "context": "CanvasShortcutDialog",
+  "source": "Choose an action",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Выберите действие",
+  "uk_UA": "Виберіть дію"
+ },
+ {
+  "context": "CanvasShortcutsModel",
+  "source": "Center Tool",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Центрирование инструмента",
+  "uk_UA": "Центрування інструмента"
+ },
+ {
+  "context": "CanvasShortcutsModel",
+  "source": "Change Brush Hardness",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Изменить жёсткость кисти",
+  "uk_UA": "Змінити жорсткість пензля"
+ },
+ {
+  "context": "CanvasShortcutsModel",
+  "source": "Change Brush Opacity",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Изменить непрозрачность кисти",
+  "uk_UA": "Змінити непрозорість пензля"
+ },
+ {
+  "context": "CanvasShortcutsModel",
+  "source": "Change Brush Size",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Изменить размер кисти",
+  "uk_UA": "Змінити розмір пензля"
+ },
+ {
+  "context": "CanvasShortcutsModel",
+  "source": "Change Color Hue",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Изменить тон цвета",
+  "uk_UA": "Змінити тон кольору"
+ },
+ {
+  "context": "CanvasShortcutsModel",
+  "source": "Change Color Saturation",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Изменить насыщенность цвета",
+  "uk_UA": "Змінити насиченість кольору"
+ },
+ {
+  "context": "CanvasShortcutsModel",
+  "source": "Change Color Value",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Изменить яркость цвета",
+  "uk_UA": "Змінити яскравість кольору"
+ },
+ {
+  "context": "CanvasShortcutsModel",
+  "source": "Constrain Tool",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ограничение инструмента",
+  "uk_UA": "Обмеження інструмента"
+ },
+ {
+  "context": "CanvasShortcutsModel",
+  "source": "Constrain and Center Tool",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ограничение и центрирование инструмента",
+  "uk_UA": "Обмеження й центрування інструмента"
+ },
+ {
+  "context": "CanvasShortcutsModel",
+  "source": "Free Rotate Canvas",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Свободный поворот холста",
+  "uk_UA": "Вільне обертання полотна"
+ },
+ {
+  "context": "CanvasShortcutsModel",
+  "source": "Hide Docks",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Скрыть панели",
+  "uk_UA": "Сховати панелі"
+ },
+ {
+  "context": "CanvasShortcutsModel",
+  "source": "Pan Canvas",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Перемещение холста",
+  "uk_UA": "Переміщення полотна"
+ },
+ {
+  "context": "CanvasShortcutsModel",
+  "source": "Pick Color",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Взять цвет",
+  "uk_UA": "Взяти колір"
+ },
+ {
+  "context": "CanvasShortcutsModel",
+  "source": "Pick Layer",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Выбрать слой",
+  "uk_UA": "Вибрати шар"
+ },
+ {
+  "context": "CanvasShortcutsModel",
+  "source": "Ratchet Rotate Canvas",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Пошаговый поворот холста",
+  "uk_UA": "Покрокове обертання полотна"
+ },
+ {
+  "context": "CanvasShortcutsModel",
+  "source": "Redo",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Повторить",
+  "uk_UA": "Повторити"
+ },
+ {
+  "context": "CanvasShortcutsModel",
+  "source": "Rotate Canvas",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Повернуть холст",
+  "uk_UA": "Обертати полотно"
+ },
+ {
+  "context": "CanvasShortcutsModel",
+  "source": "Toggle Alpha Preserve",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Переключить сохранение прозрачности",
+  "uk_UA": "Перемкнути збереження прозорості"
+ },
+ {
+  "context": "CanvasShortcutsModel",
+  "source": "Toggle Eraser Mode",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Переключить режим ластика",
+  "uk_UA": "Перемкнути режим гумки"
+ },
+ {
+  "context": "CanvasShortcutsModel",
+  "source": "Toggle Eraser Tool",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Переключить инструмент «Ластик»",
+  "uk_UA": "Перемкнути інструмент «Гумка»"
+ },
+ {
+  "context": "CanvasShortcutsModel",
+  "source": "Trigger Action",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Выполнить действие",
+  "uk_UA": "Виконати дію"
+ },
+ {
+  "context": "CanvasShortcutsModel",
+  "source": "Undo",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Отменить",
+  "uk_UA": "Скасувати"
+ },
+ {
+  "context": "CanvasShortcutsModel",
+  "source": "Zoom Canvas",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Масштабирование холста",
+  "uk_UA": "Масштабування полотна"
+ },
+ {
+  "context": "FileWrangler",
+  "source": "Append",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Дописать",
+  "uk_UA": "Доповнити"
+ },
+ {
+  "context": "FileWrangler",
+  "source": "Drawpile Project",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Проект Drawpile",
+  "uk_UA": "Проєкт Drawpile"
+ },
+ {
+  "context": "FileWrangler",
+  "source": "Drawpile Project Files",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Файлы проектов Drawpile",
+  "uk_UA": "Файли проєктів Drawpile"
+ },
+ {
+  "context": "FileWrangler",
+  "source": "Export Animated PNG",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Экспорт анимированного PNG",
+  "uk_UA": "Експорт анімованого PNG"
+ },
+ {
+  "context": "FileWrangler",
+  "source": "Export Autorecovery File",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Экспорт файла автовосстановления",
+  "uk_UA": "Експорт файлу автовідновлення"
+ },
+ {
+  "context": "FileWrangler",
+  "source": "Export PNG Spritesheet",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Экспорт PNG-спрайтшита",
+  "uk_UA": "Експорт PNG-спрайтшита"
+ },
+ {
+  "context": "FileWrangler",
+  "source": "If you replace the file, any data it contains from past sessions will be lost.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Если заменить файл, все данные прошлых сессий в нём будут потеряны.",
+  "uk_UA": "Якщо замінити файл, усі дані попередніх сеансів у ньому буде втрачено."
+ },
+ {
+  "context": "FileWrangler",
+  "source": "No, keep",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Нет, оставить",
+  "uk_UA": "Ні, залишити"
+ },
+ {
+  "context": "FileWrangler",
+  "source": "Open Playback",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Открыть запись",
+  "uk_UA": "Відкрити запис"
+ },
+ {
+  "context": "FileWrangler",
+  "source": "Project Information",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Информация о проекте",
+  "uk_UA": "Інформація про проєкт"
+ },
+ {
+  "context": "FileWrangler",
+  "source": "Recordings",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Записи",
+  "uk_UA": "Записи"
+ },
+ {
+  "context": "FileWrangler",
+  "source": "Repairable Files",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Восстанавливаемые файлы",
+  "uk_UA": "Файли, які можна відновити"
+ },
+ {
+  "context": "FileWrangler",
+  "source": "Repaired File",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Восстановленный файл",
+  "uk_UA": "Відновлений файл"
+ },
+ {
+  "context": "FileWrangler",
+  "source": "Replace",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Заменить",
+  "uk_UA": "Замінити"
+ },
+ {
+  "context": "FileWrangler",
+  "source": "Replace Image",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Заменить изображение",
+  "uk_UA": "Замінити зображення"
+ },
+ {
+  "context": "FileWrangler",
+  "source": "Replace Project",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Заменить проект",
+  "uk_UA": "Замінити проєкт"
+ },
+ {
+  "context": "FileWrangler",
+  "source": "Save Project",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Сохранить проект",
+  "uk_UA": "Зберегти проєкт"
+ },
+ {
+  "context": "FileWrangler",
+  "source": "Save Repaired File",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Сохранить восстановленный файл",
+  "uk_UA": "Зберегти відновлений файл"
+ },
+ {
+  "context": "FileWrangler",
+  "source": "The file %1 already exists, do you want to replace it?",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Файл %1 уже существует. Заменить его?",
+  "uk_UA": "Файл %1 уже існує. Замінити його?"
+ },
+ {
+  "context": "FileWrangler",
+  "source": "The project file %1 already exists. Do you want to append to it or replace it?",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Файл проекта %1 уже существует. Дописать в него или заменить?",
+  "uk_UA": "Файл проєкту %1 уже існує. Доповнити його чи замінити?"
+ },
+ {
+  "context": "FileWrangler",
+  "source": "Yes, replace",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Да, заменить",
+  "uk_UA": "Так, замінити"
+ },
+ {
+  "context": "Flipbook",
+  "source": "More…",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ещё…",
+  "uk_UA": "Ще…"
+ },
+ {
+  "context": "InviteDialog",
+  "source": "Session Settings",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Настройки сессии",
+  "uk_UA": "Налаштування сеансу"
+ },
+ {
+  "context": "MainWindow",
+  "source": "Animation",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Анимация",
+  "uk_UA": "Анімація"
+ },
+ {
+  "context": "MainWindow",
+  "source": "Animation menu",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Меню «Анимация»",
+  "uk_UA": "Меню «Анімація»"
+ },
+ {
+  "context": "MainWindow",
+  "source": "Are you sure you want to disable autorecovery for this session?",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Отключить автовосстановление для этой сессии?",
+  "uk_UA": "Вимкнути автовідновлення для цього сеансу?"
+ },
+ {
+  "context": "MainWindow",
+  "source": "Autorecovery",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Автовосстановление",
+  "uk_UA": "Автовідновлення"
+ },
+ {
+  "context": "MainWindow",
+  "source": "Autorecovery Error",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка автовосстановления",
+  "uk_UA": "Помилка автовідновлення"
+ },
+ {
+  "context": "MainWindow",
+  "source": "Autorecovery deactivated",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Автовосстановление отключено",
+  "uk_UA": "Автовідновлення вимкнено"
+ },
+ {
+  "context": "MainWindow",
+  "source": "Autorecovery error: %1",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка автовосстановления: %1",
+  "uk_UA": "Помилка автовідновлення: %1"
+ },
+ {
+  "context": "MainWindow",
+  "source": "Autorecovery will be disabled for the current session. The file will be left available for recovery. If you continue, you will not be able to create a timelapse.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Автовосстановление будет отключено для текущей сессии. Файл останется доступным для восстановления. Если продолжить, создать таймлапс будет невозможно.",
+  "uk_UA": "Автовідновлення буде вимкнено для поточного сеансу. Файл залишиться доступним для відновлення. Якщо продовжити, створити таймлапс буде неможливо."
+ },
+ {
+  "context": "MainWindow",
+  "source": "Convert",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Преобразовать",
+  "uk_UA": "Перетворити"
+ },
+ {
+  "context": "MainWindow",
+  "source": "Convert &Recordings to Project…",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Преобразовать &записи в проект…",
+  "uk_UA": "Перетворити &записи на проєкт…"
+ },
+ {
+  "context": "MainWindow",
+  "source": "Copy Key Frame(s)",
+  "comment": null,
+  "numerus": true,
+  "ru_RU": [
+   "Копировать ключевой кадр",
+   "Копировать ключевые кадры",
+   "Копировать ключевые кадры"
+  ],
+  "uk_UA": [
+   "Копіювати ключовий кадр",
+   "Копіювати ключові кадри",
+   "Копіювати ключові кадри"
+  ]
+ },
+ {
+  "context": "MainWindow",
+  "source": "Create Layer Group(s) on Current Key Frame(s)",
+  "comment": null,
+  "numerus": true,
+  "ru_RU": [
+   "Создать группу слоёв на текущем ключевом кадре",
+   "Создать группы слоёв на текущих ключевых кадрах",
+   "Создать группы слоёв на текущих ключевых кадрах"
+  ],
+  "uk_UA": [
+   "Створити групу шарів на поточному ключовому кадрі",
+   "Створити групи шарів на поточних ключових кадрах",
+   "Створити групи шарів на поточних ключових кадрах"
+  ]
+ },
+ {
+  "context": "MainWindow",
+  "source": "Create Layers on Current Key Frame(s)",
+  "comment": null,
+  "numerus": true,
+  "ru_RU": [
+   "Создать слои на текущем ключевом кадре",
+   "Создать слои на текущих ключевых кадрах",
+   "Создать слои на текущих ключевых кадрах"
+  ],
+  "uk_UA": [
+   "Створити шари на поточному ключовому кадрі",
+   "Створити шари на поточних ключових кадрах",
+   "Створити шари на поточних ключових кадрах"
+  ]
+ },
+ {
+  "context": "MainWindow",
+  "source": "Cut Key Frame(s)",
+  "comment": null,
+  "numerus": true,
+  "ru_RU": [
+   "Вырезать ключевой кадр",
+   "Вырезать ключевые кадры",
+   "Вырезать ключевые кадры"
+  ],
+  "uk_UA": [
+   "Вирізати ключовий кадр",
+   "Вирізати ключові кадри",
+   "Вирізати ключові кадри"
+  ]
+ },
+ {
+  "context": "MainWindow",
+  "source": "Debug Input Events…",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Отладка событий ввода…",
+  "uk_UA": "Налагодження подій введення…"
+ },
+ {
+  "context": "MainWindow",
+  "source": "Declone Key Frame Layers",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Разделить клонированные слои ключевого кадра",
+  "uk_UA": "Роз'єднати клоновані шари ключового кадру"
+ },
+ {
+  "context": "MainWindow",
+  "source": "Decrease Exposure on All Tracks",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Уменьшить экспозицию на всех дорожках",
+  "uk_UA": "Зменшити експозицію на всіх доріжках"
+ },
+ {
+  "context": "MainWindow",
+  "source": "Delete Key Frame(s)",
+  "comment": null,
+  "numerus": true,
+  "ru_RU": [
+   "Удалить ключевой кадр",
+   "Удалить ключевые кадры",
+   "Удалить ключевые кадры"
+  ],
+  "uk_UA": [
+   "Видалити ключовий кадр",
+   "Видалити ключові кадри",
+   "Видалити ключові кадри"
+  ]
+ },
+ {
+  "context": "MainWindow",
+  "source": "Directly opens this recording to let you play it back.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Сразу открывает запись для воспроизведения.",
+  "uk_UA": "Одразу відкриває запис для відтворення."
+ },
+ {
+  "context": "MainWindow",
+  "source": "Disable Autorecovery",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Отключить автовосстановление",
+  "uk_UA": "Вимкнути автовідновлення"
+ },
+ {
+  "context": "MainWindow",
+  "source": "Do you want to start another recording anyway?",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Всё равно начать ещё одну запись?",
+  "uk_UA": "Усе одно почати ще один запис?"
+ },
+ {
+  "context": "MainWindow",
+  "source": "Edit",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Правка",
+  "uk_UA": "Редагування"
+ },
+ {
+  "context": "MainWindow",
+  "source": "Edit menu",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Меню «Правка»",
+  "uk_UA": "Меню «Редагування»"
+ },
+ {
+  "context": "MainWindow",
+  "source": "Erase",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Стирать",
+  "uk_UA": "Стирати"
+ },
+ {
+  "context": "MainWindow",
+  "source": "Error preparing project overview file.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка подготовки файла обзора проекта.",
+  "uk_UA": "Помилка підготовки файлу огляду проєкту."
+ },
+ {
+  "context": "MainWindow",
+  "source": "Error preparing timelapse file.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка подготовки файла таймлапса.",
+  "uk_UA": "Помилка підготовки файлу таймлапсу."
+ },
+ {
+  "context": "MainWindow",
+  "source": "Exposure",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Экспозиция",
+  "uk_UA": "Експозиція"
+ },
+ {
+  "context": "MainWindow",
+  "source": "File",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Файл",
+  "uk_UA": "Файл"
+ },
+ {
+  "context": "MainWindow",
+  "source": "File menu",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Меню «Файл»",
+  "uk_UA": "Меню «Файл»"
+ },
+ {
+  "context": "MainWindow",
+  "source": "Help",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Справка",
+  "uk_UA": "Довідка"
+ },
+ {
+  "context": "MainWindow",
+  "source": "Help menu",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Меню «Справка»",
+  "uk_UA": "Меню «Довідка»"
+ },
+ {
+  "context": "MainWindow",
+  "source": "Incompatible Recording",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Несовместимая запись",
+  "uk_UA": "Несумісний запис"
+ },
+ {
+  "context": "MainWindow",
+  "source": "Increase Exposure on All Tracks",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Увеличить экспозицию на всех дорожках",
+  "uk_UA": "Збільшити експозицію на всіх доріжках"
+ },
+ {
+  "context": "MainWindow",
+  "source": "Input Settings",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Настройки ввода",
+  "uk_UA": "Налаштування введення"
+ },
+ {
+  "context": "MainWindow",
+  "source": "Interface scale…",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Масштаб интерфейса…",
+  "uk_UA": "Масштаб інтерфейсу…"
+ },
+ {
+  "context": "MainWindow",
+  "source": "It may be possible to repair it.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Возможно, его удастся восстановить.",
+  "uk_UA": "Можливо, його вдасться відновити."
+ },
+ {
+  "context": "MainWindow",
+  "source": "Layer",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Слой",
+  "uk_UA": "Шар"
+ },
+ {
+  "context": "MainWindow",
+  "source": "Layer menu",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Меню «Слой»",
+  "uk_UA": "Меню «Шар»"
+ },
+ {
+  "context": "MainWindow",
+  "source": "Make timelapse…",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Создать таймлапс…",
+  "uk_UA": "Створити таймлапс…"
+ },
+ {
+  "context": "MainWindow",
+  "source": "Manage autorecovery…",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Управление автовосстановлением…",
+  "uk_UA": "Керування автовідновленням…"
+ },
+ {
+  "context": "MainWindow",
+  "source": "Mas&k Strokes/Shape Fills by Selection",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "&Маскировать штрихи и заливки формой выделением",
+  "uk_UA": "&Маскувати штрихи й заливки формою виділенням"
+ },
+ {
+  "context": "MainWindow",
+  "source": "Merge/split projects…",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Объединить/разделить проекты…",
+  "uk_UA": "Об'єднати/розділити проєкти…"
+ },
+ {
+  "context": "MainWindow",
+  "source": "Next Frame Within Range",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Следующий кадр в пределах диапазона",
+  "uk_UA": "Наступний кадр у межах діапазону"
+ },
+ {
+  "context": "MainWindow",
+  "source": "No, keep enabled",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Нет, оставить включённым",
+  "uk_UA": "Ні, залишити ввімкненим"
+ },
+ {
+  "context": "MainWindow",
+  "source": "None",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Нет",
+  "uk_UA": "Немає"
+ },
+ {
+  "context": "MainWindow",
+  "source": "Open &Playback…",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Открыть &запись…",
+  "uk_UA": "Відкрити &запис…"
+ },
+ {
+  "context": "MainWindow",
+  "source": "Open &Player…",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Открыть &проигрыватель…",
+  "uk_UA": "Відкрити &програвач…"
+ },
+ {
+  "context": "MainWindow",
+  "source": "Open Project",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Открыть проект",
+  "uk_UA": "Відкрити проєкт"
+ },
+ {
+  "context": "MainWindow",
+  "source": "Open Recording",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Открыть запись",
+  "uk_UA": "Відкрити запис"
+ },
+ {
+  "context": "MainWindow",
+  "source": "Open Recovered File",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Открыть восстановленный файл",
+  "uk_UA": "Відкрити відновлений файл"
+ },
+ {
+  "context": "MainWindow",
+  "source": "Paste Decloned Key Frame Layers",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Вставить разделённые слои ключевого кадра",
+  "uk_UA": "Вставити роз'єднані шари ключового кадру"
+ },
+ {
+  "context": "MainWindow",
+  "source": "Paste Key Frame(s)",
+  "comment": null,
+  "numerus": true,
+  "ru_RU": [
+   "Вставить ключевой кадр",
+   "Вставить ключевые кадры",
+   "Вставить ключевые кадры"
+  ],
+  "uk_UA": [
+   "Вставити ключовий кадр",
+   "Вставити ключові кадри",
+   "Вставити ключові кадри"
+  ]
+ },
+ {
+  "context": "MainWindow",
+  "source": "Previous Frame Within Range",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Предыдущий кадр в пределах диапазона",
+  "uk_UA": "Попередній кадр у межах діапазону"
+ },
+ {
+  "context": "MainWindow",
+  "source": "Project Information…",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Информация о проекте…",
+  "uk_UA": "Інформація про проєкт…"
+ },
+ {
+  "context": "MainWindow",
+  "source": "Project statistics…",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Статистика проекта…",
+  "uk_UA": "Статистика проєкту…"
+ },
+ {
+  "context": "MainWindow",
+  "source": "Record",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Записывать",
+  "uk_UA": "Записувати"
+ },
+ {
+  "context": "MainWindow",
+  "source": "Recover…",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Восстановить…",
+  "uk_UA": "Відновити…"
+ },
+ {
+  "context": "MainWindow",
+  "source": "Repair",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Исправить",
+  "uk_UA": "Виправити"
+ },
+ {
+  "context": "MainWindow",
+  "source": "Repair file…",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Исправить файл…",
+  "uk_UA": "Виправити файл…"
+ },
+ {
+  "context": "MainWindow",
+  "source": "Reset zoom",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Сбросить масштаб",
+  "uk_UA": "Скинути масштаб"
+ },
+ {
+  "context": "MainWindow",
+  "source": "Resuming…",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Возобновление…",
+  "uk_UA": "Відновлення роботи…"
+ },
+ {
+  "context": "MainWindow",
+  "source": "Right-click drawing: erase",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Рисование правой кнопкой: стирать",
+  "uk_UA": "Малювання правою кнопкою: стирати"
+ },
+ {
+  "context": "MainWindow",
+  "source": "Right-click drawing: none",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Рисование правой кнопкой: нет",
+  "uk_UA": "Малювання правою кнопкою: немає"
+ },
+ {
+  "context": "MainWindow",
+  "source": "Right-click drawing: use background color",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Рисование правой кнопкой: цвет фона",
+  "uk_UA": "Малювання правою кнопкою: колір фону"
+ },
+ {
+  "context": "MainWindow",
+  "source": "Rotate the canvas view",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Повернуть вид холста",
+  "uk_UA": "Обертати вигляд полотна"
+ },
+ {
+  "context": "MainWindow",
+  "source": "S&hape Fill",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "&Заливка формой",
+  "uk_UA": "&Заливка формою"
+ },
+ {
+  "context": "MainWindow",
+  "source": "Save Failed",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Не удалось сохранить",
+  "uk_UA": "Не вдалося зберегти"
+ },
+ {
+  "context": "MainWindow",
+  "source": "Select",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Выбор",
+  "uk_UA": "Вибір"
+ },
+ {
+  "context": "MainWindow",
+  "source": "Select Layer Above",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Выбрать слой выше",
+  "uk_UA": "Вибрати шар вище"
+ },
+ {
+  "context": "MainWindow",
+  "source": "Select Layer Below",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Выбрать слой ниже",
+  "uk_UA": "Вибрати шар нижче"
+ },
+ {
+  "context": "MainWindow",
+  "source": "Selection",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Выделение",
+  "uk_UA": "Виділення"
+ },
+ {
+  "context": "MainWindow",
+  "source": "Selection menu",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Меню «Выделение»",
+  "uk_UA": "Меню «Виділення»"
+ },
+ {
+  "context": "MainWindow",
+  "source": "Session",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Сессия",
+  "uk_UA": "Сеанс"
+ },
+ {
+  "context": "MainWindow",
+  "source": "Session menu",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Меню «Сессия»",
+  "uk_UA": "Меню «Сеанс»"
+ },
+ {
+  "context": "MainWindow",
+  "source": "Set Blank Key Frame(s)",
+  "comment": null,
+  "numerus": true,
+  "ru_RU": [
+   "Сделать ключевой кадр пустым",
+   "Сделать ключевые кадры пустыми",
+   "Сделать ключевые кадры пустыми"
+  ],
+  "uk_UA": [
+   "Зробити ключовий кадр порожнім",
+   "Зробити ключові кадри порожніми",
+   "Зробити ключові кадри порожніми"
+  ]
+ },
+ {
+  "context": "MainWindow",
+  "source": "Set Key Frame(s) to %1",
+  "comment": null,
+  "numerus": true,
+  "ru_RU": [
+   "Назначить ключевому кадру %1",
+   "Назначить ключевым кадрам %1",
+   "Назначить ключевым кадрам %1"
+  ],
+  "uk_UA": [
+   "Призначити ключовому кадру %1",
+   "Призначити ключовим кадрам %1",
+   "Призначити ключовим кадрам %1"
+  ]
+ },
+ {
+  "context": "MainWindow",
+  "source": "Set Key Frame(s) to Current Layer",
+  "comment": null,
+  "numerus": true,
+  "ru_RU": [
+   "Назначить ключевому кадру текущий слой",
+   "Назначить ключевым кадрам текущий слой",
+   "Назначить ключевым кадрам текущий слой"
+  ],
+  "uk_UA": [
+   "Призначити ключовому кадру поточний шар",
+   "Призначити ключовим кадрам поточний шар",
+   "Призначити ключовим кадрам поточний шар"
+  ]
+ },
+ {
+  "context": "MainWindow",
+  "source": "Text Input Debug Overlay",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Отладочный оверлей ввода текста",
+  "uk_UA": "Налагоджувальний оверлей введення тексту"
+ },
+ {
+  "context": "MainWindow",
+  "source": "The autorecovery file has exceeded %1% of the %2 size limit. Autorecovery will be disabled if the limit is reached.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Файл автовосстановления превысил %1% лимита размера (%2). При достижении лимита автовосстановление будет отключено.",
+  "uk_UA": "Файл автовідновлення перевищив %1% ліміту розміру (%2). Після досягнення ліміту автовідновлення буде вимкнено."
+ },
+ {
+  "context": "MainWindow",
+  "source": "This recording is incompatible, it cannot be opened with this version of Drawpile.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Эта запись несовместима, её нельзя открыть в этой версии Drawpile.",
+  "uk_UA": "Цей запис несумісний, його не можна відкрити в цій версії Drawpile."
+ },
+ {
+  "context": "MainWindow",
+  "source": "Timeline tool: edit",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Инструмент таймлайна: правка",
+  "uk_UA": "Інструмент таймлайну: редагування"
+ },
+ {
+  "context": "MainWindow",
+  "source": "Timeline tool: exposure",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Инструмент таймлайна: экспозиция",
+  "uk_UA": "Інструмент таймлайну: експозиція"
+ },
+ {
+  "context": "MainWindow",
+  "source": "Timeline tool: select",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Инструмент таймлайна: выбор",
+  "uk_UA": "Інструмент таймлайну: вибір"
+ },
+ {
+  "context": "MainWindow",
+  "source": "Timeline: reset zoom",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Таймлайн: сбросить масштаб",
+  "uk_UA": "Таймлайн: скинути масштаб"
+ },
+ {
+  "context": "MainWindow",
+  "source": "Timeline: zoom in",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Таймлайн: приблизить",
+  "uk_UA": "Таймлайн: наблизити"
+ },
+ {
+  "context": "MainWindow",
+  "source": "Timeline: zoom out",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Таймлайн: отдалить",
+  "uk_UA": "Таймлайн: віддалити"
+ },
+ {
+  "context": "MainWindow",
+  "source": "Tools",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Инструменты",
+  "uk_UA": "Інструменти"
+ },
+ {
+  "context": "MainWindow",
+  "source": "Tools menu",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Меню «Инструменты»",
+  "uk_UA": "Меню «Інструменти»"
+ },
+ {
+  "context": "MainWindow",
+  "source": "Track Frame Move Locked for You",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Перемещение кадров дорожки заблокировано для вас",
+  "uk_UA": "Переміщення кадрів доріжки заблоковано для вас"
+ },
+ {
+  "context": "MainWindow",
+  "source": "Track Onion Skin for You",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Калька дорожки для вас",
+  "uk_UA": "Калька доріжки для вас"
+ },
+ {
+  "context": "MainWindow",
+  "source": "Track Visible for You",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Дорожка видима для вас",
+  "uk_UA": "Доріжка видима для вас"
+ },
+ {
+  "context": "MainWindow",
+  "source": "Turn this recording into a project (dppr) file. Lets you make a timelapse of it afterwards.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Превратить запись в файл проекта (dppr). Потом из него можно сделать таймлапс.",
+  "uk_UA": "Перетворити запис на файл проєкту (dppr). Потім із нього можна зробити таймлапс."
+ },
+ {
+  "context": "MainWindow",
+  "source": "UDP Activity Stream…",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Поток активности по UDP…",
+  "uk_UA": "Потік активності через UDP…"
+ },
+ {
+  "context": "MainWindow",
+  "source": "Unassign Key Frame(s)",
+  "comment": null,
+  "numerus": true,
+  "ru_RU": [
+   "Отвязать ключевой кадр",
+   "Отвязать ключевые кадры",
+   "Отвязать ключевые кадры"
+  ],
+  "uk_UA": [
+   "Відв'язати ключовий кадр",
+   "Відв'язати ключові кадри",
+   "Відв'язати ключові кадри"
+  ]
+ },
+ {
+  "context": "MainWindow",
+  "source": "Unsaved data will be discarded and can't be recovered. You will not be able to create a timelapse.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Несохранённые данные будут удалены без возможности восстановления. Создать таймлапс будет невозможно.",
+  "uk_UA": "Незбережені дані буде видалено без можливості відновлення. Створити таймлапс буде неможливо."
+ },
+ {
+  "context": "MainWindow",
+  "source": "Use background color",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Использовать цвет фона",
+  "uk_UA": "Використовувати колір фону"
+ },
+ {
+  "context": "MainWindow",
+  "source": "View",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Вид",
+  "uk_UA": "Вигляд"
+ },
+ {
+  "context": "MainWindow",
+  "source": "View menu",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Меню «Вид»",
+  "uk_UA": "Меню «Вигляд»"
+ },
+ {
+  "context": "MainWindow",
+  "source": "What do you want to do with this recording?",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Что сделать с этой записью?",
+  "uk_UA": "Що зробити з цим записом?"
+ },
+ {
+  "context": "MainWindow",
+  "source": "Yes, disable",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Да, отключить",
+  "uk_UA": "Так, вимкнути"
+ },
+ {
+  "context": "MainWindow",
+  "source": "You are already recording this session because autorecovery is enabled. If you save to a project file (.dppr), it will save the recording as well.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Эта сессия уже записывается, потому что включено автовосстановление. Если сохранить в файл проекта (.dppr), запись тоже сохранится.",
+  "uk_UA": "Цей сеанс уже записується, бо ввімкнено автовідновлення. Якщо зберегти у файл проєкту (.dppr), запис теж збережеться."
+ },
+ {
+  "context": "MainWindow",
+  "source": "You can check the file size in your operating system. If it is not zero, it should be done saving.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Размер файла можно проверить в операционной системе. Если он не нулевой, сохранение должно быть завершено.",
+  "uk_UA": "Розмір файлу можна перевірити в операційній системі. Якщо він не нульовий, збереження має бути завершено."
+ },
+ {
+  "context": "MainWindow",
+  "source": "You should have been prompted to save the file. Please wait at least 30 seconds before closing this tab, otherwise some browsers will leave you with an empty file!",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Вам должно было быть предложено сохранить файл. Подождите хотя бы 30 секунд, прежде чем закрывать вкладку, иначе некоторые браузеры оставят пустой файл!",
+  "uk_UA": "Вам мало бути запропоновано зберегти файл. Зачекайте щонайменше 30 секунд, перш ніж закривати вкладку, інакше деякі браузери залишать порожній файл!"
+ },
+ {
+  "context": "MainWindow",
+  "source": "You're about to open a recovered file and close this window.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Сейчас откроется восстановленный файл, а это окно закроется.",
+  "uk_UA": "Зараз відкриється відновлений файл, а це вікно закриється."
+ },
+ {
+  "context": "MainWindow",
+  "source": "You're about to open the project file and close this window.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Сейчас откроется файл проекта, а это окно закроется.",
+  "uk_UA": "Зараз відкриється файл проєкту, а це вікно закриється."
+ },
+ {
+  "context": "MainWindow",
+  "source": "Zoom in",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Приблизить",
+  "uk_UA": "Наблизити"
+ },
+ {
+  "context": "MainWindow",
+  "source": "Zoom out",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Отдалить",
+  "uk_UA": "Віддалити"
+ },
+ {
+  "context": "MarkerColors",
+  "source": "Select blue-marked layer",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Выбрать слой с синей меткой",
+  "uk_UA": "Вибрати шар із синьою позначкою"
+ },
+ {
+  "context": "MarkerColors",
+  "source": "Select brown-marked layer",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Выбрать слой с коричневой меткой",
+  "uk_UA": "Вибрати шар із коричневою позначкою"
+ },
+ {
+  "context": "MarkerColors",
+  "source": "Select gray-marked layer",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Выбрать слой с серой меткой",
+  "uk_UA": "Вибрати шар із сірою позначкою"
+ },
+ {
+  "context": "MarkerColors",
+  "source": "Select green-marked layer",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Выбрать слой с зелёной меткой",
+  "uk_UA": "Вибрати шар із зеленою позначкою"
+ },
+ {
+  "context": "MarkerColors",
+  "source": "Select orange-marked layer",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Выбрать слой с оранжевой меткой",
+  "uk_UA": "Вибрати шар із помаранчевою позначкою"
+ },
+ {
+  "context": "MarkerColors",
+  "source": "Select purple-marked layer",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Выбрать слой с фиолетовой меткой",
+  "uk_UA": "Вибрати шар із фіолетовою позначкою"
+ },
+ {
+  "context": "MarkerColors",
+  "source": "Select red-marked layer",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Выбрать слой с красной меткой",
+  "uk_UA": "Вибрати шар із червоною позначкою"
+ },
+ {
+  "context": "MarkerColors",
+  "source": "Select yellow-marked layer",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Выбрать слой с жёлтой меткой",
+  "uk_UA": "Вибрати шар із жовтою позначкою"
+ },
+ {
+  "context": "QApplication",
+  "source": "Rotation",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Поворот",
+  "uk_UA": "Обертання"
+ },
+ {
+  "context": "QApplication",
+  "source": "Shape Fill",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Заливка формой",
+  "uk_UA": "Заливка формою"
+ },
+ {
+  "context": "QPlatformTheme",
+  "source": "Cancel",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Отмена",
+  "uk_UA": "Скасувати"
+ },
+ {
+  "context": "QPlatformTheme",
+  "source": "Close",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Закрыть",
+  "uk_UA": "Закрити"
+ },
+ {
+  "context": "QPlatformTheme",
+  "source": "Save",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Сохранить",
+  "uk_UA": "Зберегти"
+ },
+ {
+  "context": "Time",
+  "source": "%n days(s)",
+  "comment": null,
+  "numerus": true,
+  "ru_RU": [
+   "%n день",
+   "%n дня",
+   "%n дней"
+  ],
+  "uk_UA": [
+   "%n день",
+   "%n дні",
+   "%n днів"
+  ]
+ },
+ {
+  "context": "Time",
+  "source": "%n hour(s)",
+  "comment": null,
+  "numerus": true,
+  "ru_RU": [
+   "%n час",
+   "%n часа",
+   "%n часов"
+  ],
+  "uk_UA": [
+   "%n година",
+   "%n години",
+   "%n годин"
+  ]
+ },
+ {
+  "context": "Time",
+  "source": "%n minute(s)",
+  "comment": null,
+  "numerus": true,
+  "ru_RU": [
+   "%n минута",
+   "%n минуты",
+   "%n минут"
+  ],
+  "uk_UA": [
+   "%n хвилина",
+   "%n хвилини",
+   "%n хвилин"
+  ]
+ },
+ {
+  "context": "Time",
+  "source": "%n second(s)",
+  "comment": null,
+  "numerus": true,
+  "ru_RU": [
+   "%n секунда",
+   "%n секунды",
+   "%n секунд"
+  ],
+  "uk_UA": [
+   "%n секунда",
+   "%n секунди",
+   "%n секунд"
+  ]
+ },
+ {
+  "context": "Time",
+  "source": ", ",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": ", ",
+  "uk_UA": ", "
+ },
+ {
+  "context": "Units",
+  "source": "%",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "%",
+  "uk_UA": "%"
+ },
+ {
+  "context": "WorkTime",
+  "source": "%1 and %2",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "%1 и %2",
+  "uk_UA": "%1 і %2"
+ },
+ {
+  "context": "WorkTime",
+  "source": "%n hour(s)",
+  "comment": null,
+  "numerus": true,
+  "ru_RU": [
+   "%n час",
+   "%n часа",
+   "%n часов"
+  ],
+  "uk_UA": [
+   "%n година",
+   "%n години",
+   "%n годин"
+  ]
+ },
+ {
+  "context": "WorkTime",
+  "source": "%n minute(s)",
+  "comment": null,
+  "numerus": true,
+  "ru_RU": [
+   "%n минута",
+   "%n минуты",
+   "%n минут"
+  ],
+  "uk_UA": [
+   "%n хвилина",
+   "%n хвилини",
+   "%n хвилин"
+  ]
+ },
+ {
+  "context": "WorkTime",
+  "source": "unknown",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "неизвестно",
+  "uk_UA": "невідомо"
+ },
+ {
+  "context": "dialogs::ActionPickerDialog",
+  "source": "Select Action",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Выбор действия",
+  "uk_UA": "Вибір дії"
+ },
+ {
+  "context": "dialogs::AnimationExportDialog",
+  "source": "%1x%2 sprites at %3x%4 pixels each, %5x%6 pixels total.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "%1×%2 спрайтов по %3×%4 пикселей, всего %5×%6 пикселей.",
+  "uk_UA": "%1×%2 спрайтів по %3×%4 пікселів, усього %5×%6 пікселів."
+ },
+ {
+  "context": "dialogs::AnimationExportDialog",
+  "source": "Encoder:",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Кодировщик:",
+  "uk_UA": "Кодувальник:"
+ },
+ {
+  "context": "dialogs::AnimationExportDialog",
+  "source": "FFmpeg",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "FFmpeg",
+  "uk_UA": "FFmpeg"
+ },
+ {
+  "context": "dialogs::BrushSaveDialog",
+  "source": "Save Brush",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Сохранить кисть",
+  "uk_UA": "Зберегти пензель"
+ },
+ {
+  "context": "dialogs::BrushSaveDialog",
+  "source": "Tags:",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Теги:",
+  "uk_UA": "Теги:"
+ },
+ {
+  "context": "dialogs::BrushSettingsDialog",
+  "source": "Basic",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Основное",
+  "uk_UA": "Основне"
+ },
+ {
+  "context": "dialogs::BrushSettingsDialog",
+  "source": "Color",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Цвет",
+  "uk_UA": "Колір"
+ },
+ {
+  "context": "dialogs::BrushSettingsDialog",
+  "source": "Common",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Общее",
+  "uk_UA": "Загальне"
+ },
+ {
+  "context": "dialogs::BrushSettingsDialog",
+  "source": "Custom",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Пользовательское",
+  "uk_UA": "Власне"
+ },
+ {
+  "context": "dialogs::BrushSettingsDialog",
+  "source": "Dabs",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Мазки",
+  "uk_UA": "Мазки"
+ },
+ {
+  "context": "dialogs::BrushSettingsDialog",
+  "source": "Directional Offsets",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Направленные смещения",
+  "uk_UA": "Напрямні зміщення"
+ },
+ {
+  "context": "dialogs::BrushSettingsDialog",
+  "source": "Grid Map",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Карта сетки",
+  "uk_UA": "Карта сітки"
+ },
+ {
+  "context": "dialogs::BrushSettingsDialog",
+  "source": "Options",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Параметры",
+  "uk_UA": "Параметри"
+ },
+ {
+  "context": "dialogs::BrushSettingsDialog",
+  "source": "Save Brush…",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Сохранить кисть…",
+  "uk_UA": "Зберегти пензель…"
+ },
+ {
+  "context": "dialogs::BrushSettingsDialog",
+  "source": "Smudge",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Размазывание",
+  "uk_UA": "Розмазування"
+ },
+ {
+  "context": "dialogs::BrushSettingsDialog",
+  "source": "Speed",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Скорость",
+  "uk_UA": "Швидкість"
+ },
+ {
+  "context": "dialogs::BrushSettingsDialog",
+  "source": "Stroke",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Штрих",
+  "uk_UA": "Штрих"
+ },
+ {
+  "context": "dialogs::BrushSettingsDialog",
+  "source": "Tracking",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Отслеживание",
+  "uk_UA": "Відстеження"
+ },
+ {
+  "context": "dialogs::BrushSettingsDialog",
+  "source": "Undelete Brush",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Восстановить удалённую кисть",
+  "uk_UA": "Відновити видалений пензель"
+ },
+ {
+  "context": "dialogs::CanvasShortcutsDialog",
+  "source": "Choose an action to proceed.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Выберите действие, чтобы продолжить.",
+  "uk_UA": "Виберіть дію, щоб продовжити."
+ },
+ {
+  "context": "dialogs::CurvePresetDialog",
+  "source": "Anti-Strain",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Против напряжения",
+  "uk_UA": "Проти напруження"
+ },
+ {
+  "context": "dialogs::CurvePresetDialog",
+  "source": "Apple Pencil",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Apple Pencil",
+  "uk_UA": "Apple Pencil"
+ },
+ {
+  "context": "dialogs::CurvePresetDialog",
+  "source": "Xiaomi Stylus",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Стилус Xiaomi",
+  "uk_UA": "Стилус Xiaomi"
+ },
+ {
+  "context": "dialogs::FfmpegDialog",
+  "source": "After downloading and unpacking everything, click on Choose and locate the %1 file.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "После загрузки и распаковки нажмите «Выбрать» и укажите файл %1.",
+  "uk_UA": "Після завантаження й розпакування натисніть «Вибрати» та вкажіть файл %1."
+ },
+ {
+  "context": "dialogs::FfmpegDialog",
+  "source": "Back",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Назад",
+  "uk_UA": "Назад"
+ },
+ {
+  "context": "dialogs::FfmpegDialog",
+  "source": "Checking…",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Проверка…",
+  "uk_UA": "Перевірка…"
+ },
+ {
+  "context": "dialogs::FfmpegDialog",
+  "source": "Choose",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Выбрать",
+  "uk_UA": "Вибрати"
+ },
+ {
+  "context": "dialogs::FfmpegDialog",
+  "source": "Choose ffmpeg path",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Выберите путь к ffmpeg",
+  "uk_UA": "Виберіть шлях до ffmpeg"
+ },
+ {
+  "context": "dialogs::FfmpegDialog",
+  "source": "Error: the given program could not be started.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка: не удалось запустить указанную программу.",
+  "uk_UA": "Помилка: не вдалося запустити вказану програму."
+ },
+ {
+  "context": "dialogs::FfmpegDialog",
+  "source": "Error: the given program did not finish.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка: указанная программа не завершилась.",
+  "uk_UA": "Помилка: вказана програма не завершилася."
+ },
+ {
+  "context": "dialogs::FfmpegDialog",
+  "source": "Error: the given program does not appear to be ffmpeg.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка: указанная программа, похоже, не ffmpeg.",
+  "uk_UA": "Помилка: вказана програма, схоже, не ffmpeg."
+ },
+ {
+  "context": "dialogs::FfmpegDialog",
+  "source": "Error: the given program exited with an error.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка: указанная программа завершилась с ошибкой.",
+  "uk_UA": "Помилка: вказана програма завершилася з помилкою."
+ },
+ {
+  "context": "dialogs::FfmpegDialog",
+  "source": "Executables",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Исполняемые файлы",
+  "uk_UA": "Виконувані файли"
+ },
+ {
+  "context": "dialogs::FfmpegDialog",
+  "source": "FFmpeg Settings",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Настройки FFmpeg",
+  "uk_UA": "Налаштування FFmpeg"
+ },
+ {
+  "context": "dialogs::FfmpegDialog",
+  "source": "FFmpeg is not supported on this platform.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "FFmpeg не поддерживается на этой платформе.",
+  "uk_UA": "FFmpeg не підтримується на цій платформі."
+ },
+ {
+  "context": "dialogs::FfmpegDialog",
+  "source": "FFmpeg path or command:",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Путь или команда FFmpeg:",
+  "uk_UA": "Шлях або команда FFmpeg:"
+ },
+ {
+  "context": "dialogs::FfmpegDialog",
+  "source": "If you see this message, you found a bug in Drawpile.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Если вы видите это сообщение, вы нашли ошибку в Drawpile.",
+  "uk_UA": "Якщо ви бачите це повідомлення, ви знайшли помилку в Drawpile."
+ },
+ {
+  "context": "dialogs::FfmpegDialog",
+  "source": "Once it is installed, just using %1 in the field above should work. Otherwise, click on Choose and locate the executable.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "После установки должно хватить %1 в поле выше. Иначе нажмите «Выбрать» и укажите исполняемый файл.",
+  "uk_UA": "Після встановлення має вистачити %1 у полі вище. Інакше натисніть «Вибрати» та вкажіть виконуваний файл."
+ },
+ {
+  "context": "dialogs::FfmpegDialog",
+  "source": "Programming Error",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка программы",
+  "uk_UA": "Помилка програми"
+ },
+ {
+  "context": "dialogs::FfmpegDialog",
+  "source": "Successfully detected ffmpeg version %1.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Обнаружен ffmpeg версии %1.",
+  "uk_UA": "Виявлено ffmpeg версії %1."
+ },
+ {
+  "context": "dialogs::FfmpegDialog",
+  "source": "You can download a Windows version of ffmpeg from %1.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Версию ffmpeg для Windows можно скачать с %1.",
+  "uk_UA": "Версію ffmpeg для Windows можна завантажити з %1."
+ },
+ {
+  "context": "dialogs::FfmpegDialog",
+  "source": "You can install ffmpeg through Homebrew.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "ffmpeg можно установить через Homebrew.",
+  "uk_UA": "ffmpeg можна встановити через Homebrew."
+ },
+ {
+  "context": "dialogs::FfmpegDialog",
+  "source": "You can probably install ffmpeg through your package manager.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Скорее всего, ffmpeg можно установить через менеджер пакетов.",
+  "uk_UA": "Найімовірніше, ffmpeg можна встановити через менеджер пакетів."
+ },
+ {
+  "context": "dialogs::Flipbook",
+  "source": "FPS:",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Кадр/с:",
+  "uk_UA": "Кадр/с:"
+ },
+ {
+  "context": "dialogs::Flipbook",
+  "source": "Reset range",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Сбросить диапазон",
+  "uk_UA": "Скинути діапазон"
+ },
+ {
+  "context": "dialogs::Flipbook",
+  "source": "Reset speed",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Сбросить скорость",
+  "uk_UA": "Скинути швидкість"
+ },
+ {
+  "context": "dialogs::Flipbook",
+  "source": "Set speed from FPS…",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Задать скорость по кадрам/с…",
+  "uk_UA": "Задати швидкість за кадрами/с…"
+ },
+ {
+  "context": "dialogs::InputSettingsDialog",
+  "source": "Adjust with velocity",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Подстройка по скорости",
+  "uk_UA": "Підлаштування за швидкістю"
+ },
+ {
+  "context": "dialogs::InputSettingsDialog",
+  "source": "Adjustment",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Подстройка",
+  "uk_UA": "Підлаштування"
+ },
+ {
+  "context": "dialogs::InputSettingsDialog",
+  "source": "Finish strokes",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Завершать штрихи",
+  "uk_UA": "Завершувати штрихи"
+ },
+ {
+  "context": "dialogs::InputSettingsDialog",
+  "source": "Input Settings",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Настройки ввода",
+  "uk_UA": "Налаштування введення"
+ },
+ {
+  "context": "dialogs::InputSettingsDialog",
+  "source": "Maximum adjustment: ",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Макс. подстройка: ",
+  "uk_UA": "Макс. підлаштування: "
+ },
+ {
+  "context": "dialogs::InputSettingsDialog",
+  "source": "Maximum velocity: ",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Макс. скорость: ",
+  "uk_UA": "Макс. швидкість: "
+ },
+ {
+  "context": "dialogs::InputSettingsDialog",
+  "source": "Stabilization",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Стабилизация",
+  "uk_UA": "Стабілізація"
+ },
+ {
+  "context": "dialogs::InputSettingsDialog",
+  "source": "Stabilizer: ",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Стабилизатор: ",
+  "uk_UA": "Стабілізатор: "
+ },
+ {
+  "context": "dialogs::InputSettingsDialog",
+  "source": "Velocity",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Скорость",
+  "uk_UA": "Швидкість"
+ },
+ {
+  "context": "dialogs::InviteDialog",
+  "source": " Only the desktop or mobile application will work.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": " Будет работать только настольное или мобильное приложение.",
+  "uk_UA": " Працюватиме лише настільний або мобільний застосунок."
+ },
+ {
+  "context": "dialogs::InviteDialog",
+  "source": " Operators and server administrators can use <a href=\"#\">invite codes</a> to let people join via web browser.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": " Операторы и администраторы сервера могут использовать <a href=\"#\">коды приглашения</a>, чтобы люди могли подключаться через браузер.",
+  "uk_UA": " Оператори й адміністратори сервера можуть використовувати <a href=\"#\">коди запрошення</a>, щоб люди могли під'єднуватися через браузер."
+ },
+ {
+  "context": "dialogs::InviteDialog",
+  "source": " Server administrators can use <a href=\"#\">invite codes</a> to let people join via web browser.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": " Администраторы сервера могут использовать <a href=\"#\">коды приглашения</a>, чтобы люди могли подключаться через браузер.",
+  "uk_UA": " Адміністратори сервера можуть використовувати <a href=\"#\">коди запрошення</a>, щоб люди могли під'єднуватися через браузер."
+ },
+ {
+  "context": "dialogs::InviteDialog",
+  "source": " The desktop or mobile application will work normally.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": " Настольное и мобильное приложения будут работать как обычно.",
+  "uk_UA": " Настільний і мобільний застосунки працюватимуть як зазвичай."
+ },
+ {
+  "context": "dialogs::InviteDialog",
+  "source": " Use <a href=\"#\">invite codes</a> to let people join via web browser.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": " Используйте <a href=\"#\">коды приглашения</a>, чтобы люди могли подключаться через браузер.",
+  "uk_UA": " Використовуйте <a href=\"#\">коди запрошення</a>, щоб люди могли під'єднуватися через браузер."
+ },
+ {
+  "context": "dialogs::InviteDialog",
+  "source": "Dismiss",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Скрыть",
+  "uk_UA": "Сховати"
+ },
+ {
+  "context": "dialogs::InviteDialog",
+  "source": "This session <strong>does not allow joining with the web browser version of Drawpile.</strong>",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Эта сессия <strong>не позволяет подключаться из браузерной версии Drawpile.</strong>",
+  "uk_UA": "Цей сеанс <strong>не дозволяє під'єднуватися з браузерної версії Drawpile.</strong>"
+ },
+ {
+  "context": "dialogs::InviteDialog",
+  "source": "This session <strong>restricts joining with the web browser version of Drawpile.</strong>",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Эта сессия <strong>ограничивает подключение из браузерной версии Drawpile.</strong>",
+  "uk_UA": "Цей сеанс <strong>обмежує під'єднання з браузерної версії Drawpile.</strong>"
+ },
+ {
+  "context": "dialogs::InviteDialog",
+  "source": "This session is <strong>public</strong>, strangers can join it!",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Эта сессия <strong>публичная</strong>, к ней могут подключиться посторонние!",
+  "uk_UA": "Цей сеанс <strong>публічний</strong>, до нього можуть під'єднатися сторонні!"
+ },
+ {
+  "context": "dialogs::InviteDialog",
+  "source": "This session is hosted on a server that <strong>does not support the web browser version of Drawpile</strong>.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Эта сессия размещена на сервере, который <strong>не поддерживает браузерную версию Drawpile</strong>.",
+  "uk_UA": "Цей сеанс розміщено на сервері, який <strong>не підтримує браузерну версію Drawpile</strong>."
+ },
+ {
+  "context": "dialogs::InviteDialog",
+  "source": "To make it invite-only, [set a session password].",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Чтобы вход был только по приглашению, [задайте пароль сессии].",
+  "uk_UA": "Щоб вхід був лише за запрошенням, [задайте пароль сеансу]."
+ },
+ {
+  "context": "dialogs::InviteDialog",
+  "source": "To make it invite-only, a session operator can set a password.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Чтобы вход был только по приглашению, оператор сессии может задать пароль.",
+  "uk_UA": "Щоб вхід був лише за запрошенням, оператор сеансу може задати пароль."
+ },
+ {
+  "context": "dialogs::LayoutsDialog",
+  "source": "Floofderg",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Floofderg",
+  "uk_UA": "Floofderg"
+ },
+ {
+  "context": "dialogs::LayoutsDialog",
+  "source": "Kerfluff",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Kerfluff",
+  "uk_UA": "Kerfluff"
+ },
+ {
+  "context": "dialogs::LayoutsDialog",
+  "source": "Lambda",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Lambda",
+  "uk_UA": "Lambda"
+ },
+ {
+  "context": "dialogs::LoginDialog",
+  "source": "This username doesn't belong to an account on %1.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Это имя пользователя не принадлежит учётной записи на %1.",
+  "uk_UA": "Це ім'я користувача не належить обліковому запису на %1."
+ },
+ {
+  "context": "dialogs::ProjectDialog",
+  "source": "Closed at:",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Закрыта:",
+  "uk_UA": "Закрито:"
+ },
+ {
+  "context": "dialogs::ProjectDialog",
+  "source": "Converted from a recording file, no timing information available.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Преобразовано из файла записи, сведений о времени нет.",
+  "uk_UA": "Перетворено з файлу запису, відомостей про час немає."
+ },
+ {
+  "context": "dialogs::ProjectDialog",
+  "source": "Loading…",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Загрузка…",
+  "uk_UA": "Завантаження…"
+ },
+ {
+  "context": "dialogs::ProjectDialog",
+  "source": "Opened at:",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Открыта:",
+  "uk_UA": "Відкрито:"
+ },
+ {
+  "context": "dialogs::ProjectDialog",
+  "source": "Project Statistics",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Статистика проекта",
+  "uk_UA": "Статистика проєкту"
+ },
+ {
+  "context": "dialogs::ProjectDialog",
+  "source": "Recorded with a new, incompatible version of Drawpile.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Записано новой, несовместимой версией Drawpile.",
+  "uk_UA": "Записано новою, несумісною версією Drawpile."
+ },
+ {
+  "context": "dialogs::ProjectDialog",
+  "source": "Recorded with a newer version of Drawpile with minor incompatibilities.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Записано более новой версией Drawpile с небольшими несовместимостями.",
+  "uk_UA": "Записано новішою версією Drawpile з невеликими несумісностями."
+ },
+ {
+  "context": "dialogs::ProjectDialog",
+  "source": "Recorded with an old incompatible version of Drawpile.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Записано старой несовместимой версией Drawpile.",
+  "uk_UA": "Записано старою несумісною версією Drawpile."
+ },
+ {
+  "context": "dialogs::ProjectDialog",
+  "source": "Recorded with an old, incompatible version (%1) of Drawpile.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Записано старой несовместимой версией Drawpile (%1).",
+  "uk_UA": "Записано старою несумісною версією Drawpile (%1)."
+ },
+ {
+  "context": "dialogs::ProjectDialog",
+  "source": "Recorded with an older, but compatible version (%1) of Drawpile.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Записано более старой, но совместимой версией Drawpile (%1).",
+  "uk_UA": "Записано старішою, але сумісною версією Drawpile (%1)."
+ },
+ {
+  "context": "dialogs::ProjectDialog",
+  "source": "Recorded with an older, but compatible version of Drawpile.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Записано более старой, но совместимой версией Drawpile.",
+  "uk_UA": "Записано старішою, але сумісною версією Drawpile."
+ },
+ {
+  "context": "dialogs::ProjectDialog",
+  "source": "Recorded with an unknown incompatible version of Drawpile.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Записано неизвестной несовместимой версией Drawpile.",
+  "uk_UA": "Записано невідомою несумісною версією Drawpile."
+ },
+ {
+  "context": "dialogs::ProjectDialog",
+  "source": "Session %1",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Сессия %1",
+  "uk_UA": "Сеанс %1"
+ },
+ {
+  "context": "dialogs::ProjectDialog",
+  "source": "Session time:",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Время сессии:",
+  "uk_UA": "Час сеансу:"
+ },
+ {
+  "context": "dialogs::ProjectDialog",
+  "source": "These statistics only reflect sessions saved in the project. Sessions where you disabled autorecovery or quit without saving and otherwise unsaved changes will not be present.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Статистика учитывает только сессии, сохранённые в проекте. Сессии с отключённым автовосстановлением, выход без сохранения и прочие несохранённые изменения здесь не учтены.",
+  "uk_UA": "Статистика враховує лише сеанси, збережені в проєкті. Сеанси з вимкненим автовідновленням, вихід без збереження та інші незбережені зміни тут не враховано."
+ },
+ {
+  "context": "dialogs::ProjectDialog",
+  "source": "This is probably a bug in Drawpile.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Вероятно, это ошибка в Drawpile.",
+  "uk_UA": "Імовірно, це помилка в Drawpile."
+ },
+ {
+  "context": "dialogs::ProjectDialog",
+  "source": "Total session time:",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Общее время сессий:",
+  "uk_UA": "Загальний час сеансів:"
+ },
+ {
+  "context": "dialogs::ProjectDialog",
+  "source": "Unexpected Error",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Непредвиденная ошибка",
+  "uk_UA": "Неочікувана помилка"
+ },
+ {
+  "context": "dialogs::ProjectDialog",
+  "source": "Your total work time:",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ваше общее время работы:",
+  "uk_UA": "Ваш загальний час роботи:"
+ },
+ {
+  "context": "dialogs::ProjectDialog",
+  "source": "Your work time:",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ваше время работы:",
+  "uk_UA": "Ваш час роботи:"
+ },
+ {
+  "context": "dialogs::ProjectDialog",
+  "source": "unknown",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "неизвестно",
+  "uk_UA": "невідомо"
+ },
+ {
+  "context": "dialogs::ProjectEditDialog",
+  "source": "Add",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Добавить",
+  "uk_UA": "Додати"
+ },
+ {
+  "context": "dialogs::ProjectEditDialog",
+  "source": "Add the dppr, dprec and dptxt files you want to include. You can drag sessions to change their order and remove unwanted ones from the set. Once done, press %1 to create a new dppr file.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Добавьте нужные файлы dppr, dprec и dptxt. Сессии можно перетаскивать, чтобы изменить порядок, и удалять лишние. Затем нажмите %1, чтобы создать новый файл dppr.",
+  "uk_UA": "Додайте потрібні файли dppr, dprec і dptxt. Сеанси можна перетягувати, щоб змінити порядок, і видаляти зайві. Потім натисніть %1, щоб створити новий файл dppr."
+ },
+ {
+  "context": "dialogs::ProjectEditDialog",
+  "source": "Back",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Назад",
+  "uk_UA": "Назад"
+ },
+ {
+  "context": "dialogs::ProjectEditDialog",
+  "source": "Conversion suceeded, but file saving failed.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Преобразование прошло успешно, но сохранить файл не удалось.",
+  "uk_UA": "Перетворення вдалося, але зберегти файл не вдалося."
+ },
+ {
+  "context": "dialogs::ProjectEditDialog",
+  "source": "Edit Project",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Изменение проекта",
+  "uk_UA": "Редагування проєкту"
+ },
+ {
+  "context": "dialogs::ProjectEditDialog",
+  "source": "Error",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка",
+  "uk_UA": "Помилка"
+ },
+ {
+  "context": "dialogs::ProjectEditDialog",
+  "source": "Error %1 opening input file: %2",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка %1 при открытии входного файла: %2",
+  "uk_UA": "Помилка %1 під час відкриття вхідного файлу: %2"
+ },
+ {
+  "context": "dialogs::ProjectEditDialog",
+  "source": "Error %1 opening output file: %2",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка %1 при открытии выходного файла: %2",
+  "uk_UA": "Помилка %1 під час відкриття вихідного файлу: %2"
+ },
+ {
+  "context": "dialogs::ProjectEditDialog",
+  "source": "Error %1 opening temporary file: %2",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка %1 при открытии временного файла: %2",
+  "uk_UA": "Помилка %1 під час відкриття тимчасового файлу: %2"
+ },
+ {
+  "context": "dialogs::ProjectEditDialog",
+  "source": "Error copying to temporary file: %1",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка копирования во временный файл: %1",
+  "uk_UA": "Помилка копіювання в тимчасовий файл: %1"
+ },
+ {
+  "context": "dialogs::ProjectEditDialog",
+  "source": "Failed to initialize temporary file.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Не удалось инициализировать временный файл.",
+  "uk_UA": "Не вдалося ініціалізувати тимчасовий файл."
+ },
+ {
+  "context": "dialogs::ProjectEditDialog",
+  "source": "Failed to load %n file(s).",
+  "comment": null,
+  "numerus": true,
+  "ru_RU": [
+   "Не удалось загрузить %n файл.",
+   "Не удалось загрузить %n файла.",
+   "Не удалось загрузить %n файлов."
+  ],
+  "uk_UA": [
+   "Не вдалося завантажити %n файл.",
+   "Не вдалося завантажити %n файли.",
+   "Не вдалося завантажити %n файлів."
+  ]
+ },
+ {
+  "context": "dialogs::ProjectEditDialog",
+  "source": "Failed to open project: %1",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Не удалось открыть проект: %1",
+  "uk_UA": "Не вдалося відкрити проєкт: %1"
+ },
+ {
+  "context": "dialogs::ProjectEditDialog",
+  "source": "Failed to open recording: %1",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Не удалось открыть запись: %1",
+  "uk_UA": "Не вдалося відкрити запис: %1"
+ },
+ {
+  "context": "dialogs::ProjectEditDialog",
+  "source": "Failed to read project: %1",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Не удалось прочитать проект: %1",
+  "uk_UA": "Не вдалося прочитати проєкт: %1"
+ },
+ {
+  "context": "dialogs::ProjectEditDialog",
+  "source": "Incompatible recording.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Несовместимая запись.",
+  "uk_UA": "Несумісний запис."
+ },
+ {
+  "context": "dialogs::ProjectEditDialog",
+  "source": "Loading…",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Загрузка…",
+  "uk_UA": "Завантаження…"
+ },
+ {
+  "context": "dialogs::ProjectEditDialog",
+  "source": "Move down",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Вниз",
+  "uk_UA": "Униз"
+ },
+ {
+  "context": "dialogs::ProjectEditDialog",
+  "source": "Move up",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Вверх",
+  "uk_UA": "Угору"
+ },
+ {
+  "context": "dialogs::ProjectEditDialog",
+  "source": "No converted file available.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Нет преобразованного файла.",
+  "uk_UA": "Немає перетвореного файлу."
+ },
+ {
+  "context": "dialogs::ProjectEditDialog",
+  "source": "No file to save to given.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Не указан файл для сохранения.",
+  "uk_UA": "Не вказано файл для збереження."
+ },
+ {
+  "context": "dialogs::ProjectEditDialog",
+  "source": "No recording in dpcs file.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "В файле dpcs нет записи.",
+  "uk_UA": "У файлі dpcs немає запису."
+ },
+ {
+  "context": "dialogs::ProjectEditDialog",
+  "source": "Open project file",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Открыть файл проекта",
+  "uk_UA": "Відкрити файл проєкту"
+ },
+ {
+  "context": "dialogs::ProjectEditDialog",
+  "source": "Processing…",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Обработка…",
+  "uk_UA": "Обробка…"
+ },
+ {
+  "context": "dialogs::ProjectEditDialog",
+  "source": "Project contains no sessions.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "В проекте нет сессий.",
+  "uk_UA": "У проєкті немає сеансів."
+ },
+ {
+  "context": "dialogs::ProjectEditDialog",
+  "source": "Project file created successfully.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Файл проекта успешно создан.",
+  "uk_UA": "Файл проєкту успішно створено."
+ },
+ {
+  "context": "dialogs::ProjectEditDialog",
+  "source": "Project session %1",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Сессия проекта %1",
+  "uk_UA": "Сеанс проєкту %1"
+ },
+ {
+  "context": "dialogs::ProjectEditDialog",
+  "source": "Recording",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Запись",
+  "uk_UA": "Запис"
+ },
+ {
+  "context": "dialogs::ProjectEditDialog",
+  "source": "Remove",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Удалить",
+  "uk_UA": "Видалити"
+ },
+ {
+  "context": "dialogs::ProjectEditDialog",
+  "source": "Saving project…",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Сохранение проекта…",
+  "uk_UA": "Збереження проєкту…"
+ },
+ {
+  "context": "dialogs::ProjectEditDialog",
+  "source": "Unknown file format.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Неизвестный формат файла.",
+  "uk_UA": "Невідомий формат файлу."
+ },
+ {
+  "context": "dialogs::ProjectPlaybackDialog",
+  "source": "Conversion cancelled.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Преобразование отменено.",
+  "uk_UA": "Перетворення скасовано."
+ },
+ {
+  "context": "dialogs::ProjectPlaybackDialog",
+  "source": "Converting recording %1…",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Преобразование записи %1…",
+  "uk_UA": "Перетворення запису %1…"
+ },
+ {
+  "context": "dialogs::ProjectPlaybackDialog",
+  "source": "Failed to open temporary file.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Не удалось открыть временный файл.",
+  "uk_UA": "Не вдалося відкрити тимчасовий файл."
+ },
+ {
+  "context": "dialogs::ProjectPlaybackDialog",
+  "source": "Follow view",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Следовать за видом",
+  "uk_UA": "Стежити за виглядом"
+ },
+ {
+  "context": "dialogs::ProjectPlaybackDialog",
+  "source": "Loading…",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Загрузка…",
+  "uk_UA": "Завантаження…"
+ },
+ {
+  "context": "dialogs::ProjectPlaybackDialog",
+  "source": "Nothing to play back.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Нечего воспроизводить.",
+  "uk_UA": "Немає чого відтворювати."
+ },
+ {
+  "context": "dialogs::ProjectPlaybackDialog",
+  "source": "Opening project…",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Открытие проекта…",
+  "uk_UA": "Відкриття проєкту…"
+ },
+ {
+  "context": "dialogs::ProjectPlaybackDialog",
+  "source": "Options",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Параметры",
+  "uk_UA": "Параметри"
+ },
+ {
+  "context": "dialogs::ProjectPlaybackDialog",
+  "source": "Pause",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Пауза",
+  "uk_UA": "Пауза"
+ },
+ {
+  "context": "dialogs::ProjectPlaybackDialog",
+  "source": "Play",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Воспроизвести",
+  "uk_UA": "Відтворити"
+ },
+ {
+  "context": "dialogs::ProjectPlaybackDialog",
+  "source": "Playback speed: ",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Скорость воспроизведения: ",
+  "uk_UA": "Швидкість відтворення: "
+ },
+ {
+  "context": "dialogs::ProjectPlaybackDialog",
+  "source": "Player Error",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка проигрывателя",
+  "uk_UA": "Помилка програвача"
+ },
+ {
+  "context": "dialogs::ProjectPlaybackDialog",
+  "source": "Rewind session",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Перемотать сессию",
+  "uk_UA": "Перемотати сеанс"
+ },
+ {
+  "context": "dialogs::ProjectPlaybackDialog",
+  "source": "Sequence number %1",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Порядковый номер %1",
+  "uk_UA": "Порядковий номер %1"
+ },
+ {
+  "context": "dialogs::ProjectPlaybackDialog",
+  "source": "Session %1",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Сессия %1",
+  "uk_UA": "Сеанс %1"
+ },
+ {
+  "context": "dialogs::ProjectPlaybackDialog",
+  "source": "Session %1 - End",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Сессия %1 — конец",
+  "uk_UA": "Сеанс %1 — кінець"
+ },
+ {
+  "context": "dialogs::ProjectPlaybackDialog",
+  "source": "Session %1 - Error",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Сессия %1 — ошибка",
+  "uk_UA": "Сеанс %1 — помилка"
+ },
+ {
+  "context": "dialogs::ProjectPlaybackDialog",
+  "source": "Skip session",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Пропустить сессию",
+  "uk_UA": "Пропустити сеанс"
+ },
+ {
+  "context": "dialogs::ProjectPlaybackDialog",
+  "source": "Skip stroke",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Пропустить штрих",
+  "uk_UA": "Пропустити штрих"
+ },
+ {
+  "context": "dialogs::ProjectPlaybackDialog",
+  "source": "Unsaved changes will be lost if you continue!",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Если продолжить, несохранённые изменения будут потеряны!",
+  "uk_UA": "Якщо продовжити, незбережені зміни буде втрачено!"
+ },
+ {
+  "context": "dialogs::ProjectPlaybackDialog",
+  "source": "uncapped",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "без ограничения",
+  "uk_UA": "без обмеження"
+ },
+ {
+  "context": "dialogs::ProjectRecordingSettingsDialog",
+  "source": " There is no size limit set.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": " Ограничение размера не задано.",
+  "uk_UA": " Обмеження розміру не задано."
+ },
+ {
+  "context": "dialogs::ProjectRecordingSettingsDialog",
+  "source": " This is %1% of the current %2 limit.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": " Это %1% от текущего лимита %2.",
+  "uk_UA": " Це %1% від поточного ліміту %2."
+ },
+ {
+  "context": "dialogs::ProjectRecordingSettingsDialog",
+  "source": "Change Size Limit",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Изменить лимит размера",
+  "uk_UA": "Змінити ліміт розміру"
+ },
+ {
+  "context": "dialogs::ProjectRecordingSettingsDialog",
+  "source": "Enable autorecovery for the current session",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Включить автовосстановление для текущей сессии",
+  "uk_UA": "Увімкнути автовідновлення для поточного сеансу"
+ },
+ {
+  "context": "dialogs::ProjectRecordingSettingsDialog",
+  "source": "Manage Autorecovery",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Управление автовосстановлением",
+  "uk_UA": "Керування автовідновленням"
+ },
+ {
+  "context": "dialogs::ProjectRecordingSettingsDialog",
+  "source": "No size limit",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Без ограничения размера",
+  "uk_UA": "Без обмеження розміру"
+ },
+ {
+  "context": "dialogs::ProjectRecordingSettingsDialog",
+  "source": "Size limit",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Лимит размера",
+  "uk_UA": "Ліміт розміру"
+ },
+ {
+  "context": "dialogs::ProjectRecordingSettingsDialog",
+  "source": "Size limit: %1 GB",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Лимит размера: %1 ГБ",
+  "uk_UA": "Ліміт розміру: %1 ГБ"
+ },
+ {
+  "context": "dialogs::ProjectRecordingSettingsDialog",
+  "source": "The current autorecovery file size is %1.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Текущий размер файла автовосстановления — %1.",
+  "uk_UA": "Поточний розмір файлу автовідновлення — %1."
+ },
+ {
+  "context": "dialogs::ProjectRecordingSettingsDialog",
+  "source": "These settings affect only the current session. You can change the defaults [in the preferences].",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Эти настройки действуют только для текущей сессии. Значения по умолчанию можно изменить [в параметрах].",
+  "uk_UA": "Ці налаштування діють лише для поточного сеансу. Типові значення можна змінити [у налаштуваннях]."
+ },
+ {
+  "context": "dialogs::ProjectRecordingSettingsDialog",
+  "source": "You will receive a warning when the autorecovery file reaches %1% of the size limit. Once it exceeds the limit, autorecovery will terminate.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Вы получите предупреждение, когда файл автовосстановления достигнет %1% лимита. После превышения лимита автовосстановление прекратится.",
+  "uk_UA": "Ви отримаєте попередження, коли файл автовідновлення досягне %1% ліміту. Після перевищення ліміту автовідновлення припиниться."
+ },
+ {
+  "context": "dialogs::ProjectRepairDialog",
+  "source": "Cancelled.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Отменено.",
+  "uk_UA": "Скасовано."
+ },
+ {
+  "context": "dialogs::ProjectRepairDialog",
+  "source": "Checking…",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Проверка…",
+  "uk_UA": "Перевірка…"
+ },
+ {
+  "context": "dialogs::ProjectRepairDialog",
+  "source": "Error",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка",
+  "uk_UA": "Помилка"
+ },
+ {
+  "context": "dialogs::ProjectRepairDialog",
+  "source": "Error %1:",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка %1:",
+  "uk_UA": "Помилка %1:"
+ },
+ {
+  "context": "dialogs::ProjectRepairDialog",
+  "source": "Error saving repaired project.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка сохранения исправленного проекта.",
+  "uk_UA": "Помилка збереження виправленого проєкту."
+ },
+ {
+  "context": "dialogs::ProjectRepairDialog",
+  "source": "It is strongly recommended that you save to a new file. Overwriting an existing file may render it irrecoverable.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Настоятельно рекомендуется сохранить в новый файл. Перезапись существующего файла может сделать его невосстановимым.",
+  "uk_UA": "Наполегливо рекомендується зберегти в новий файл. Перезапис наявного файлу може зробити його невідновлюваним."
+ },
+ {
+  "context": "dialogs::ProjectRepairDialog",
+  "source": "Repair Project",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Исправить проект",
+  "uk_UA": "Виправити проєкт"
+ },
+ {
+  "context": "dialogs::ProjectRepairDialog",
+  "source": "Repairing…",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Исправление…",
+  "uk_UA": "Виправлення…"
+ },
+ {
+  "context": "dialogs::ProjectRepairDialog",
+  "source": "Saved",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Сохранено",
+  "uk_UA": "Збережено"
+ },
+ {
+  "context": "dialogs::ProjectRepairDialog",
+  "source": "The project has been repaired, but no corruption was detected. You can choose to save it file anyway, but it may now contain invalid data.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Проект исправлен, но повреждений не обнаружено. Можно всё равно сохранить файл, но теперь он может содержать некорректные данные.",
+  "uk_UA": "Проєкт виправлено, але пошкоджень не виявлено. Можна все одно зберегти файл, але тепер він може містити некоректні дані."
+ },
+ {
+  "context": "dialogs::ProjectRepairDialog",
+  "source": "The project has been repaired, choose a file to save it to.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Проект исправлен, выберите файл для сохранения.",
+  "uk_UA": "Проєкт виправлено, виберіть файл для збереження."
+ },
+ {
+  "context": "dialogs::ProjectRepairDialog",
+  "source": "The repaired project has been saved, do you want to open it now?",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Исправленный проект сохранён. Открыть его сейчас?",
+  "uk_UA": "Виправлений проєкт збережено. Відкрити його зараз?"
+ },
+ {
+  "context": "dialogs::SessionSettingsDialog",
+  "source": "Make Session Public",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Сделать сессию публичной",
+  "uk_UA": "Зробити сеанс публічним"
+ },
+ {
+  "context": "dialogs::SessionSettingsDialog",
+  "source": "No, keep password",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Нет, оставить пароль",
+  "uk_UA": "Ні, залишити пароль"
+ },
+ {
+  "context": "dialogs::SessionSettingsDialog",
+  "source": "Removing the password from the session will make it publicly visible and allow strangers to join! Are you sure?",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Если убрать пароль, сессия станет публично видимой и к ней смогут подключаться посторонние! Вы уверены?",
+  "uk_UA": "Якщо прибрати пароль, сеанс стане публічно видимим і до нього зможуть під'єднуватися сторонні! Ви впевнені?"
+ },
+ {
+  "context": "dialogs::SessionSettingsDialog",
+  "source": "Yes, make public",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Да, сделать публичной",
+  "uk_UA": "Так, зробити публічним"
+ },
+ {
+  "context": "dialogs::ShadeSelectorDialog",
+  "source": "%",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "%",
+  "uk_UA": "%"
+ },
+ {
+  "context": "dialogs::ShadeSelectorDialog",
+  "source": "Chroma",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Цветность",
+  "uk_UA": "Колірність"
+ },
+ {
+  "context": "dialogs::ShadeSelectorDialog",
+  "source": "Chroma offset: ",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Смещение цветности: ",
+  "uk_UA": "Зміщення колірності: "
+ },
+ {
+  "context": "dialogs::ShadeSelectorDialog",
+  "source": "Chroma range: ",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Диапазон цветности: ",
+  "uk_UA": "Діапазон колірності: "
+ },
+ {
+  "context": "dialogs::ShadeSelectorDialog",
+  "source": "Custom",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Пользовательский",
+  "uk_UA": "Власний"
+ },
+ {
+  "context": "dialogs::ShadeSelectorDialog",
+  "source": "Hue",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Тон",
+  "uk_UA": "Тон"
+ },
+ {
+  "context": "dialogs::ShadeSelectorDialog",
+  "source": "Hue offset: ",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Смещение тона: ",
+  "uk_UA": "Зміщення тону: "
+ },
+ {
+  "context": "dialogs::ShadeSelectorDialog",
+  "source": "Lightness",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Светлота",
+  "uk_UA": "Світлість"
+ },
+ {
+  "context": "dialogs::ShadeSelectorDialog",
+  "source": "Lightness offset: ",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Смещение светлоты: ",
+  "uk_UA": "Зміщення світлості: "
+ },
+ {
+  "context": "dialogs::ShadeSelectorDialog",
+  "source": "Lightness range: ",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Диапазон светлоты: ",
+  "uk_UA": "Діапазон світлості: "
+ },
+ {
+  "context": "dialogs::ShadeSelectorDialog",
+  "source": "Luminance",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Яркость",
+  "uk_UA": "Яскравість"
+ },
+ {
+  "context": "dialogs::ShadeSelectorDialog",
+  "source": "Luminance offset: ",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Смещение яркости: ",
+  "uk_UA": "Зміщення яскравості: "
+ },
+ {
+  "context": "dialogs::ShadeSelectorDialog",
+  "source": "Luminance range: ",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Диапазон яркости: ",
+  "uk_UA": "Діапазон яскравості: "
+ },
+ {
+  "context": "dialogs::ShadeSelectorDialog",
+  "source": "Move Down",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Вниз",
+  "uk_UA": "Униз"
+ },
+ {
+  "context": "dialogs::ShadeSelectorDialog",
+  "source": "Move Up",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Вверх",
+  "uk_UA": "Угору"
+ },
+ {
+  "context": "dialogs::ShadeSelectorDialog",
+  "source": "Range: ",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Диапазон: ",
+  "uk_UA": "Діапазон: "
+ },
+ {
+  "context": "dialogs::ShadeSelectorDialog",
+  "source": "Saturation",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Насыщенность",
+  "uk_UA": "Насиченість"
+ },
+ {
+  "context": "dialogs::ShadeSelectorDialog",
+  "source": "Saturation offset: ",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Смещение насыщенности: ",
+  "uk_UA": "Зміщення насиченості: "
+ },
+ {
+  "context": "dialogs::ShadeSelectorDialog",
+  "source": "Saturation range: ",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Диапазон насыщенности: ",
+  "uk_UA": "Діапазон насиченості: "
+ },
+ {
+  "context": "dialogs::ShadeSelectorDialog",
+  "source": "Shades",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Оттенки",
+  "uk_UA": "Відтінки"
+ },
+ {
+  "context": "dialogs::ShadeSelectorDialog",
+  "source": "Value",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Значение",
+  "uk_UA": "Значення"
+ },
+ {
+  "context": "dialogs::ShadeSelectorDialog",
+  "source": "Value offset: ",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Смещение значения: ",
+  "uk_UA": "Зміщення значення: "
+ },
+ {
+  "context": "dialogs::ShadeSelectorDialog",
+  "source": "Value range: ",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Диапазон значения: ",
+  "uk_UA": "Діапазон значення: "
+ },
+ {
+  "context": "dialogs::StartDialog",
+  "source": "Manage servers",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Управление серверами",
+  "uk_UA": "Керування серверами"
+ },
+ {
+  "context": "dialogs::StartDialog",
+  "source": "Recover",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Восстановить",
+  "uk_UA": "Відновити"
+ },
+ {
+  "context": "dialogs::StartDialog",
+  "source": "Restore autorecovery files",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Восстановить файлы автовосстановления",
+  "uk_UA": "Відновити файли автовідновлення"
+ },
+ {
+  "context": "dialogs::TimelapseDialog",
+  "source": " FPS",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": " кадр/с",
+  "uk_UA": " кадр/с"
+ },
+ {
+  "context": "dialogs::TimelapseDialog",
+  "source": " seconds",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": " секунд",
+  "uk_UA": " секунд"
+ },
+ {
+  "context": "dialogs::TimelapseDialog",
+  "source": "%",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "%",
+  "uk_UA": "%"
+ },
+ {
+  "context": "dialogs::TimelapseDialog",
+  "source": "%1 loop(s)",
+  "comment": null,
+  "numerus": true,
+  "ru_RU": [
+   "%1 повтор",
+   "%1 повтора",
+   "%1 повторов"
+  ],
+  "uk_UA": [
+   "%1 повтор",
+   "%1 повтори",
+   "%1 повторів"
+  ]
+ },
+ {
+  "context": "dialogs::TimelapseDialog",
+  "source": "Advanced settings",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Дополнительные настройки",
+  "uk_UA": "Додаткові налаштування"
+ },
+ {
+  "context": "dialogs::TimelapseDialog",
+  "source": "Are you sure you want to reset all timelapse settings to their default values?",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Сбросить все настройки таймлапса к значениям по умолчанию?",
+  "uk_UA": "Скинути всі налаштування таймлапсу до типових значень?"
+ },
+ {
+  "context": "dialogs::TimelapseDialog",
+  "source": "Automatic",
+  "comment": "interpolation",
+  "numerus": false,
+  "ru_RU": "Автоматически",
+  "uk_UA": "Автоматично"
+ },
+ {
+  "context": "dialogs::TimelapseDialog",
+  "source": "Automatic (%1)",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Автоматически (%1)",
+  "uk_UA": "Автоматично (%1)"
+ },
+ {
+  "context": "dialogs::TimelapseDialog",
+  "source": "Back",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Назад",
+  "uk_UA": "Назад"
+ },
+ {
+  "context": "dialogs::TimelapseDialog",
+  "source": "Backdrop:",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Подложка:",
+  "uk_UA": "Підкладка:"
+ },
+ {
+  "context": "dialogs::TimelapseDialog",
+  "source": "Bicubic",
+  "comment": "interpolation",
+  "numerus": false,
+  "ru_RU": "Бикубическая",
+  "uk_UA": "Бікубічна"
+ },
+ {
+  "context": "dialogs::TimelapseDialog",
+  "source": "Bilinear",
+  "comment": "interpolation",
+  "numerus": false,
+  "ru_RU": "Билинейная",
+  "uk_UA": "Білінійна"
+ },
+ {
+  "context": "dialogs::TimelapseDialog",
+  "source": "Binary",
+  "comment": "interpolation",
+  "numerus": false,
+  "ru_RU": "Бинарная",
+  "uk_UA": "Бінарна"
+ },
+ {
+  "context": "dialogs::TimelapseDialog",
+  "source": "Bottom-left",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Внизу слева",
+  "uk_UA": "Унизу ліворуч"
+ },
+ {
+  "context": "dialogs::TimelapseDialog",
+  "source": "Bottom-right",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Внизу справа",
+  "uk_UA": "Унизу праворуч"
+ },
+ {
+  "context": "dialogs::TimelapseDialog",
+  "source": "Calculating video duration…",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Вычисление длительности видео…",
+  "uk_UA": "Обчислення тривалості відео…"
+ },
+ {
+  "context": "dialogs::TimelapseDialog",
+  "source": "Cancelling…",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Отмена…",
+  "uk_UA": "Скасування…"
+ },
+ {
+  "context": "dialogs::TimelapseDialog",
+  "source": "Choose Backdrop Color",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Выбор цвета подложки",
+  "uk_UA": "Вибір кольору підкладки"
+ },
+ {
+  "context": "dialogs::TimelapseDialog",
+  "source": "Choose Background Color",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Выбор цвета фона",
+  "uk_UA": "Вибір кольору фону"
+ },
+ {
+  "context": "dialogs::TimelapseDialog",
+  "source": "Choose Flash Color",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Выбор цвета вспышки",
+  "uk_UA": "Вибір кольору спалаху"
+ },
+ {
+  "context": "dialogs::TimelapseDialog",
+  "source": "Crop to selection area",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Обрезать по выделению",
+  "uk_UA": "Обрізати за виділенням"
+ },
+ {
+  "context": "dialogs::TimelapseDialog",
+  "source": "Duration presets:",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Пресеты длительности:",
+  "uk_UA": "Пресети тривалості:"
+ },
+ {
+  "context": "dialogs::TimelapseDialog",
+  "source": "Duration:",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Длительность:",
+  "uk_UA": "Тривалість:"
+ },
+ {
+  "context": "dialogs::TimelapseDialog",
+  "source": "Encoder:",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Кодировщик:",
+  "uk_UA": "Кодувальник:"
+ },
+ {
+  "context": "dialogs::TimelapseDialog",
+  "source": "Export",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Экспорт",
+  "uk_UA": "Експорт"
+ },
+ {
+  "context": "dialogs::TimelapseDialog",
+  "source": "Export Error",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка экспорта",
+  "uk_UA": "Помилка експорту"
+ },
+ {
+  "context": "dialogs::TimelapseDialog",
+  "source": "FFmpeg",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "FFmpeg",
+  "uk_UA": "FFmpeg"
+ },
+ {
+  "context": "dialogs::TimelapseDialog",
+  "source": "FFmpeg settings",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Настройки FFmpeg",
+  "uk_UA": "Налаштування FFmpeg"
+ },
+ {
+  "context": "dialogs::TimelapseDialog",
+  "source": "Failed to export timelapse.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Не удалось экспортировать таймлапс.",
+  "uk_UA": "Не вдалося експортувати таймлапс."
+ },
+ {
+  "context": "dialogs::TimelapseDialog",
+  "source": "Flash:",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Вспышка:",
+  "uk_UA": "Спалах:"
+ },
+ {
+  "context": "dialogs::TimelapseDialog",
+  "source": "Format:",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Формат:",
+  "uk_UA": "Формат:"
+ },
+ {
+  "context": "dialogs::TimelapseDialog",
+  "source": "Framerate:",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Частота кадров:",
+  "uk_UA": "Частота кадрів:"
+ },
+ {
+  "context": "dialogs::TimelapseDialog",
+  "source": "Internal",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Встроенный",
+  "uk_UA": "Вбудований"
+ },
+ {
+  "context": "dialogs::TimelapseDialog",
+  "source": "Interpolation:",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Интерполяция:",
+  "uk_UA": "Інтерполяція:"
+ },
+ {
+  "context": "dialogs::TimelapseDialog",
+  "source": "Interval limit:",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ограничение интервала:",
+  "uk_UA": "Обмеження інтервалу:"
+ },
+ {
+  "context": "dialogs::TimelapseDialog",
+  "source": "Keep aspect ratio",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Сохранять пропорции",
+  "uk_UA": "Зберігати пропорції"
+ },
+ {
+  "context": "dialogs::TimelapseDialog",
+  "source": "Lanczos",
+  "comment": "interpolation",
+  "numerus": false,
+  "ru_RU": "Ланцош",
+  "uk_UA": "Ланцош"
+ },
+ {
+  "context": "dialogs::TimelapseDialog",
+  "source": "Linger result:",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Задержка результата:",
+  "uk_UA": "Затримка результату:"
+ },
+ {
+  "context": "dialogs::TimelapseDialog",
+  "source": "Logo opacity:",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Непрозрачность логотипа:",
+  "uk_UA": "Непрозорість логотипа:"
+ },
+ {
+  "context": "dialogs::TimelapseDialog",
+  "source": "Logo padding:",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Отступ логотипа:",
+  "uk_UA": "Відступ логотипа:"
+ },
+ {
+  "context": "dialogs::TimelapseDialog",
+  "source": "Logo scale:",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Масштаб логотипа:",
+  "uk_UA": "Масштаб логотипа:"
+ },
+ {
+  "context": "dialogs::TimelapseDialog",
+  "source": "Logo:",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Логотип:",
+  "uk_UA": "Логотип:"
+ },
+ {
+  "context": "dialogs::TimelapseDialog",
+  "source": "Nearest",
+  "comment": "interpolation",
+  "numerus": false,
+  "ru_RU": "Ближайший сосед",
+  "uk_UA": "Найближчий сусід"
+ },
+ {
+  "context": "dialogs::TimelapseDialog",
+  "source": "None",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Нет",
+  "uk_UA": "Немає"
+ },
+ {
+  "context": "dialogs::TimelapseDialog",
+  "source": "Only time own drawing",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Учитывать время только своего рисования",
+  "uk_UA": "Враховувати час лише власного малювання"
+ },
+ {
+  "context": "dialogs::TimelapseDialog",
+  "source": "Play animation as result",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Проиграть анимацию как результат",
+  "uk_UA": "Відтворити анімацію як результат"
+ },
+ {
+  "context": "dialogs::TimelapseDialog",
+  "source": "Preview result:",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Предпросмотр результата:",
+  "uk_UA": "Попередній перегляд результату:"
+ },
+ {
+  "context": "dialogs::TimelapseDialog",
+  "source": "Queue size:",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Размер очереди:",
+  "uk_UA": "Розмір черги:"
+ },
+ {
+  "context": "dialogs::TimelapseDialog",
+  "source": "Reset",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Сбросить",
+  "uk_UA": "Скинути"
+ },
+ {
+  "context": "dialogs::TimelapseDialog",
+  "source": "Resolution:",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Разрешение:",
+  "uk_UA": "Роздільність:"
+ },
+ {
+  "context": "dialogs::TimelapseDialog",
+  "source": "Saving…",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Сохранение…",
+  "uk_UA": "Збереження…"
+ },
+ {
+  "context": "dialogs::TimelapseDialog",
+  "source": "Set up FFmpeg",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Настроить FFmpeg",
+  "uk_UA": "Налаштувати FFmpeg"
+ },
+ {
+  "context": "dialogs::TimelapseDialog",
+  "source": "Speed presets:",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Пресеты скорости:",
+  "uk_UA": "Пресети швидкості:"
+ },
+ {
+  "context": "dialogs::TimelapseDialog",
+  "source": "Speed:",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Скорость:",
+  "uk_UA": "Швидкість:"
+ },
+ {
+  "context": "dialogs::TimelapseDialog",
+  "source": "Starting export…",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Начало экспорта…",
+  "uk_UA": "Початок експорту…"
+ },
+ {
+  "context": "dialogs::TimelapseDialog",
+  "source": "Switch to duration",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Перейти к длительности",
+  "uk_UA": "Перейти до тривалості"
+ },
+ {
+  "context": "dialogs::TimelapseDialog",
+  "source": "Switch to speed",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Перейти к скорости",
+  "uk_UA": "Перейти до швидкості"
+ },
+ {
+  "context": "dialogs::TimelapseDialog",
+  "source": "The selected encoder requires FFmpeg. Do you want to set it up now?",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Выбранному кодировщику нужен FFmpeg. Настроить его сейчас?",
+  "uk_UA": "Вибраному кодувальнику потрібен FFmpeg. Налаштувати його зараз?"
+ },
+ {
+  "context": "dialogs::TimelapseDialog",
+  "source": "This encoder requires FFmpeg, click here to set it up.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Этому кодировщику нужен FFmpeg, нажмите здесь, чтобы настроить его.",
+  "uk_UA": "Цьому кодувальнику потрібен FFmpeg, натисніть тут, щоб налаштувати його."
+ },
+ {
+  "context": "dialogs::TimelapseDialog",
+  "source": "This format requires FFmpeg, click here to set it up.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Этому формату нужен FFmpeg, нажмите здесь, чтобы настроить его.",
+  "uk_UA": "Цьому формату потрібен FFmpeg, натисніть тут, щоб налаштувати його."
+ },
+ {
+  "context": "dialogs::TimelapseDialog",
+  "source": "Timelapse",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Таймлапс",
+  "uk_UA": "Таймлапс"
+ },
+ {
+  "context": "dialogs::TimelapseDialog",
+  "source": "Timelapse exported in %1.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Таймлапс экспортирован за %1.",
+  "uk_UA": "Таймлапс експортовано за %1."
+ },
+ {
+  "context": "dialogs::TimelapseDialog",
+  "source": "Timing:",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Время:",
+  "uk_UA": "Час:"
+ },
+ {
+  "context": "dialogs::TimelapseDialog",
+  "source": "Top-left",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Вверху слева",
+  "uk_UA": "Угорі ліворуч"
+ },
+ {
+  "context": "dialogs::TimelapseDialog",
+  "source": "Top-right",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Вверху справа",
+  "uk_UA": "Угорі праворуч"
+ },
+ {
+  "context": "dialogs::TimelapseDialog",
+  "source": "Use flipbook range and speed",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Использовать диапазон и скорость кинеографа",
+  "uk_UA": "Використовувати діапазон і швидкість кінеографа"
+ },
+ {
+  "context": "dialogs::TimelapseDialog",
+  "source": "Video duration: %1",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Длительность видео: %1",
+  "uk_UA": "Тривалість відео: %1"
+ },
+ {
+  "context": "dialogs::TimelapseDialog",
+  "source": "Video with dimensions larger than 1920 pixels is not widely supported. Many devices and platforms won't play them properly, degrade their quality or refuse to recognize them altogether.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Видео шире 1920 пикселей поддерживается не везде. Многие устройства и платформы воспроизводят его неправильно, ухудшают качество или вовсе не распознают.",
+  "uk_UA": "Відео ширше за 1920 пікселів підтримується не всюди. Багато пристроїв і платформ відтворюють його неправильно, погіршують якість або взагалі не розпізнають."
+ },
+ {
+  "context": "dialogs::TimelapseDialog",
+  "source": "Video with framerates above 30 FPS is not widely supported. Many devices and platforms won't play them properly, degrade their quality or refuse to recognize them altogether.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Видео с частотой выше 30 кадров/с поддерживается не везде. Многие устройства и платформы воспроизводят его неправильно, ухудшают качество или вовсе не распознают.",
+  "uk_UA": "Відео з частотою понад 30 кадрів/с підтримується не всюди. Багато пристроїв і платформ відтворюють його неправильно, погіршують якість або взагалі не розпізнають."
+ },
+ {
+  "context": "dialogs::TimelapseDialog",
+  "source": "pixels",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "пикселей",
+  "uk_UA": "пікселів"
+ },
+ {
+  "context": "dialogs::settingsdialog::Files",
+  "source": "Autorecovery:",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Автовосстановление:",
+  "uk_UA": "Автовідновлення:"
+ },
+ {
+  "context": "dialogs::settingsdialog::Files",
+  "source": "Changing autorecovery preferences will not affect the status or limits of any running sessions. [Click here to manage autorecovery on your current session.]",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Изменение настроек автовосстановления не влияет на состояние и лимиты уже идущих сессий. [Нажмите здесь, чтобы управлять автовосстановлением текущей сессии.]",
+  "uk_UA": "Зміна налаштувань автовідновлення не впливає на стан і ліміти вже запущених сеансів. [Натисніть тут, щоб керувати автовідновленням поточного сеансу.]"
+ },
+ {
+  "context": "dialogs::settingsdialog::Files",
+  "source": "Clear Log Files",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Очистка журналов",
+  "uk_UA": "Очищення журналів"
+ },
+ {
+  "context": "dialogs::settingsdialog::Files",
+  "source": "Clear log files…",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Очистить журналы…",
+  "uk_UA": "Очистити журнали…"
+ },
+ {
+  "context": "dialogs::settingsdialog::Files",
+  "source": "Default file name:",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Имя файла по умолчанию:",
+  "uk_UA": "Типова назва файлу:"
+ },
+ {
+  "context": "dialogs::settingsdialog::Files",
+  "source": "Do you want to delete %n log file(s)?",
+  "comment": null,
+  "numerus": true,
+  "ru_RU": [
+   "Удалить %n файл журнала?",
+   "Удалить %n файла журнала?",
+   "Удалить %n файлов журнала?"
+  ],
+  "uk_UA": [
+   "Видалити %n файл журналу?",
+   "Видалити %n файли журналу?",
+   "Видалити %n файлів журналу?"
+  ]
+ },
+ {
+  "context": "dialogs::settingsdialog::Files",
+  "source": "Drawpile Project (.dppr)",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Проект Drawpile (.dppr)",
+  "uk_UA": "Проєкт Drawpile (.dppr)"
+ },
+ {
+  "context": "dialogs::settingsdialog::Files",
+  "source": "It/They take(s) up %1 of space.",
+  "comment": null,
+  "numerus": true,
+  "ru_RU": [
+   "Он занимает %1.",
+   "Они занимают %1.",
+   "Они занимают %1."
+  ],
+  "uk_UA": [
+   "Він займає %1.",
+   "Вони займають %1.",
+   "Вони займають %1."
+  ]
+ },
+ {
+  "context": "dialogs::settingsdialog::Files",
+  "source": "No log files to clear found.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Нет файлов журнала для очистки.",
+  "uk_UA": "Немає файлів журналу для очищення."
+ },
+ {
+  "context": "dialogs::settingsdialog::Files",
+  "source": "Placeholders: %Y year, %m month, %d day, %H hours, %M minutes, %S seconds, %T session title.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Подстановки: %Y — год, %m — месяц, %d — день, %H — часы, %M — минуты, %S — секунды, %T — название сессии.",
+  "uk_UA": "Підстановки: %Y — рік, %m — місяць, %d — день, %H — години, %M — хвилини, %S — секунди, %T — назва сеансу."
+ },
+ {
+  "context": "dialogs::settingsdialog::Files",
+  "source": "Snapshot every %1 minute(s)",
+  "comment": null,
+  "numerus": true,
+  "ru_RU": [
+   "Снимок каждую %1 минуту",
+   "Снимок каждые %1 минуты",
+   "Снимок каждые %1 минут"
+  ],
+  "uk_UA": [
+   "Знімок щохвилини (%1)",
+   "Знімок кожні %1 хвилини",
+   "Знімок кожні %1 хвилин"
+  ]
+ },
+ {
+  "context": "dialogs::settingsdialog::Files",
+  "source": "When joining sessions",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "При подключении к сессиям",
+  "uk_UA": "Під час під'єднання до сеансів"
+ },
+ {
+  "context": "dialogs::settingsdialog::Files",
+  "source": "When offline or hosting sessions",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Офлайн или при проведении сессий",
+  "uk_UA": "Офлайн або під час проведення сеансів"
+ },
+ {
+  "context": "dialogs::settingsdialog::General",
+  "source": "%1 (not found)",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "%1 (не найден)",
+  "uk_UA": "%1 (не знайдено)"
+ },
+ {
+  "context": "dialogs::settingsdialog::General",
+  "source": "Night Mode",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ночной режим",
+  "uk_UA": "Нічний режим"
+ },
+ {
+  "context": "dialogs::settingsdialog::Notifications",
+  "source": "Canvas locked",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Холст заблокирован",
+  "uk_UA": "Полотно заблоковано"
+ },
+ {
+  "context": "dialogs::settingsdialog::Notifications",
+  "source": "Canvas unlocked",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Холст разблокирован",
+  "uk_UA": "Полотно розблоковано"
+ },
+ {
+  "context": "dialogs::settingsdialog::Notifications",
+  "source": "Chat message",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Сообщение в чате",
+  "uk_UA": "Повідомлення в чаті"
+ },
+ {
+  "context": "dialogs::settingsdialog::Notifications",
+  "source": "Disconnected",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Отключено",
+  "uk_UA": "Від'єднано"
+ },
+ {
+  "context": "dialogs::settingsdialog::Notifications",
+  "source": "Private message",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Личное сообщение",
+  "uk_UA": "Особисте повідомлення"
+ },
+ {
+  "context": "dialogs::settingsdialog::Notifications",
+  "source": "User joined",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Пользователь подключился",
+  "uk_UA": "Користувач під'єднався"
+ },
+ {
+  "context": "dialogs::settingsdialog::Notifications",
+  "source": "User left",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Пользователь вышел",
+  "uk_UA": "Користувач вийшов"
+ },
+ {
+  "context": "dialogs::settingsdialog::Shortcuts",
+  "source": "Choose which shortcuts you want to modify:",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Выберите, какие сочетания клавиш изменить:",
+  "uk_UA": "Виберіть, які сполучення клавіш змінити:"
+ },
+ {
+  "context": "dialogs::settingsdialog::Shortcuts",
+  "source": "Keyboard shortcuts to switch brushes. Assigning the same shortcut to multiple brushes will toggle through them.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Сочетания клавиш для переключения кистей. Если назначить одно сочетание нескольким кистям, оно будет переключать их по очереди.",
+  "uk_UA": "Сполучення клавіш для перемикання пензлів. Якщо призначити одне сполучення кільком пензлям, воно перемикатиме їх по черзі."
+ },
+ {
+  "context": "dialogs::settingsdialog::Shortcuts",
+  "source": "Keyboard shortcuts to trigger actions, like switching tools, creating layers or anything else you can pick from the top menu bar.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Сочетания клавиш для действий: смена инструментов, создание слоёв и всё, что есть в верхнем меню.",
+  "uk_UA": "Сполучення клавіш для дій: зміна інструментів, створення шарів і все, що є у верхньому меню."
+ },
+ {
+  "context": "dialogs::settingsdialog::Shortcuts",
+  "source": "Shortcuts",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Сочетания клавиш",
+  "uk_UA": "Сполучення клавіш"
+ },
+ {
+  "context": "dialogs::settingsdialog::Shortcuts",
+  "source": "Shortcuts for mouse or stylus buttons, wheels or keyboard keys that apply only in the canvas view. For example, panning, rotating, zooming, color picking, brush resizing and more.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Сочетания для кнопок мыши или стилуса, колёсика и клавиш, действующие только на холсте: перемещение, поворот, масштаб, пипетка, размер кисти и другое.",
+  "uk_UA": "Сполучення для кнопок миші чи стилуса, коліщатка та клавіш, що діють лише на полотні: переміщення, обертання, масштаб, піпетка, розмір пензля та інше."
+ },
+ {
+  "context": "dialogs::settingsdialog::Tablet",
+  "source": "Disregard position history (Xiaomi)",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Игнорировать историю позиций (Xiaomi)",
+  "uk_UA": "Ігнорувати історію позицій (Xiaomi)"
+ },
+ {
+  "context": "dialogs::settingsdialog::Tablet",
+  "source": "Ignore full-pressure blotches (Ugee)",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Игнорировать кляксы с полным нажимом (Ugee)",
+  "uk_UA": "Ігнорувати плями з повним натиском (Ugee)"
+ },
+ {
+  "context": "dialogs::settingsdialog::Tablet",
+  "source": "Ignore inputs with no pressure (Gaomon)",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Игнорировать ввод без нажима (Gaomon)",
+  "uk_UA": "Ігнорувати введення без натиску (Gaomon)"
+ },
+ {
+  "context": "dialogs::settingsdialog::Tablet",
+  "source": "Translate F21 key to middle click (OnePlus)",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Преобразовывать клавишу F21 в средний щелчок (OnePlus)",
+  "uk_UA": "Перетворювати клавішу F21 на середній клац (OnePlus)"
+ },
+ {
+  "context": "dialogs::settingsdialog::Tablet",
+  "source": "Translate page keys to clicks (Xiaomi)",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Преобразовывать клавиши страниц в щелчки (Xiaomi)",
+  "uk_UA": "Перетворювати клавіші сторінок на клацання (Xiaomi)"
+ },
+ {
+  "context": "dialogs::settingsdialog::Tablet",
+  "source": "Wait for movement before starting strokes",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ждать движения перед началом штриха",
+  "uk_UA": "Чекати руху перед початком штриха"
+ },
+ {
+  "context": "dialogs::settingsdialog::Tablet",
+  "source": "Workarounds:",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Обходные решения:",
+  "uk_UA": "Обхідні рішення:"
+ },
+ {
+  "context": "dialogs::settingsdialog::Tools",
+  "source": "Alt",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Alt",
+  "uk_UA": "Alt"
+ },
+ {
+  "context": "dialogs::settingsdialog::Tools",
+  "source": "Blank",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Пусто",
+  "uk_UA": "Порожньо"
+ },
+ {
+  "context": "dialogs::settingsdialog::Tools",
+  "source": "Do nothing",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ничего не делать",
+  "uk_UA": "Нічого не робити"
+ },
+ {
+  "context": "dialogs::settingsdialog::Tools",
+  "source": "Double-tap %1 key to focus canvas",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Двойное нажатие %1 переводит фокус на холст",
+  "uk_UA": "Подвійне натискання %1 переводить фокус на полотно"
+ },
+ {
+  "context": "dialogs::settingsdialog::Tools",
+  "source": "Erase",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Стирать",
+  "uk_UA": "Стирати"
+ },
+ {
+  "context": "dialogs::settingsdialog::Tools",
+  "source": "No outline",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Без контура",
+  "uk_UA": "Без контуру"
+ },
+ {
+  "context": "dialogs::settingsdialog::Tools",
+  "source": "Option",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Option",
+  "uk_UA": "Option"
+ },
+ {
+  "context": "dialogs::settingsdialog::Tools",
+  "source": "Right-click drawing:",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Рисование правой кнопкой:",
+  "uk_UA": "Малювання правою кнопкою:"
+ },
+ {
+  "context": "dialogs::settingsdialog::Tools",
+  "source": "Use background color",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Использовать цвет фона",
+  "uk_UA": "Використовувати колір фону"
+ },
+ {
+  "context": "dialogs::settingsdialog::Touch",
+  "source": "Automatic (%1)",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Автоматически (%1)",
+  "uk_UA": "Автоматично (%1)"
+ },
+ {
+  "context": "dialogs::settingsdialog::Touch",
+  "source": "Do nothing",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ничего не делать",
+  "uk_UA": "Нічого не робити"
+ },
+ {
+  "context": "dialogs::settingsdialog::Touch",
+  "source": "Flip canvas upside-down",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Перевернуть холст вверх ногами",
+  "uk_UA": "Перевернути полотно догори дриґом"
+ },
+ {
+  "context": "dialogs::settingsdialog::Touch",
+  "source": "Mirror canvas horizontally",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Отразить холст по горизонтали",
+  "uk_UA": "Віддзеркалити полотно горизонтально"
+ },
+ {
+  "context": "dialogs::settingsdialog::Touch",
+  "source": "One-finger double-tap:",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Двойное касание одним пальцем:",
+  "uk_UA": "Подвійний дотик одним пальцем:"
+ },
+ {
+  "context": "dialogs::settingsdialog::Touch",
+  "source": "Smoothing: ",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Сглаживание: ",
+  "uk_UA": "Згладжування: "
+ },
+ {
+  "context": "dialogs::settingsdialog::Touch",
+  "source": "Trigger action",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Выполнить действие",
+  "uk_UA": "Виконати дію"
+ },
+ {
+  "context": "dialogs::settingsdialog::UserInterface",
+  "source": "Change mode and scale…",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Изменить режим и масштаб…",
+  "uk_UA": "Змінити режим і масштаб…"
+ },
+ {
+  "context": "dialogs::settingsdialog::UserInterface",
+  "source": "Mobile",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Мобильный",
+  "uk_UA": "Мобільний"
+ },
+ {
+  "context": "dialogs::settingsdialog::UserInterface",
+  "source": "px",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "пикс.",
+  "uk_UA": "пкс"
+ },
+ {
+  "context": "dialogs::startdialog::Host",
+  "source": "HostError",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка проведения сессии",
+  "uk_UA": "Помилка проведення сеансу"
+ },
+ {
+  "context": "dialogs::startdialog::Host",
+  "source": "Public sessions require a title. Do you want to host an invite-only session instead?",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Публичным сессиям нужно название. Провести вместо этого сессию только по приглашению?",
+  "uk_UA": "Публічним сеансам потрібна назва. Провести натомість сеанс лише за запрошенням?"
+ },
+ {
+  "context": "dialogs::startdialog::Recover",
+  "source": "Autorecovery Removal Failed",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Не удалось удалить файл автовосстановления",
+  "uk_UA": "Не вдалося видалити файл автовідновлення"
+ },
+ {
+  "context": "dialogs::startdialog::Recover",
+  "source": "Could not remove autorecovery file %1.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Не удалось удалить файл автовосстановления %1.",
+  "uk_UA": "Не вдалося видалити файл автовідновлення %1."
+ },
+ {
+  "context": "dialogs::startdialog::Recover",
+  "source": "Error deleting file: %1.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка удаления файла: %1.",
+  "uk_UA": "Помилка видалення файлу: %1."
+ },
+ {
+  "context": "dialogs::startdialog::Recover",
+  "source": "File is locked by another process.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Файл заблокирован другим процессом.",
+  "uk_UA": "Файл заблоковано іншим процесом."
+ },
+ {
+  "context": "dialogs::startdialog::Recover",
+  "source": "File not found.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Файл не найден.",
+  "uk_UA": "Файл не знайдено."
+ },
+ {
+  "context": "dialogs::startdialog::Recover",
+  "source": "No files to recover.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Нет файлов для восстановления.",
+  "uk_UA": "Немає файлів для відновлення."
+ },
+ {
+  "context": "dialogs::startdialog::RecoverNotice",
+  "source": "Dismiss",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Скрыть",
+  "uk_UA": "Сховати"
+ },
+ {
+  "context": "dialogs::startdialog::RecoverNotice",
+  "source": "Recover",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Восстановить",
+  "uk_UA": "Відновити"
+ },
+ {
+  "context": "dialogs::startdialog::RecoverNotice",
+  "source": "You have unsaved files to recover!",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Есть несохранённые файлы, которые можно восстановить!",
+  "uk_UA": "Є незбережені файли, які можна відновити!"
+ },
+ {
+  "context": "dialogs::startdialog::RecoveryEntryWidget",
+  "source": "Any unrecovered data will be lost.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Все невосстановленные данные будут потеряны.",
+  "uk_UA": "Усі невідновлені дані буде втрачено."
+ },
+ {
+  "context": "dialogs::startdialog::RecoveryEntryWidget",
+  "source": "Are you sure you want to permanently delete this autorecovery file?",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Удалить этот файл автовосстановления навсегда?",
+  "uk_UA": "Видалити цей файл автовідновлення назавжди?"
+ },
+ {
+  "context": "dialogs::startdialog::RecoveryEntryWidget",
+  "source": "Autorecovery file read error during verification: %1",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка чтения файла автовосстановления при проверке: %1",
+  "uk_UA": "Помилка читання файлу автовідновлення під час перевірки: %1"
+ },
+ {
+  "context": "dialogs::startdialog::RecoveryEntryWidget",
+  "source": "Corrupted File",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Повреждённый файл",
+  "uk_UA": "Пошкоджений файл"
+ },
+ {
+  "context": "dialogs::startdialog::RecoveryEntryWidget",
+  "source": "Corrupted, may be possible to repair",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Повреждён, возможно, удастся исправить",
+  "uk_UA": "Пошкоджений, можливо, вдасться виправити"
+ },
+ {
+  "context": "dialogs::startdialog::RecoveryEntryWidget",
+  "source": "Delete",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Удалить",
+  "uk_UA": "Видалити"
+ },
+ {
+  "context": "dialogs::startdialog::RecoveryEntryWidget",
+  "source": "Delete Autorecovery File",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Удалить файл автовосстановления",
+  "uk_UA": "Видалити файл автовідновлення"
+ },
+ {
+  "context": "dialogs::startdialog::RecoveryEntryWidget",
+  "source": "Delete original autorecovery file",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Удалить исходный файл автовосстановления",
+  "uk_UA": "Видалити вихідний файл автовідновлення"
+ },
+ {
+  "context": "dialogs::startdialog::RecoveryEntryWidget",
+  "source": "Download",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Скачать",
+  "uk_UA": "Завантажити"
+ },
+ {
+  "context": "dialogs::startdialog::RecoveryEntryWidget",
+  "source": "Download Error",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка загрузки",
+  "uk_UA": "Помилка завантаження"
+ },
+ {
+  "context": "dialogs::startdialog::RecoveryEntryWidget",
+  "source": "Download Started",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Загрузка началась",
+  "uk_UA": "Завантаження почалося"
+ },
+ {
+  "context": "dialogs::startdialog::RecoveryEntryWidget",
+  "source": "Error: %1",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка: %1",
+  "uk_UA": "Помилка: %1"
+ },
+ {
+  "context": "dialogs::startdialog::RecoveryEntryWidget",
+  "source": "Export Error",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка экспорта",
+  "uk_UA": "Помилка експорту"
+ },
+ {
+  "context": "dialogs::startdialog::RecoveryEntryWidget",
+  "source": "Export successful. Do you want to open the file now?",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Экспорт выполнен. Открыть файл сейчас?",
+  "uk_UA": "Експорт виконано. Відкрити файл зараз?"
+ },
+ {
+  "context": "dialogs::startdialog::RecoveryEntryWidget",
+  "source": "Exported",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Экспортировано",
+  "uk_UA": "Експортовано"
+ },
+ {
+  "context": "dialogs::startdialog::RecoveryEntryWidget",
+  "source": "Failed to open autorecovery file for verification: %1",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Не удалось открыть файл автовосстановления для проверки: %1",
+  "uk_UA": "Не вдалося відкрити файл автовідновлення для перевірки: %1"
+ },
+ {
+  "context": "dialogs::startdialog::RecoveryEntryWidget",
+  "source": "Failed to open target file for verification: %1",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Не удалось открыть целевой файл для проверки: %1",
+  "uk_UA": "Не вдалося відкрити цільовий файл для перевірки: %1"
+ },
+ {
+  "context": "dialogs::startdialog::RecoveryEntryWidget",
+  "source": "Failed to read autorecovery file: %1",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Не удалось прочитать файл автовосстановления: %1",
+  "uk_UA": "Не вдалося прочитати файл автовідновлення: %1"
+ },
+ {
+  "context": "dialogs::startdialog::RecoveryEntryWidget",
+  "source": "Locked by another process",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Заблокирован другим процессом",
+  "uk_UA": "Заблоковано іншим процесом"
+ },
+ {
+  "context": "dialogs::startdialog::RecoveryEntryWidget",
+  "source": "Modified %1",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Изменён %1",
+  "uk_UA": "Змінено %1"
+ },
+ {
+  "context": "dialogs::startdialog::RecoveryEntryWidget",
+  "source": "No, keep",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Нет, оставить",
+  "uk_UA": "Ні, залишити"
+ },
+ {
+  "context": "dialogs::startdialog::RecoveryEntryWidget",
+  "source": "Recover",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Восстановить",
+  "uk_UA": "Відновити"
+ },
+ {
+  "context": "dialogs::startdialog::RecoveryEntryWidget",
+  "source": "Repair",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Исправить",
+  "uk_UA": "Виправити"
+ },
+ {
+  "context": "dialogs::startdialog::RecoveryEntryWidget",
+  "source": "Save as-is",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Сохранить как есть",
+  "uk_UA": "Зберегти як є"
+ },
+ {
+  "context": "dialogs::startdialog::RecoveryEntryWidget",
+  "source": "Session: %1",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Сессия: %1",
+  "uk_UA": "Сеанс: %1"
+ },
+ {
+  "context": "dialogs::startdialog::RecoveryEntryWidget",
+  "source": "Size: %1",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Размер: %1",
+  "uk_UA": "Розмір: %1"
+ },
+ {
+  "context": "dialogs::startdialog::RecoveryEntryWidget",
+  "source": "Target file read error during verification: %1",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка чтения целевого файла при проверке: %1",
+  "uk_UA": "Помилка читання цільового файлу під час перевірки: %1"
+ },
+ {
+  "context": "dialogs::startdialog::RecoveryEntryWidget",
+  "source": "The file may not have been saved correctly.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Возможно, файл сохранён неправильно.",
+  "uk_UA": "Можливо, файл збережено неправильно."
+ },
+ {
+  "context": "dialogs::startdialog::RecoveryEntryWidget",
+  "source": "This file is corrupted. Do you want to attempt to repair it or save it as-is?",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Этот файл повреждён. Попробовать исправить его или сохранить как есть?",
+  "uk_UA": "Цей файл пошкоджено. Спробувати виправити його чи зберегти як є?"
+ },
+ {
+  "context": "dialogs::startdialog::RecoveryEntryWidget",
+  "source": "Unknown modification time",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Время изменения неизвестно",
+  "uk_UA": "Час зміни невідомий"
+ },
+ {
+  "context": "dialogs::startdialog::RecoveryEntryWidget",
+  "source": "Unknown status",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Состояние неизвестно",
+  "uk_UA": "Стан невідомий"
+ },
+ {
+  "context": "dialogs::startdialog::RecoveryEntryWidget",
+  "source": "Verification Error",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка проверки",
+  "uk_UA": "Помилка перевірки"
+ },
+ {
+  "context": "dialogs::startdialog::RecoveryEntryWidget",
+  "source": "Verification failed: autorecovery and target file data does not match",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Проверка не пройдена: данные файла автовосстановления и целевого файла не совпадают",
+  "uk_UA": "Перевірку не пройдено: дані файлу автовідновлення та цільового файлу не збігаються"
+ },
+ {
+  "context": "dialogs::startdialog::RecoveryEntryWidget",
+  "source": "Verification failed: file sizes do not match",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Проверка не пройдена: размеры файлов не совпадают",
+  "uk_UA": "Перевірку не пройдено: розміри файлів не збігаються"
+ },
+ {
+  "context": "dialogs::startdialog::RecoveryEntryWidget",
+  "source": "Verification failed: read size mismatch",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Проверка не пройдена: несовпадение прочитанного размера",
+  "uk_UA": "Перевірку не пройдено: розбіжність прочитаного розміру"
+ },
+ {
+  "context": "dialogs::startdialog::RecoveryEntryWidget",
+  "source": "Work time: %1",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Время работы: %1",
+  "uk_UA": "Час роботи: %1"
+ },
+ {
+  "context": "dialogs::startdialog::RecoveryEntryWidget",
+  "source": "Yes, delete",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Да, удалить",
+  "uk_UA": "Так, видалити"
+ },
+ {
+  "context": "dialogs::startdialog::RecoveryEntryWidget",
+  "source": "You can also attempt to repair it after saving.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Попробовать исправить его можно и после сохранения.",
+  "uk_UA": "Спробувати виправити його можна й після збереження."
+ },
+ {
+  "context": "dialogs::startdialog::RecoveryEntryWidget",
+  "source": "Your browser should have prompted you to download the file. Make sure to check it for completeness afterwards.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Браузер должен был предложить скачать файл. Потом обязательно проверьте, что он полный.",
+  "uk_UA": "Браузер мав запропонувати завантажити файл. Потім обов'язково перевірте, що він повний."
+ },
+ {
+  "context": "dialogs::startdialog::host::Session",
+  "source": "Only people you invite can join",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Подключиться могут только приглашённые",
+  "uk_UA": "Під'єднатися можуть лише запрошені"
+ },
+ {
+  "context": "dialogs::startdialog::host::Session",
+  "source": "Public, strangers can join",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Публичная, могут подключиться посторонние",
+  "uk_UA": "Публічний, можуть під'єднатися сторонні"
+ },
+ {
+  "context": "docks::BrushPalette",
+  "source": "%n deleted brush(es) will be erased irrecoverably.",
+  "comment": null,
+  "numerus": true,
+  "ru_RU": [
+   "%n удалённая кисть будет стёрта без возможности восстановления.",
+   "%n удалённые кисти будут стёрты без возможности восстановления.",
+   "%n удалённых кистей будут стёрты без возможности восстановления."
+  ],
+  "uk_UA": [
+   "%n видалений пензель буде стерто без можливості відновлення.",
+   "%n видалені пензлі буде стерто без можливості відновлення.",
+   "%n видалених пензлів буде стерто без можливості відновлення."
+  ]
+ },
+ {
+  "context": "docks::BrushPalette",
+  "source": "Automatic",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Автоматически",
+  "uk_UA": "Автоматично"
+ },
+ {
+  "context": "docks::BrushPalette",
+  "source": "Both",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Оба",
+  "uk_UA": "Обидва"
+ },
+ {
+  "context": "docks::BrushPalette",
+  "source": "Clear",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Очистить",
+  "uk_UA": "Очистити"
+ },
+ {
+  "context": "docks::BrushPalette",
+  "source": "Clear Brush History",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Очистить историю кистей",
+  "uk_UA": "Очистити історію пензлів"
+ },
+ {
+  "context": "docks::BrushPalette",
+  "source": "Columns:",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Столбцы:",
+  "uk_UA": "Стовпці:"
+ },
+ {
+  "context": "docks::BrushPalette",
+  "source": "Display:",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Показ:",
+  "uk_UA": "Показ:"
+ },
+ {
+  "context": "docks::BrushPalette",
+  "source": "Do you really want to clear the contents of the history tag?",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Действительно очистить тег истории?",
+  "uk_UA": "Справді очистити тег історії?"
+ },
+ {
+  "context": "docks::BrushPalette",
+  "source": "Really remove brush '%1' from the history tag?",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Действительно убрать кисть «%1» из тега истории?",
+  "uk_UA": "Справді прибрати пензель «%1» з тегу історії?"
+ },
+ {
+  "context": "docks::BrushPalette",
+  "source": "Remove",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Убрать",
+  "uk_UA": "Прибрати"
+ },
+ {
+  "context": "docks::BrushPalette",
+  "source": "Remove Brush History",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Убрать историю кистей",
+  "uk_UA": "Прибрати історію пензлів"
+ },
+ {
+  "context": "docks::BrushPalette",
+  "source": "Remove Brush from History",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Убрать кисть из истории",
+  "uk_UA": "Прибрати пензель з історії"
+ },
+ {
+  "context": "docks::BrushPalette",
+  "source": "Save Brush…",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Сохранить кисть…",
+  "uk_UA": "Зберегти пензель…"
+ },
+ {
+  "context": "docks::BrushPalette",
+  "source": "Size:",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Размер:",
+  "uk_UA": "Розмір:"
+ },
+ {
+  "context": "docks::BrushPalette",
+  "source": "Strokes",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Штрихи",
+  "uk_UA": "Штрихи"
+ },
+ {
+  "context": "docks::BrushPalette",
+  "source": "The brush will be deleted permanently and cannot be recovered.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Кисть будет удалена навсегда без возможности восстановления.",
+  "uk_UA": "Пензель буде видалено назавжди без можливості відновлення."
+ },
+ {
+  "context": "docks::BrushPalette",
+  "source": "Thumbnails",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Миниатюры",
+  "uk_UA": "Мініатюри"
+ },
+ {
+  "context": "docks::BrushPalette",
+  "source": "Undelete Brush",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Восстановить удалённую кисть",
+  "uk_UA": "Відновити видалений пензель"
+ },
+ {
+  "context": "docks::BrushPalette",
+  "source": "You can still recover it from the brush history.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Её всё ещё можно восстановить из истории кистей.",
+  "uk_UA": "Його все ще можна відновити з історії пензлів."
+ },
+ {
+  "context": "docks::Timeline",
+  "source": "Column width:",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ширина столбца:",
+  "uk_UA": "Ширина стовпця:"
+ },
+ {
+  "context": "docks::Timeline",
+  "source": "Zoom",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Масштаб",
+  "uk_UA": "Масштаб"
+ },
+ {
+  "context": "tools::BrushSettings",
+  "source": "Adjust With Velocity",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Подстройка по скорости",
+  "uk_UA": "Підлаштування за швидкістю"
+ },
+ {
+  "context": "tools::BrushSettings",
+  "source": "Alters stabilization depending on how fast the stroke is.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Меняет стабилизацию в зависимости от скорости штриха.",
+  "uk_UA": "Змінює стабілізацію залежно від швидкості штриха."
+ },
+ {
+  "context": "tools::BrushSettings",
+  "source": "Full",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Полный",
+  "uk_UA": "Повний"
+ },
+ {
+  "context": "tools::BrushSettings",
+  "source": "Input Settings…",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Настройки ввода…",
+  "uk_UA": "Налаштування введення…"
+ },
+ {
+  "context": "tools::BrushSettings",
+  "source": "None",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Нет",
+  "uk_UA": "Немає"
+ },
+ {
+  "context": "tools::BrushSettings",
+  "source": "Plain",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Простой",
+  "uk_UA": "Простий"
+ },
+ {
+  "context": "tools::BrushSettings",
+  "source": "Preview",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Предпросмотр",
+  "uk_UA": "Попередній перегляд"
+ },
+ {
+  "context": "tools::BrushSettings",
+  "source": "Remove Brush From History",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Убрать кисть из истории",
+  "uk_UA": "Прибрати пензель з історії"
+ },
+ {
+  "context": "tools::BrushSettings",
+  "source": "Right-click drawing",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Рисование правой кнопкой",
+  "uk_UA": "Малювання правою кнопкою"
+ },
+ {
+  "context": "tools::BrushSettings",
+  "source": "Save Brush…",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Сохранить кисть…",
+  "uk_UA": "Зберегти пензель…"
+ },
+ {
+  "context": "tools::BrushSettings",
+  "source": "Show Thumbnail",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Показывать миниатюру",
+  "uk_UA": "Показувати мініатюру"
+ },
+ {
+  "context": "tools::BrushSettings",
+  "source": "Show Title",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Показывать название",
+  "uk_UA": "Показувати назву"
+ },
+ {
+  "context": "tools::BrushSettings",
+  "source": "Show the input settings dialog for more stabilizer settings.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Открыть настройки ввода для дополнительных параметров стабилизатора.",
+  "uk_UA": "Відкрити налаштування введення для додаткових параметрів стабілізатора."
+ },
+ {
+  "context": "tools::BrushSettings",
+  "source": "Undelete Brush",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Восстановить удалённую кисть",
+  "uk_UA": "Відновити видалений пензель"
+ },
+ {
+  "context": "tools::LassoFillSettings",
+  "source": "Fan",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Веер",
+  "uk_UA": "Віяло"
+ },
+ {
+  "context": "tools::LassoFillSettings",
+  "source": "Fills the shape with intersections making holes",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Заливает форму с отверстиями в местах пересечений",
+  "uk_UA": "Заливає форму з отворами в місцях перетинів"
+ },
+ {
+  "context": "tools::LassoFillSettings",
+  "source": "Fills the shape without holes",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Заливает форму без отверстий",
+  "uk_UA": "Заливає форму без отворів"
+ },
+ {
+  "context": "tools::LassoFillSettings",
+  "source": "Lasso",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Лассо",
+  "uk_UA": "Ласо"
+ },
+ {
+  "context": "tools::LassoFillSettings",
+  "source": "Shape:",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Форма:",
+  "uk_UA": "Форма:"
+ },
+ {
+  "context": "tools::RotationSettings",
+  "source": "Free rotation",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Свободный поворот",
+  "uk_UA": "Вільне обертання"
+ },
+ {
+  "context": "tools::RotationSettings",
+  "source": "Normal rotation",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Обычный поворот",
+  "uk_UA": "Звичайне обертання"
+ },
+ {
+  "context": "tools::RotationSettings",
+  "source": "Ratchet rotation",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Пошаговый поворот",
+  "uk_UA": "Покрокове обертання"
+ },
+ {
+  "context": "tools::RotationSettings",
+  "source": "Rotates in 15° increments",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Поворачивает с шагом 15°",
+  "uk_UA": "Обертає з кроком 15°"
+ },
+ {
+  "context": "tools::RotationSettings",
+  "source": "Rotates smoothly, never snaps",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Поворачивает плавно, без привязки",
+  "uk_UA": "Обертає плавно, без прив'язки"
+ },
+ {
+  "context": "tools::RotationSettings",
+  "source": "Rotates smoothly, snaps to 0°",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Поворачивает плавно, с привязкой к 0°",
+  "uk_UA": "Обертає плавно, з прив'язкою до 0°"
+ },
+ {
+  "context": "view::CanvasView",
+  "source": "Manage…",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Управление…",
+  "uk_UA": "Керування…"
+ },
+ {
+  "context": "view::Lock",
+  "source": "Playback in progress",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Идёт воспроизведение",
+  "uk_UA": "Триває відтворення"
+ },
+ {
+  "context": "widgets::Banner",
+  "source": "Dismiss",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Скрыть",
+  "uk_UA": "Сховати"
+ },
+ {
+  "context": "widgets::CanvasView",
+  "source": "Manage…",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Управление…",
+  "uk_UA": "Керування…"
+ },
+ {
+  "context": "widgets::ProjectRecordingStatusButton",
+  "source": " Click to manage.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": " Нажмите, чтобы настроить.",
+  "uk_UA": " Натисніть, щоб налаштувати."
+ },
+ {
+  "context": "widgets::ProjectRecordingStatusButton",
+  "source": "Autorecovery is disabled.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Автовосстановление отключено.",
+  "uk_UA": "Автовідновлення вимкнено."
+ },
+ {
+  "context": "widgets::ProjectRecordingStatusButton",
+  "source": "Autorecovery is enabled, file size is %1.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Автовосстановление включено, размер файла — %1.",
+  "uk_UA": "Автовідновлення ввімкнено, розмір файлу — %1."
+ },
+ {
+  "context": "widgets::TimelineWidget",
+  "source": "Toggle frame move lock for you",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Переключить блокировку перемещения кадров для вас",
+  "uk_UA": "Перемкнути блокування переміщення кадрів для вас"
+ },
+ {
+  "context": "widgets::TimelineWidget",
+  "source": "Toggle onion skin for you",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Переключить кальку для вас",
+  "uk_UA": "Перемкнути кальку для вас"
+ },
+ {
+  "context": "widgets::TimelineWidget",
+  "source": "Toggle visibility for you",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Переключить видимость для вас",
+  "uk_UA": "Перемкнути видимість для вас"
+ },
+ {
+  "context": "AndroidForegroundResourceExhaustionWarningDialog",
+  "source": "It looks like Drawpile exited because it ran out of memory. If you were trying to join a session or open a file, its canvas may be too large or have too many layers for your device to handle.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Похоже, Drawpile завершился из-за нехватки памяти. Если вы подключались к сессии или открывали файл, его холст может быть слишком большим или содержать слишком много слоёв для вашего устройства.",
+  "uk_UA": "Схоже, Drawpile завершився через брак пам'яті. Якщо ви під'єднувалися до сеансу чи відкривали файл, його полотно може бути завеликим або містити забагато шарів для вашого пристрою."
+ },
+ {
+  "context": "AndroidForegroundResourceExhaustionWarningDialog",
+  "source": "OK",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "ОК",
+  "uk_UA": "Гаразд"
+ },
+ {
+  "context": "AndroidForegroundResourceExhaustionWarningDialog",
+  "source": "Resource Exhaustion",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Нехватка ресурсов",
+  "uk_UA": "Брак ресурсів"
+ },
+ {
+  "context": "AndroidScalingDialog",
+  "source": "Interface scale: %1",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Масштаб интерфейса: %1",
+  "uk_UA": "Масштаб інтерфейсу: %1"
+ },
+ {
+  "context": "AndroidScalingDialog",
+  "source": "Interface scale: %1 (default)",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Масштаб интерфейса: %1 (по умолчанию)",
+  "uk_UA": "Масштаб інтерфейсу: %1 (типовий)"
+ },
+ {
+  "context": "AndroidScalingDialog",
+  "source": "OK",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "ОК",
+  "uk_UA": "Гаразд"
+ },
+ {
+  "context": "AndroidScalingDialog",
+  "source": "Show this dialog when Drawpile starts",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Показывать это окно при запуске Drawpile",
+  "uk_UA": "Показувати це вікно під час запуску Drawpile"
+ },
+ {
+  "context": "CanvasShortcutsModel",
+  "source": "Hide Docks",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Скрыть панели",
+  "uk_UA": "Сховати панелі"
+ },
+ {
+  "context": "CanvasShortcutsModel",
+  "source": "Redo",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Повторить",
+  "uk_UA": "Повторити"
+ },
+ {
+  "context": "CanvasShortcutsModel",
+  "source": "Toggle Alpha Preserve",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Переключить сохранение прозрачности",
+  "uk_UA": "Перемкнути збереження прозорості"
+ },
+ {
+  "context": "CanvasShortcutsModel",
+  "source": "Toggle Eraser Mode",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Переключить режим ластика",
+  "uk_UA": "Перемкнути режим гумки"
+ },
+ {
+  "context": "CanvasShortcutsModel",
+  "source": "Toggle Eraser Tool",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Переключить инструмент «Ластик»",
+  "uk_UA": "Перемкнути інструмент «Гумка»"
+ },
+ {
+  "context": "CanvasShortcutsModel",
+  "source": "Trigger Action",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Выполнить действие",
+  "uk_UA": "Виконати дію"
+ },
+ {
+  "context": "CanvasShortcutsModel",
+  "source": "Undo",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Отменить",
+  "uk_UA": "Скасувати"
+ },
+ {
+  "context": "Document",
+  "source": "Download cancelled",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Загрузка отменена",
+  "uk_UA": "Завантаження скасовано"
+ },
+ {
+  "context": "Document",
+  "source": "Resumed.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Возобновлено.",
+  "uk_UA": "Відновлено."
+ },
+ {
+  "context": "ProjectSaver",
+  "source": "Autosave cancelled during save",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Автосохранение отменено во время сохранения",
+  "uk_UA": "Автозбереження скасовано під час збереження"
+ },
+ {
+  "context": "QGuiApplication",
+  "source": "Canvases (%1)",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Холсты (%1)",
+  "uk_UA": "Полотна (%1)"
+ },
+ {
+  "context": "QGuiApplication",
+  "source": "Projects (%1)",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Проекты (%1)",
+  "uk_UA": "Проєкти (%1)"
+ },
+ {
+  "context": "TimelapseSaverRunnable",
+  "source": "Calculating…",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Вычисление…",
+  "uk_UA": "Обчислення…"
+ },
+ {
+  "context": "TimelapseSaverRunnable",
+  "source": "Error %d opening project.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка %d при открытии проекта.",
+  "uk_UA": "Помилка %d під час відкриття проєкту."
+ },
+ {
+  "context": "TimelapseSaverRunnable",
+  "source": "Error reading playback timing.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка чтения временных меток воспроизведения.",
+  "uk_UA": "Помилка читання часових міток відтворення."
+ },
+ {
+  "context": "TimelapseSaverRunnable",
+  "source": "Failed to start playback.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Не удалось начать воспроизведение.",
+  "uk_UA": "Не вдалося почати відтворення."
+ },
+ {
+  "context": "TimelapseSaverRunnable",
+  "source": "Finishing up…",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Завершение…",
+  "uk_UA": "Завершення…"
+ },
+ {
+  "context": "TimelapseSaverRunnable",
+  "source": "Invalid animation parameters given.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Заданы недопустимые параметры анимации.",
+  "uk_UA": "Задано неприпустимі параметри анімації."
+ },
+ {
+  "context": "TimelapseSaverRunnable",
+  "source": "Invalid frame queue size %1 given.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Задан недопустимый размер очереди кадров %1.",
+  "uk_UA": "Задано неприпустимий розмір черги кадрів %1."
+ },
+ {
+  "context": "TimelapseSaverRunnable",
+  "source": "Invalid framerate %1 given.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Задана недопустимая частота кадров %1.",
+  "uk_UA": "Задано неприпустиму частоту кадрів %1."
+ },
+ {
+  "context": "TimelapseSaverRunnable",
+  "source": "Invalid output format %1 given.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Задан недопустимый выходной формат %1.",
+  "uk_UA": "Задано неприпустимий вихідний формат %1."
+ },
+ {
+  "context": "TimelapseSaverRunnable",
+  "source": "Invalid parameter(s):",
+  "comment": null,
+  "numerus": true,
+  "ru_RU": [
+   "Недопустимый параметр:",
+   "Недопустимые параметры:",
+   "Недопустимые параметры:"
+  ],
+  "uk_UA": [
+   "Неприпустимий параметр:",
+   "Неприпустимі параметри:",
+   "Неприпустимі параметри:"
+  ]
+ },
+ {
+  "context": "TimelapseSaverRunnable",
+  "source": "Invalid time given.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Задано недопустимое время.",
+  "uk_UA": "Задано неприпустимий час."
+ },
+ {
+  "context": "TimelapseSaverRunnable",
+  "source": "Loading project…",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Загрузка проекта…",
+  "uk_UA": "Завантаження проєкту…"
+ },
+ {
+  "context": "TimelapseSaverRunnable",
+  "source": "No input path given.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Не указан входной путь.",
+  "uk_UA": "Не вказано вхідний шлях."
+ },
+ {
+  "context": "TimelapseSaverRunnable",
+  "source": "No output path given.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Не указан выходной путь.",
+  "uk_UA": "Не вказано вихідний шлях."
+ },
+ {
+  "context": "TimelapseSaverRunnable",
+  "source": "Nothing to play back. You may not have recorded anything to this project file.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Нечего воспроизводить. Возможно, в этот файл проекта ничего не записано.",
+  "uk_UA": "Немає чого відтворювати. Можливо, до цього файлу проєкту нічого не записано."
+ },
+ {
+  "context": "TimelapseSaverRunnable",
+  "source": "Rendering preview…",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Отрисовка предпросмотра…",
+  "uk_UA": "Відмальовування попереднього перегляду…"
+ },
+ {
+  "context": "TimelapseSaverRunnable",
+  "source": "Rendering result…",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Отрисовка результата…",
+  "uk_UA": "Відмальовування результату…"
+ },
+ {
+  "context": "TimelapseSaverRunnable",
+  "source": "Rendering timelapse…",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Отрисовка таймлапса…",
+  "uk_UA": "Відмальовування таймлапсу…"
+ },
+ {
+  "context": "Units",
+  "source": "%",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "%",
+  "uk_UA": "%"
+ },
+ {
+  "context": "Units",
+  "source": "px",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "пикс.",
+  "uk_UA": "пкс"
+ },
+ {
+  "context": "brushes::BrushPresetModel",
+  "source": "Brush requested from user \"%1\" on %2 at %3.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Кисть запрошена у пользователя «%1» %2 в %3.",
+  "uk_UA": "Пензель запитано в користувача «%1» %2 о %3."
+ },
+ {
+  "context": "brushes::BrushPresetTagModel",
+  "source": " (deleted)",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": " (удалена)",
+  "uk_UA": " (видалено)"
+ },
+ {
+  "context": "brushes::BrushPresetTagModel",
+  "source": " (unsaved)",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": " (не сохранена)",
+  "uk_UA": " (не збережено)"
+ },
+ {
+  "context": "brushes::BrushPresetTagModel",
+  "source": "History",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "История",
+  "uk_UA": "Історія"
+ },
+ {
+  "context": "brushes::BrushPresetTagModel",
+  "source": "Show a history of brushes used.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Показывает историю использованных кистей.",
+  "uk_UA": "Показує історію використаних пензлів."
+ },
+ {
+  "context": "canvas::CanvasModel",
+  "source": "No session to resume given",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Не указана сессия для возобновления",
+  "uk_UA": "Не вказано сеанс для відновлення"
+ },
+ {
+  "context": "canvas::CanvasModel",
+  "source": "Playback is active",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Идёт воспроизведение",
+  "uk_UA": "Триває відтворення"
+ },
+ {
+  "context": "canvas::CanvasModel",
+  "source": "Project recording is already active",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Запись проекта уже идёт",
+  "uk_UA": "Запис проєкту вже триває"
+ },
+ {
+  "context": "dialogs::AnimationExportDialog",
+  "source": "Animated GIF",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Анимированный GIF",
+  "uk_UA": "Анімований GIF"
+ },
+ {
+  "context": "dialogs::AnimationExportDialog",
+  "source": "Animated PNG (APNG)",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Анимированный PNG (APNG)",
+  "uk_UA": "Анімований PNG (APNG)"
+ },
+ {
+  "context": "dialogs::AnimationExportDialog",
+  "source": "Animated WEBP",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Анимированный WEBP",
+  "uk_UA": "Анімований WEBP"
+ },
+ {
+  "context": "dialogs::AnimationExportDialog",
+  "source": "Frames as PNGs",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Кадры в PNG",
+  "uk_UA": "Кадри в PNG"
+ },
+ {
+  "context": "dialogs::AnimationExportDialog",
+  "source": "Frames as PNGs in ZIP",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Кадры в PNG в ZIP-архиве",
+  "uk_UA": "Кадри в PNG у ZIP-архіві"
+ },
+ {
+  "context": "dialogs::AnimationExportDialog",
+  "source": "MP4 Video (AV1)",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Видео MP4 (AV1)",
+  "uk_UA": "Відео MP4 (AV1)"
+ },
+ {
+  "context": "dialogs::AnimationExportDialog",
+  "source": "MP4 Video (H.264)",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Видео MP4 (H.264)",
+  "uk_UA": "Відео MP4 (H.264)"
+ },
+ {
+  "context": "dialogs::AnimationExportDialog",
+  "source": "MP4 Video (VP9)",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Видео MP4 (VP9)",
+  "uk_UA": "Відео MP4 (VP9)"
+ },
+ {
+  "context": "dialogs::AnimationExportDialog",
+  "source": "PNG Spritesheet",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "PNG-спрайтшит",
+  "uk_UA": "PNG-спрайтшит"
+ },
+ {
+  "context": "dialogs::AnimationExportDialog",
+  "source": "WEBM Video (VP8)",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Видео WEBM (VP8)",
+  "uk_UA": "Відео WEBM (VP8)"
+ },
+ {
+  "context": "dialogs::settingsdialog::UserInterface",
+  "source": "Desktop",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Рабочий стол",
+  "uk_UA": "Робочий стіл"
+ },
+ {
+  "context": "dialogs::settingsdialog::UserInterface",
+  "source": "Dynamic",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Динамический",
+  "uk_UA": "Динамічний"
+ },
+ {
+  "context": "dialogs::settingsdialog::UserInterface",
+  "source": "Mobile",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Мобильный",
+  "uk_UA": "Мобільний"
+ },
+ {
+  "context": "impex::RecordingConverter",
+  "source": "Converting recording %1…",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Преобразование записи %1…",
+  "uk_UA": "Перетворення запису %1…"
+ },
+ {
+  "context": "impex::RecordingConverter",
+  "source": "Error %1 closing project session.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка %1 при закрытии сессии проекта.",
+  "uk_UA": "Помилка %1 під час закриття сеансу проєкту."
+ },
+ {
+  "context": "impex::RecordingConverter",
+  "source": "Error %1 converting recording %2.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка %1 при преобразовании записи %2.",
+  "uk_UA": "Помилка %1 під час перетворення запису %2."
+ },
+ {
+  "context": "impex::RecordingConverter",
+  "source": "Error %1 copying session %2 from project %3.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка %1 при копировании сессии %2 из проекта %3.",
+  "uk_UA": "Помилка %1 під час копіювання сеансу %2 із проєкту %3."
+ },
+ {
+  "context": "impex::RecordingConverter",
+  "source": "Error %1 finishing project snapshot.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка %1 при завершении снимка проекта.",
+  "uk_UA": "Помилка %1 під час завершення знімка проєкту."
+ },
+ {
+  "context": "impex::RecordingConverter",
+  "source": "Error %1 opening project %2.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка %1 при открытии проекта %2.",
+  "uk_UA": "Помилка %1 під час відкриття проєкту %2."
+ },
+ {
+  "context": "impex::RecordingConverter",
+  "source": "Error %1 opening project %2: %3.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка %1 при открытии проекта %2: %3.",
+  "uk_UA": "Помилка %1 під час відкриття проєкту %2: %3."
+ },
+ {
+  "context": "impex::RecordingConverter",
+  "source": "Error %1 opening project file %2.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка %1 при открытии файла проекта %2.",
+  "uk_UA": "Помилка %1 під час відкриття файлу проєкту %2."
+ },
+ {
+  "context": "impex::RecordingConverter",
+  "source": "Error %1 opening project session.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка %1 при открытии сессии проекта.",
+  "uk_UA": "Помилка %1 під час відкриття сеансу проєкту."
+ },
+ {
+  "context": "impex::RecordingConverter",
+  "source": "Error %1 opening project snapshot.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка %1 при открытии снимка проекта.",
+  "uk_UA": "Помилка %1 під час відкриття знімка проєкту."
+ },
+ {
+  "context": "impex::RecordingConverter",
+  "source": "Error %1 opening temporary file for %2: %3.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка %1 при открытии временного файла для %2: %3.",
+  "uk_UA": "Помилка %1 під час відкриття тимчасового файлу для %2: %3."
+ },
+ {
+  "context": "impex::RecordingConverter",
+  "source": "Error %1 preparing playback for project %2",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка %1 при подготовке воспроизведения проекта %2",
+  "uk_UA": "Помилка %1 під час підготовки відтворення проєкту %2"
+ },
+ {
+  "context": "impex::RecordingConverter",
+  "source": "Error %1 preparing playback for project %2.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка %1 при подготовке воспроизведения проекта %2.",
+  "uk_UA": "Помилка %1 під час підготовки відтворення проєкту %2."
+ },
+ {
+  "context": "impex::RecordingConverter",
+  "source": "Error %1 processing project %2.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка %1 при обработке проекта %2.",
+  "uk_UA": "Помилка %1 під час обробки проєкту %2."
+ },
+ {
+  "context": "impex::RecordingConverter",
+  "source": "Error %1 reading recording %2.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка %1 при чтении записи %2.",
+  "uk_UA": "Помилка %1 під час читання запису %2."
+ },
+ {
+  "context": "impex::RecordingConverter",
+  "source": "Error %1 reading sessions in project %2.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка %1 при чтении сессий проекта %2.",
+  "uk_UA": "Помилка %1 під час читання сеансів проєкту %2."
+ },
+ {
+  "context": "impex::RecordingConverter",
+  "source": "Error %1 replacing snapshot in project %2.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка %1 при замене снимка в проекте %2.",
+  "uk_UA": "Помилка %1 під час заміни знімка в проєкті %2."
+ },
+ {
+  "context": "impex::RecordingConverter",
+  "source": "Error %1 saving project snapshot.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка %1 при сохранении снимка проекта.",
+  "uk_UA": "Помилка %1 під час збереження знімка проєкту."
+ },
+ {
+  "context": "impex::RecordingConverter",
+  "source": "Error %1 saving snapshot in project %2.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка %1 при сохранении снимка в проекте %2.",
+  "uk_UA": "Помилка %1 під час збереження знімка в проєкті %2."
+ },
+ {
+  "context": "impex::RecordingConverter",
+  "source": "Error %1 updating snapshot in project %2.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка %1 при обновлении снимка в проекте %2.",
+  "uk_UA": "Помилка %1 під час оновлення знімка в проєкті %2."
+ },
+ {
+  "context": "impex::RecordingConverter",
+  "source": "Error closing project.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка закрытия проекта.",
+  "uk_UA": "Помилка закриття проєкту."
+ },
+ {
+  "context": "impex::RecordingConverter",
+  "source": "Error finishing project.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка завершения проекта.",
+  "uk_UA": "Помилка завершення проєкту."
+ },
+ {
+  "context": "impex::RecordingConverter",
+  "source": "Error flushing compressor.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка сброса компрессора.",
+  "uk_UA": "Помилка скидання компресора."
+ },
+ {
+  "context": "impex::RecordingConverter",
+  "source": "Error initializing compressor.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка инициализации компрессора.",
+  "uk_UA": "Помилка ініціалізації компресора."
+ },
+ {
+  "context": "impex::RecordingConverter",
+  "source": "Error loading project %1.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка загрузки проекта %1.",
+  "uk_UA": "Помилка завантаження проєкту %1."
+ },
+ {
+  "context": "impex::RecordingConverter",
+  "source": "Error opening playback for project %1",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка открытия воспроизведения проекта %1",
+  "uk_UA": "Помилка відкриття відтворення проєкту %1"
+ },
+ {
+  "context": "impex::RecordingConverter",
+  "source": "Error opening playback for project %1.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка открытия воспроизведения проекта %1.",
+  "uk_UA": "Помилка відкриття відтворення проєкту %1."
+ },
+ {
+  "context": "impex::RecordingConverter",
+  "source": "Error setting compressor session.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка установки сессии компрессора.",
+  "uk_UA": "Помилка встановлення сеансу компресора."
+ },
+ {
+  "context": "impex::RecordingConverter",
+  "source": "Failed to open recording %1.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Не удалось открыть запись %1.",
+  "uk_UA": "Не вдалося відкрити запис %1."
+ },
+ {
+  "context": "impex::RecordingConverter",
+  "source": "Finishing project…",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Завершение проекта…",
+  "uk_UA": "Завершення проєкту…"
+ },
+ {
+  "context": "impex::RecordingConverter",
+  "source": "Incompatible recording.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Несовместимая запись.",
+  "uk_UA": "Несумісний запис."
+ },
+ {
+  "context": "impex::RecordingConverter",
+  "source": "No input files given.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Не указаны входные файлы.",
+  "uk_UA": "Не вказано вхідні файли."
+ },
+ {
+  "context": "impex::RecordingConverter",
+  "source": "Processing final project snapshot…",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Обработка последнего снимка проекта…",
+  "uk_UA": "Обробка останнього знімка проєкту…"
+ },
+ {
+  "context": "impex::RecordingConverter",
+  "source": "Processing project %1 session %2…",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Обработка проекта %1, сессия %2…",
+  "uk_UA": "Обробка проєкту %1, сеанс %2…"
+ },
+ {
+  "context": "impex::RecordingConverter",
+  "source": "Processing project %1 snapshot %2…",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Обработка проекта %1, снимок %2…",
+  "uk_UA": "Обробка проєкту %1, знімок %2…"
+ },
+ {
+  "context": "impex::RecordingConverter",
+  "source": "Session %1 not found in project %2.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Сессия %1 не найдена в проекте %2.",
+  "uk_UA": "Сеанс %1 не знайдено в проєкті %2."
+ },
+ {
+  "context": "net::Client",
+  "source": "Blocking new joins is not supported by this server. Set or change the session password instead.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Этот сервер не поддерживает блокировку новых подключений. Вместо этого задайте или смените пароль сессии.",
+  "uk_UA": "Цей сервер не підтримує блокування нових під'єднань. Натомість задайте або змініть пароль сеансу."
+ },
+ {
+  "context": "project::ProjectRecorder",
+  "source": "Autosave recording already active",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Запись автосохранения уже идёт",
+  "uk_UA": "Запис автозбереження вже триває"
+ },
+ {
+  "context": "project::ProjectRecorder",
+  "source": "Could not find any available autosave path",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Не найден доступный путь для автосохранения",
+  "uk_UA": "Не знайдено доступного шляху для автозбереження"
+ },
+ {
+  "context": "project::ProjectRecorder",
+  "source": "Could not start autosave recording: %1",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Не удалось начать запись автосохранения: %1",
+  "uk_UA": "Не вдалося почати запис автозбереження: %1"
+ },
+ {
+  "context": "project::ProjectRecorder",
+  "source": "Error %1 closing project: %2",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка %1 при закрытии проекта: %2",
+  "uk_UA": "Помилка %1 під час закриття проєкту: %2"
+ },
+ {
+  "context": "project::ProjectRecorder",
+  "source": "Error %1 closing session: %2",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка %1 при закрытии сессии: %2",
+  "uk_UA": "Помилка %1 під час закриття сеансу: %2"
+ },
+ {
+  "context": "project::ProjectRecorder",
+  "source": "Error %1 creating snapshot: %2",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка %1 при создании снимка: %2",
+  "uk_UA": "Помилка %1 під час створення знімка: %2"
+ },
+ {
+  "context": "project::ProjectRecorder",
+  "source": "Error %1 opening project: %2",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка %1 при открытии проекта: %2",
+  "uk_UA": "Помилка %1 під час відкриття проєкту: %2"
+ },
+ {
+  "context": "project::ProjectRecorder",
+  "source": "Error %1 opening session: %2",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка %1 при открытии сессии: %2",
+  "uk_UA": "Помилка %1 під час відкриття сеансу: %2"
+ },
+ {
+  "context": "project::ProjectRecorder",
+  "source": "Error %1 recording command: %2",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка %1 при записи команды: %2",
+  "uk_UA": "Помилка %1 під час запису команди: %2"
+ },
+ {
+  "context": "project::ProjectRecorder",
+  "source": "Error %1 resuming session: %2",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка %1 при возобновлении сессии: %2",
+  "uk_UA": "Помилка %1 під час відновлення сеансу: %2"
+ },
+ {
+  "context": "project::ProjectRecorder",
+  "source": "Error %1 writing to project: %2",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка %1 при записи в проект: %2",
+  "uk_UA": "Помилка %1 під час запису в проєкт: %2"
+ },
+ {
+  "context": "project::ProjectRecorder",
+  "source": "Error removing project file '%1': %2",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка удаления файла проекта «%1»: %2",
+  "uk_UA": "Помилка видалення файлу проєкту «%1»: %2"
+ },
+ {
+  "context": "project::ProjectRecorder",
+  "source": "Invalid session %1 given to resume",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Для возобновления задана недопустимая сессия %1",
+  "uk_UA": "Для відновлення задано неприпустимий сеанс %1"
+ },
+ {
+  "context": "project::ProjectRecorder",
+  "source": "No path to resume given",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Не указан путь для возобновления",
+  "uk_UA": "Не вказано шлях для відновлення"
+ },
+ {
+  "context": "project::ProjectRecorder",
+  "source": "Size limit of %1 exceeded",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Превышен лимит размера %1",
+  "uk_UA": "Перевищено ліміт розміру %1"
+ },
+ {
+  "context": "project::ProjectRepair",
+  "source": "Failed to close project.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Не удалось закрыть проект.",
+  "uk_UA": "Не вдалося закрити проєкт."
+ },
+ {
+  "context": "project::ProjectRepair",
+  "source": "Failed to open project.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Не удалось открыть проект.",
+  "uk_UA": "Не вдалося відкрити проєкт."
+ },
+ {
+  "context": "project::ProjectRepair",
+  "source": "Failed to repair file: %1",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Не удалось исправить файл: %1",
+  "uk_UA": "Не вдалося виправити файл: %1"
+ },
+ {
+  "context": "project::ProjectRepair",
+  "source": "Failed to set temporary input path.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Не удалось задать временный входной путь.",
+  "uk_UA": "Не вдалося задати тимчасовий вхідний шлях."
+ },
+ {
+  "context": "project::ProjectRepair",
+  "source": "Failed to set temporary output path.",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Не удалось задать временный выходной путь.",
+  "uk_UA": "Не вдалося задати тимчасовий вихідний шлях."
+ },
+ {
+  "context": "project::ProjectRepair",
+  "source": "Failed to start repair: %1",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Не удалось начать исправление: %1",
+  "uk_UA": "Не вдалося почати виправлення: %1"
+ },
+ {
+  "context": "project::ProjectWrangler",
+  "source": "Error %1 generating project overview: %2",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка %1 при создании обзора проекта: %2",
+  "uk_UA": "Помилка %1 під час створення огляду проєкту: %2"
+ },
+ {
+  "context": "project::ProjectWrangler",
+  "source": "Error %1 in player: %2",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка %1 в проигрывателе: %2",
+  "uk_UA": "Помилка %1 у програвачі: %2"
+ },
+ {
+  "context": "project::ProjectWrangler",
+  "source": "Error %1 opening project file: %2",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка %1 при открытии файла проекта: %2",
+  "uk_UA": "Помилка %1 під час відкриття файлу проєкту: %2"
+ },
+ {
+  "context": "project::ProjectWrangler",
+  "source": "Error %1 preparing player: %2",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка %1 при подготовке проигрывателя: %2",
+  "uk_UA": "Помилка %1 під час підготовки програвача: %2"
+ },
+ {
+  "context": "project::ProjectWrangler",
+  "source": "Failed to copy '%1' to temporary file '%2'",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Не удалось скопировать «%1» во временный файл «%2»",
+  "uk_UA": "Не вдалося скопіювати «%1» у тимчасовий файл «%2»"
+ },
+ {
+  "context": "project::ProjectWrangler",
+  "source": "Failed to open '%1': %2",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Не удалось открыть «%1»: %2",
+  "uk_UA": "Не вдалося відкрити «%1»: %2"
+ },
+ {
+  "context": "project::ProjectWrangler",
+  "source": "Failed to open temporary '%1': %2",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Не удалось открыть временный «%1»: %2",
+  "uk_UA": "Не вдалося відкрити тимчасовий «%1»: %2"
+ },
+ {
+  "context": "project::ProjectWrangler",
+  "source": "Initialization failed",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка инициализации",
+  "uk_UA": "Помилка ініціалізації"
+ },
+ {
+  "context": "project::ProjectWrangler",
+  "source": "Not initialized",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Не инициализировано",
+  "uk_UA": "Не ініціалізовано"
+ },
+ {
+  "context": "project::ProjectWrangler",
+  "source": "Unhandled error %1 of type %2: %3",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Необработанная ошибка %1 типа %2: %3",
+  "uk_UA": "Необроблена помилка %1 типу %2: %3"
+ },
+ {
+  "context": "utils::paths",
+  "source": "Could not read entire file",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Не удалось прочитать файл целиком",
+  "uk_UA": "Не вдалося прочитати файл повністю"
+ },
+ {
+  "context": "utils::paths",
+  "source": "Error flushing target file '%1': %2",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка сброса буфера целевого файла «%1»: %2",
+  "uk_UA": "Помилка скидання буфера цільового файлу «%1»: %2"
+ },
+ {
+  "context": "utils::paths",
+  "source": "Error opening source file '%1': %2",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка открытия исходного файла «%1»: %2",
+  "uk_UA": "Помилка відкриття вихідного файлу «%1»: %2"
+ },
+ {
+  "context": "utils::paths",
+  "source": "Error opening target file '%1': %2",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка открытия целевого файла «%1»: %2",
+  "uk_UA": "Помилка відкриття цільового файлу «%1»: %2"
+ },
+ {
+  "context": "utils::paths",
+  "source": "Error reading from source file '%1': %2",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка чтения исходного файла «%1»: %2",
+  "uk_UA": "Помилка читання вихідного файлу «%1»: %2"
+ },
+ {
+  "context": "utils::paths",
+  "source": "Error writing %1 byte(s) to target file '%2': %3",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Ошибка записи %1 байт в целевой файл «%2»: %3",
+  "uk_UA": "Помилка запису %1 байт у цільовий файл «%2»: %3"
+ },
+ {
+  "context": "utils::paths",
+  "source": "Failed to commit target file: %1",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Не удалось зафиксировать целевой файл: %1",
+  "uk_UA": "Не вдалося зафіксувати цільовий файл: %1"
+ },
+ {
+  "context": "utils::paths",
+  "source": "File size out of bounds",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Размер файла вне допустимых пределов",
+  "uk_UA": "Розмір файлу поза допустимими межами"
+ },
+ {
+  "context": "utils::paths",
+  "source": "Tried to write %1 byte(s) to target file '%2', but only wrote %3",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Пытались записать %1 байт в целевой файл «%2», но записано только %3",
+  "uk_UA": "Намагалися записати %1 байт у цільовий файл «%2», але записано лише %3"
+ },
+ {
+  "context": "widgets::CanvasView",
+  "source": "Downloading…",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Загрузка…",
+  "uk_UA": "Завантаження…"
+ },
+ {
+  "context": "widgets::CanvasView",
+  "source": "Horizontal mirror: OFF",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Горизонтальное отражение: ВЫКЛ",
+  "uk_UA": "Горизонтальне віддзеркалення: ВИМК"
+ },
+ {
+  "context": "widgets::CanvasView",
+  "source": "Horizontal mirror: ON",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Горизонтальное отражение: ВКЛ",
+  "uk_UA": "Горизонтальне віддзеркалення: УВІМК"
+ },
+ {
+  "context": "widgets::CanvasView",
+  "source": "Rotation: %1°",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Поворот: %1°",
+  "uk_UA": "Обертання: %1°"
+ },
+ {
+  "context": "widgets::CanvasView",
+  "source": "Saving…",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Сохранение…",
+  "uk_UA": "Збереження…"
+ },
+ {
+  "context": "widgets::CanvasView",
+  "source": "Vertical flip: OFF",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Вертикальный переворот: ВЫКЛ",
+  "uk_UA": "Вертикальне перевертання: ВИМК"
+ },
+ {
+  "context": "widgets::CanvasView",
+  "source": "Vertical flip: ON",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Вертикальный переворот: ВКЛ",
+  "uk_UA": "Вертикальне перевертання: УВІМК"
+ },
+ {
+  "context": "widgets::CanvasView",
+  "source": "Zoom: %1%",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Масштаб: %1%",
+  "uk_UA": "Масштаб: %1%"
+ },
+ {
+  "context": "docks::OnionSkinsDock",
+  "source": "Onion Skins",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Восковки",
+  "uk_UA": "Калька",
+  "override": [
+   "uk_UA"
+  ],
+  "note": "upstream uk translation was a literal 'onion peel'"
+ },
+ {
+  "context": "docks::ReferenceDock",
+  "source": "Reference",
+  "comment": null,
+  "numerus": false,
+  "ru_RU": "Эталонное изображение",
+  "uk_UA": "Референси",
+  "override": [
+   "uk_UA"
+  ],
+  "note": "upstream uk translation meant 'help'"
+ }
+]

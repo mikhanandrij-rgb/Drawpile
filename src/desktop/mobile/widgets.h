@@ -25,6 +25,8 @@ public:
 	void setSwatch(const QColor &color, const QColor &secondary = QColor());
 	void setButtonSize(int sizeDp);
 	void setShowLabel(bool showLabel);
+	// Draws a round backdrop, for buttons floating over the canvas.
+	void setFloating(bool floating);
 	// Mirrors enabled, checked, tool tip and visibility from the action and
 	// triggers it when clicked.
 	void bindAction(QAction *action);
@@ -54,6 +56,7 @@ private:
 	QColor m_swatchSecondary;
 	int m_sizeDp = 48;
 	bool m_showLabel = false;
+	bool m_floating = false;
 	bool m_longPressFired = false;
 	QTimer m_longPressTimer;
 	QPointer<QAction> m_action;
