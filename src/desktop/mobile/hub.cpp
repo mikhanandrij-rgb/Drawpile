@@ -756,8 +756,8 @@ QWidget *Hub::buildNewPage()
 	QVBoxLayout *fpsLayout = new QVBoxLayout(m_fpsRow);
 	fpsLayout->setContentsMargins(0, 0, 0, 0);
 	fpsLayout->addWidget(sectionLabel(tr("Frame rate")));
-	QHBoxLayout *fpsChips = new QHBoxLayout;
-	fpsChips->setSpacing(dp(8));
+	QWidget *fpsChipsWidget = new QWidget;
+	FlowLayout *fpsChips = new FlowLayout(fpsChipsWidget);
 	m_fpsGroup = new QButtonGroup(this);
 	for(int fps : {8, 12, 15, 24, 30, 60}) {
 		QToolButton *chip = new QToolButton;
@@ -771,8 +771,7 @@ QWidget *Hub::buildNewPage()
 			chip->setChecked(true);
 		}
 	}
-	fpsChips->addStretch(1);
-	fpsLayout->addLayout(fpsChips);
+	fpsLayout->addWidget(fpsChipsWidget);
 	QLabel *fpsNote = new QLabel(
 		tr("The frame rate and range can be changed later in the animation "
 		   "panel."));
@@ -837,8 +836,8 @@ QWidget *Hub::buildNewPage()
 		sizeEdited);
 
 	layout->addWidget(sectionLabel(tr("Background")));
-	QHBoxLayout *bgRow = new QHBoxLayout;
-	bgRow->setSpacing(dp(8));
+	QWidget *bgRowWidget = new QWidget;
+	FlowLayout *bgRow = new FlowLayout(bgRowWidget);
 	m_backgroundGroup = new QButtonGroup(this);
 	QStringList bgNames = {
 		tr("White"), tr("Transparent"), tr("Black"), tr("Custom…")};
@@ -851,7 +850,6 @@ QWidget *Hub::buildNewPage()
 		m_backgroundGroup->addButton(chip, i);
 		bgRow->addWidget(chip);
 	}
-	bgRow->addStretch(1);
 	m_backgroundGroup->button(0)->setChecked(true);
 	m_customBackground = dpAppConfig()->getNewCanvasBackColor();
 	connect(
@@ -871,7 +869,7 @@ QWidget *Hub::buildNewPage()
 			}
 			updateNewPageSummary();
 		});
-	layout->addLayout(bgRow);
+	layout->addWidget(bgRowWidget);
 
 	m_summary = new QLabel;
 	m_summary->setWordWrap(true);
@@ -1360,7 +1358,8 @@ QSize Hub::phoneSize(bool portrait) const
 											 : QGuiApplication::primaryScreen();
 	QSize size(1080, 2400);
 	if(screen) {
-		QSize s = screen->size() * screen->devicePixelRatio();
+		QSize s(int(screen->size().width() * screen->devicePixelRatio()),
+				int(screen->size().height() * screen->devicePixelRatio()));
 		if(s.width() > 0 && s.height() > 0) {
 			size = s;
 		}

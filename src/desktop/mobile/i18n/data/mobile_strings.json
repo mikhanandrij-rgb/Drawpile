@@ -924,5 +924,11 @@
   "source": "Canvas notice / on-canvas control (unchanged)",
   "ru_RU": "Уведомление на холсте / элемент на холсте (без изменений)",
   "uk_UA": "Сповіщення на полотні / елемент на полотні (без змін)"
+ },
+ {
+  "context": "mobile::Shell",
+  "source": "Dock window menu: docking options are hidden in mobile mode, as in upstream; closing is done with the sheet's ✕ button",
+  "ru_RU": "Меню окна дока: параметры стыковки скрыты в мобильном режиме, как и в оригинале; закрытие — кнопкой ✕ панели",
+  "uk_UA": "Меню вікна дока: параметри стикування приховано в мобільному режимі, як і в оригіналі; закриття — кнопкою ✕ панелі"
  }
 ]

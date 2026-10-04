@@ -883,12 +883,14 @@ elseif(ANDROID)
 	# Include a version number in release builds, don't include one in debug
 	# builds because it's annoying to end up with multiple APK versions.
 	if(CMAKE_BUILD_TYPE MATCHES "^[rR][eE][lL]")
-		set(ANDROID_PACKAGE_NAMESPACE "net.drawpile")
-		set(DRAWPILE_ANDROID_APP_NAME "Drawpile")
-		set(output_apk "${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/$<TARGET_PROPERTY:drawpile,OUTPUT_NAME>-${PROJECT_VERSION}-${ANDROID_MIN_SDK_VERSION}-${ANDROID_TARGET_SDK_VERSION}-${ANDROID_ABI}.apk")
+		# Drawpile Mobile (fork): separate application id and name, so the
+		# fork installs alongside the official app.
+		set(ANDROID_PACKAGE_NAMESPACE "net.drawpile.mobileui")
+		set(DRAWPILE_ANDROID_APP_NAME "Drawpile Mobile (fork)")
+		set(output_apk "${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/$<TARGET_PROPERTY:drawpile,OUTPUT_NAME>-mobileui-${PROJECT_VERSION}-${ANDROID_MIN_SDK_VERSION}-${ANDROID_TARGET_SDK_VERSION}-${ANDROID_ABI}.apk")
 	else()
-		set(ANDROID_PACKAGE_NAMESPACE "net.drawpile.debug")
-		set(DRAWPILE_ANDROID_APP_NAME "Drawpile Debug")
+		set(ANDROID_PACKAGE_NAMESPACE "net.drawpile.mobileui.debug")
+		set(DRAWPILE_ANDROID_APP_NAME "Drawpile Mobile Debug (fork)")
 		set(output_apk "${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/$<TARGET_PROPERTY:drawpile,OUTPUT_NAME>-debug-${ANDROID_ABI}.apk")
 	endif()
 

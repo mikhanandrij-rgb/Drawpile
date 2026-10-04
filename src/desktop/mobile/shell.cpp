@@ -239,7 +239,10 @@ bool Shell::eventFilter(QObject *watched, QEvent *event)
 			break;
 		case QEvent::PaletteChange:
 		case QEvent::StyleChange:
-			Theme::refresh();
+			if(!m_themeRefreshPending) {
+				m_themeRefreshPending = true;
+				QTimer::singleShot(0, this, &Shell::reapplyTheme);
+			}
 			break;
 		default:
 			break;
@@ -1097,6 +1100,34 @@ void Shell::bindDocument()
 	}
 }
 
+void Shell::reapplyTheme()
+{
+	m_themeRefreshPending = false;
+	if(!m_active) {
+		return;
+	}
+	Theme::refresh();
+	QString styleSheet = chromeStyleSheet();
+	QWidget *widgets[] = {
+		m_topHolder, m_railHolder, m_sliders, m_bubble, m_restoreButton,
+		m_sheet,	 m_hub,
+	};
+	for(QWidget *w : widgets) {
+		if(w) {
+			w->setStyleSheet(styleSheet);
+			w->update();
+			for(QWidget *child : w->findChildren<QWidget *>()) {
+				if(child->property("mobileChrome").toBool()) {
+					child->update();
+				}
+			}
+		}
+	}
+	if(m_sheet) {
+		m_sheet->refreshTheme();
+	}
+}
+
 void Shell::updateLayout()
 {
 	if(!m_active || !m_mw || !m_rail) {
@@ -1167,7 +1198,8 @@ void Shell::updateOverlays()
 	   m_sheet->placement() == Sheet::Placement::Side && !covered.isEmpty()) {
 		// A side sheet on the same side as the sliders hides them.
 		bool sheetLeft = covered.center().x() < area.center().x();
-		if(sheetLeft == lefty) {
+		bool slidersLeft = !lefty;
+		if(sheetLeft == slidersLeft) {
 			showSliders = false;
 		}
 	}

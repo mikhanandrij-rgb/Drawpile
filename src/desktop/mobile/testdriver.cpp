@@ -1,4 +1,7 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
+extern "C" {
+#include <dpengine/save_enums.h>
+}
 // Drawpile Mobile (fork): scripted UI driver used for automated screenshots,
 // functional checks and timing measurements on desktop builds. It is inert
 // unless DRAWPILE_MOBILE_TEST_SCRIPT points to a script file.
@@ -21,6 +24,24 @@
 //   log <text>                   write a line to the log
 //   quit                         exit the application without prompts
 #include "desktop/mainwindow.h"
+#include "desktop/utils/hostparams.h"
+#include "libclient/canvas/canvasmodel.h"
+#include "libclient/canvas/paintengine.h"
+#include "libclient/canvas/userlist.h"
+#include "libclient/document.h"
+#include "libclient/drawdance/canvasstate.h"
+#include "libclient/drawdance/documentmetadata.h"
+#include "libclient/drawdance/layerlist.h"
+#include "libclient/drawdance/timeline.h"
+#include "libclient/net/client.h"
+#include <QAbstractButton>
+#include <QDialog>
+#include <QLineEdit>
+#include <QDialogButtonBox>
+#include <QPushButton>
+#include <QMessageBox>
+#include <QScrollArea>
+#include <QSpinBox>
 #include "desktop/mobile/mobileui.h"
 #include "desktop/mobile/shell.h"
 #include <QAction>
@@ -288,6 +309,186 @@ private:
 			} else {
 				log(QStringLiteral("tree: %1 not found").arg(args.value(0)));
 			}
+		} else if(cmd == QStringLiteral("tapname")) {
+			QString name = args.join(QLatin1Char(' '));
+			QAbstractButton *found = nullptr;
+			QList<QWidget *> roots = QApplication::topLevelWidgets();
+			for(QWidget *root : roots) {
+				if(!root->isVisible()) {
+					continue;
+				}
+				for(QAbstractButton *b : root->findChildren<QAbstractButton *>()) {
+					QString text = b->text();
+					text.remove(QLatin1Char('&'));
+					if(b->isVisible() && (text == name || b->accessibleName() == name)) {
+						found = b; // keep the last one, usually the topmost
+					}
+				}
+			}
+			if(found) {
+				// Scroll it into view first, like a user would.
+				for(QWidget *w = found->parentWidget(); w; w = w->parentWidget()) {
+					if(QScrollArea *scroll = qobject_cast<QScrollArea *>(w)) {
+						scroll->ensureWidgetVisible(found);
+						pump(100);
+						break;
+					}
+				}
+				QPoint center = found->rect().center();
+				QPoint pos = found->window() == m_mw
+								 ? found->mapTo(m_mw, center)
+								 : center;
+				if(found->window() == m_mw) {
+					sendMouse(QEvent::MouseButtonPress, pos, Qt::LeftButton);
+					pump(60);
+					sendMouse(QEvent::MouseButtonRelease, pos, Qt::NoButton);
+				} else {
+					found->click();
+				}
+				log(QStringLiteral("tapname '%1' -> %2").arg(name, QString::fromLatin1(found->metaObject()->className())));
+			} else {
+				log(QStringLiteral("tapname '%1' NOT FOUND").arg(name));
+			}
+			delay = 400;
+		} else if(cmd == QStringLiteral("prop")) {
+			QObject *o = m_mw->findChild<QObject *>(args.value(0));
+			log(QStringLiteral("prop %1.%2 = %3")
+					.arg(args.value(0), args.value(1))
+					.arg(o ? o->property(qUtf8Printable(args.value(1))).toString()
+						   : QStringLiteral("<not found>")));
+		} else if(cmd == QStringLiteral("canvasinfo")) {
+			Document *doc = m_mw->findChild<Document *>();
+			canvas::CanvasModel *canvas = doc ? doc->canvas() : nullptr;
+			if(canvas) {
+				drawdance::CanvasState cs =
+					canvas->paintEngine()->historyCanvasState();
+				log(QStringLiteral("canvas %1x%2 layers=%3 tracks=%4 fps=%5 "
+								   "path='%6' dirty=%7 connected=%8 users=%9")
+						.arg(cs.width()).arg(cs.height())
+						.arg(cs.layers().count())
+						.arg(cs.timeline().trackCount())
+						.arg(cs.documentMetadata().effectiveFramerate())
+						.arg(doc->currentPath())
+						.arg(doc->isDirty())
+						.arg(doc->client()->isConnected())
+						.arg(canvas->userlist()->rowCount()));
+			} else {
+				log(QStringLiteral("canvas: none"));
+			}
+		} else if(cmd == QStringLiteral("dialogs")) {
+			for(QWidget *w : QApplication::topLevelWidgets()) {
+				if(w->isVisible() && w != m_mw) {
+					log(QStringLiteral("  window %1 '%2'").arg(
+						QString::fromLatin1(w->metaObject()->className()),
+						w->windowTitle()));
+				}
+			}
+		} else if(cmd == QStringLiteral("closedialogs")) {
+			for(QWidget *w : QApplication::topLevelWidgets()) {
+				if(w->isVisible() && w != m_mw) {
+					log(QStringLiteral("  closing %1").arg(QString::fromLatin1(w->metaObject()->className())));
+					if(QDialog *d = qobject_cast<QDialog *>(w)) {
+						d->reject();
+					} else {
+						w->close();
+					}
+				}
+			}
+			delay = 300;
+		} else if(cmd == QStringLiteral("acceptdialogs")) {
+			for(QWidget *w : QApplication::topLevelWidgets()) {
+				if(w->isVisible() && w != m_mw) {
+					if(QMessageBox *box = qobject_cast<QMessageBox *>(w)) {
+						QAbstractButton *yes = box->button(QMessageBox::Yes);
+						if(!yes) {
+							yes = box->button(QMessageBox::Ok);
+						}
+						log(QStringLiteral("  accepting message box '%1'").arg(box->text().left(80)));
+						if(yes) {
+							yes->click();
+						} else {
+							box->accept();
+						}
+					} else if(QDialog *d = qobject_cast<QDialog *>(w)) {
+						log(QStringLiteral("  accepting %1").arg(QString::fromLatin1(d->metaObject()->className())));
+						d->accept();
+					}
+				}
+			}
+			delay = 800;
+		} else if(cmd == QStringLiteral("type")) {
+			QString text = args.join(QLatin1Char(' '));
+			QLineEdit *edit = qobject_cast<QLineEdit *>(QApplication::focusWidget());
+			if(!edit) {
+				for(QWidget *w : QApplication::topLevelWidgets()) {
+					if(w->isVisible() && w != m_mw) {
+						for(QLineEdit *e : w->findChildren<QLineEdit *>()) {
+							if(e->isVisible() && e->isEnabled()) {
+								edit = e;
+								break;
+							}
+						}
+					}
+				}
+			}
+			if(edit) {
+				edit->setFocus();
+				edit->clear();
+				edit->insert(text);
+				log(QStringLiteral("typed into %1").arg(edit->objectName()));
+			} else {
+				log(QStringLiteral("type: no line edit"));
+			}
+		} else if(cmd == QStringLiteral("dialogok")) {
+			for(QWidget *w : QApplication::topLevelWidgets()) {
+				if(w->isVisible() && w != m_mw) {
+					for(QDialogButtonBox *box : w->findChildren<QDialogButtonBox *>()) {
+						QPushButton *ok = box->button(QDialogButtonBox::Ok);
+						if(ok && ok->isVisible() && ok->isEnabled()) {
+							log(QStringLiteral("  clicking OK in %1").arg(QString::fromLatin1(w->metaObject()->className())));
+							ok->click();
+						}
+					}
+				}
+			}
+			delay = 800;
+		} else if(cmd == QStringLiteral("shotdialogs")) {
+			int i = 0;
+			for(QWidget *w : QApplication::topLevelWidgets()) {
+				if(w->isVisible() && w != m_mw) {
+					QString path = QStringLiteral("%1_%2.png").arg(args.value(0)).arg(i++);
+					w->grab().save(path);
+					log(QStringLiteral("  dialog shot %1 (%2)").arg(path, QString::fromLatin1(w->metaObject()->className())));
+				}
+			}
+		} else if(cmd == QStringLiteral("host")) {
+			HostParams params;
+			params.title = QStringLiteral("Mobile fork test");
+			params.alias = args.value(0);
+			params.rememberAddress = false;
+			params.nsfm = false;
+			params.keepChat = false;
+			params.deputies = false;
+			params.undoLimit = 60;
+			m_mw->hostSession(params, 0);
+			log(QStringLiteral("host requested alias=%1").arg(args.value(0)));
+			delay = 1500;
+		} else if(cmd == QStringLiteral("savecanvas")) {
+			Document *doc = m_mw->findChild<Document *>();
+			QString path = args.value(0);
+			QString ext = path.section(QLatin1Char('.'), -1).toLower();
+			DP_SaveImageType type = ext == QStringLiteral("ora")	? DP_SAVE_IMAGE_ORA
+									: ext == QStringLiteral("png")	? DP_SAVE_IMAGE_PNG
+									: ext == QStringLiteral("psd")	? DP_SAVE_IMAGE_PSD
+									: ext == QStringLiteral("dppr") ? DP_SAVE_IMAGE_PROJECT_CANVAS
+																	: DP_SAVE_IMAGE_ORA;
+			doc->saveCanvasAs(path, type, false, false, false);
+			log(QStringLiteral("save requested %1").arg(path));
+			delay = 1500;
+		} else if(cmd == QStringLiteral("open")) {
+			m_mw->openPath(args.value(0));
+			log(QStringLiteral("open requested %1").arg(args.value(0)));
+			delay = 1500;
 		} else if(cmd == QStringLiteral("log")) {
 			log(args.join(QLatin1Char(' ')));
 		} else if(cmd == QStringLiteral("quit")) {

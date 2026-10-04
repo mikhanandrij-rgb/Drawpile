@@ -88,6 +88,7 @@ private:
 	void unparkToolBars();
 	void buildMorePanel();
 	void bindDocument();
+	void reapplyTheme();
 	void updateLayout();
 	void updateOverlays();
 	void updateTitle();
@@ -113,6 +114,7 @@ private:
 	bool m_interfaceHidden = false;
 	bool m_dockCheckPending = false;
 	bool m_updatingOverlays = false;
+	bool m_themeRefreshPending = false;
 
 	QPointer<QToolBar> m_topHolder;
 	QPointer<QToolBar> m_railHolder;

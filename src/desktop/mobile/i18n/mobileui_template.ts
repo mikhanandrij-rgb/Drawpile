@@ -572,6 +572,10 @@
         <source>Canvas notice / on-canvas control (unchanged)</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Dock window menu: docking options are hidden in mobile mode, as in upstream; closing is done with the sheet&apos;s ✕ button</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>mobile::StatusPanel</name>

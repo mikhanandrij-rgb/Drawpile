@@ -64,6 +64,7 @@ public:
 	QRect coveredRect() const;
 
 	void setAnimationsEnabled(bool enabled) { m_animationsEnabled = enabled; }
+	void refreshTheme();
 
 public slots:
 	void open(const QString &panelId, const QString &tabId = QString());

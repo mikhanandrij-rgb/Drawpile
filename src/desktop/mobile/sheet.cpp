@@ -100,6 +100,13 @@ Sheet::Sheet(QWidget *parent)
 	});
 }
 
+void Sheet::refreshTheme()
+{
+	m_closeButton->setIcon(mobile::icon(QStringLiteral("close")));
+	m_panelStack->setStyleSheet(panelStyleSheet());
+	update();
+}
+
 void Sheet::addPanel(const QString &panelId, const QString &title)
 {
 	if(panel(panelId)) {

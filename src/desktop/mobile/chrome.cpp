@@ -429,7 +429,8 @@ void ToolRail::saveSlots() const
 			merged.append(name);
 		}
 	}
-	settings.setValue(QStringLiteral("mobileui/toolslots"), merged.mid(0, 10));
+	settings.setValue(
+		QStringLiteral("mobileui/toolslots"), QStringList(merged.mid(0, 10)));
 }
 
 QAction *ToolRail::actionByName(const QString &name) const

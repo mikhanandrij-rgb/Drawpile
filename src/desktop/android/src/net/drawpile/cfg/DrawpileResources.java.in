@@ -7,4 +7,26 @@ public class DrawpileResources {
     public static int getNotificationIcon() {
         return R.drawable.ic_launcher;
     }
+
+    // Drawpile Mobile (fork): the resource class lives in the package
+    // namespace, which differs between release, debug and forked builds.
+    // Code that needs resources imports this alias instead of hard-coding
+    // net.drawpile.R, which only exists in the official release build.
+    public static final class Res {
+        public static final class layout {
+            public static final int scaling_dialog_layout =
+                R.layout.scaling_dialog_layout;
+        }
+
+        public static final class id {
+            public static final int seekBar = R.id.seekBar;
+            public static final int percentText = R.id.percentText;
+            public static final int interfaceModeGroup = R.id.interfaceModeGroup;
+            public static final int dynamicRadio = R.id.dynamicRadio;
+            public static final int desktopRadio = R.id.desktopRadio;
+            public static final int mobileRadio = R.id.mobileRadio;
+            public static final int rememberCheckBox = R.id.rememberCheckBox;
+            public static final int okButton = R.id.okButton;
+        }
+    }
 }

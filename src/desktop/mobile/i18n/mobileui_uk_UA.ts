@@ -3500,6 +3500,10 @@
         <source>Canvas notice / on-canvas control (unchanged)</source>
         <translation>Сповіщення на полотні / елемент на полотні (без змін)</translation>
     </message>
+    <message>
+        <source>Dock window menu: docking options are hidden in mobile mode, as in upstream; closing is done with the sheet's ✕ button</source>
+        <translation>Меню вікна дока: параметри стикування приховано в мобільному режимі, як і в оригіналі; закриття — кнопкою ✕ панелі</translation>
+    </message>
 </context>
 <context>
     <name>mobile::StatusPanel</name>

@@ -234,6 +234,19 @@ void Shell::dumpInventory(const QString &path)
 		for(const QString &title : hostDocks) {
 			original.append(tr("Dock: %1").arg(title));
 		}
+		QObject *parentObject = action->parent();
+		bool inDockWindowMenu =
+			parentObject && qobject_cast<QMenu *>(parentObject) &&
+			parentObject->parent() &&
+			parentObject->parent()->inherits("docks::TitleWidget");
+		if(!onCanvas && hostDocks.isEmpty() && menuPaths.value(action).isEmpty() &&
+		   toolBarNames.value(action).isEmpty() && parentObject &&
+		   (parentObject->inherits("view::Lock") ||
+			parentObject->inherits("HudHandler") || name.isEmpty())) {
+			// Actions shown on the canvas itself: lock notices, the
+			// selection action bar and the layer view mode notice menu.
+			onCanvas = true;
+		}
 		if(onCanvas) {
 			original.append(tr("Canvas notice / on-canvas control"));
 		}
@@ -264,6 +277,13 @@ void Shell::dumpInventory(const QString &path)
 		}
 		if(onCanvas) {
 			mobile.append(tr("Canvas notice / on-canvas control (unchanged)"));
+		}
+		if(inDockWindowMenu) {
+			mobile.clear();
+			mobile.append(
+				tr("Dock window menu: docking options are hidden in mobile "
+				   "mode, as in upstream; closing is done with the sheet's ✕ "
+				   "button"));
 		}
 		if(mobile.isEmpty() && shortcutOnly) {
 			mobile.append(tr("Keyboard shortcut (unchanged)"));
@@ -308,6 +328,11 @@ void Shell::dumpInventory(const QString &path)
 		row.insert(QStringLiteral("original"), QJsonArray::fromStringList(original));
 		row.insert(QStringLiteral("mobile"), QJsonArray::fromStringList(mobile));
 		row.insert(QStringLiteral("reachable"), reachable);
+		row.insert(
+			QStringLiteral("parent"),
+			action->parent() ? QString::fromLatin1(
+								   action->parent()->metaObject()->className())
+							 : QString());
 		rows.append(row);
 	}
 	ts << "\nTotal: " << index << ", unreachable: " << unreachable << "\n";

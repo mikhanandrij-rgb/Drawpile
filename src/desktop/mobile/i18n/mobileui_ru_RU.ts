@@ -3430,6 +3430,10 @@
         <source>Canvas notice / on-canvas control (unchanged)</source>
         <translation>Уведомление на холсте / элемент на холсте (без изменений)</translation>
     </message>
+    <message>
+        <source>Dock window menu: docking options are hidden in mobile mode, as in upstream; closing is done with the sheet's ✕ button</source>
+        <translation>Меню окна дока: параметры стыковки скрыты в мобильном режиме, как и в оригинале; закрытие — кнопкой ✕ панели</translation>
+    </message>
 </context>
 <context>
     <name>mobile::StatusPanel</name>

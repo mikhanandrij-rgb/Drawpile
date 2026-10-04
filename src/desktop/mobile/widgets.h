@@ -3,6 +3,8 @@
 #ifndef DESKTOP_MOBILE_WIDGETS_H
 #define DESKTOP_MOBILE_WIDGETS_H
 #include <QAbstractButton>
+#include <QLayout>
+#include <QList>
 #include <QColor>
 #include <QPointer>
 #include <QTimer>
@@ -102,6 +104,31 @@ private:
 	QString m_subtitle;
 	QString m_badge;
 	bool m_compact = false;
+};
+
+// Lays out children left to right, wrapping onto new lines as needed.
+// Based on Qt's flow layout example (BSD licensed).
+class FlowLayout final : public QLayout {
+public:
+	explicit FlowLayout(QWidget *parent = nullptr, int spacing = -1);
+	~FlowLayout() override;
+
+	void addItem(QLayoutItem *item) override;
+	int count() const override;
+	QLayoutItem *itemAt(int index) const override;
+	QLayoutItem *takeAt(int index) override;
+	Qt::Orientations expandingDirections() const override;
+	bool hasHeightForWidth() const override;
+	int heightForWidth(int width) const override;
+	QSize minimumSize() const override;
+	QSize sizeHint() const override;
+	void setGeometry(const QRect &rect) override;
+
+private:
+	int doLayout(const QRect &rect, bool testOnly) const;
+
+	QList<QLayoutItem *> m_items;
+	int m_spacing;
 };
 
 }

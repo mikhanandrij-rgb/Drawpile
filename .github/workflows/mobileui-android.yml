@@ -1,0 +1,203 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+# Drawpile Mobile (fork): builds the arm64 APKs (Android 11+ and the
+# end-of-life variant for Android 6-10). Derived from main.yml, trimmed to the
+# Android jobs. Set the ANDROID_KEYSTORE (base64 of a keystore whose key alias
+# is "drawpile") and ANDROID_KEYSTORE_PASS secrets to sign with a stable key.
+name: Drawpile Mobile (fork) Android APK
+on:
+  push:
+    branches:
+    - mobile-ui
+    - mobile-ui-*
+  workflow_dispatch:
+env:
+  CARGO_TERM_COLOR: always
+  CMAKE_COLOR_DIAGNOSTICS: true
+  CLICOLOR_FORCE: 1
+jobs:
+  android:
+    name: Android ${{ matrix.android_sdk_versions }} ${{ matrix.arch }} (Drawpile Mobile fork)
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+        - os: ubuntu-22.04
+          cross_os: Android
+          component: ''
+          qt: 5.K4b3b2a81b7a285e5705e70d11e5535fddc89b3e1
+          arch: arm64
+          android_sdk_versions: 30-36
+          sccache_triplet: x86_64-unknown-linux-musl
+          build_type: Release
+          collect_symbols: false
+          signpath: false
+          packager: cmake --install build --config Release --prefix .
+          cross_qt_args: '"-DANDROID_SDK_ROOT=$ANDROID_SDK_ROOT" "-DANDROID_NDK_ROOT=$ANDROID_NDK_ROOT" "-DANDROID_PLATFORM=$ANDROID_TARGET_PLATFORM" "-DCMAKE_ANDROID_NDK=$ANDROID_NDK_ROOT" -DANDROID_ABI=arm64-v8a -DCMAKE_ANDROID_ARCH_ABI=arm64-v8a "-DOPENSSL_SOURCE_DATE_EPOCH=$(git show ''--format=%at'' --no-patch)"'
+          cross_ffmpeg_args: '"-DCMAKE_TOOLCHAIN_FILE=$ANDROID_NDK_TOOLCHAIN_FILE" "-DANDROID_SDK_ROOT=$ANDROID_SDK_ROOT" "-DANDROID_NDK_ROOT=$ANDROID_NDK_ROOT" "-DANDROID_PLATFORM=$ANDROID_TARGET_PLATFORM" "-DCMAKE_ANDROID_NDK=$ANDROID_NDK_ROOT" -DANDROID_ABI=arm64-v8a -DCMAKE_ANDROID_ARCH_ABI=arm64-v8a'
+          cross_other_args: '"-DCMAKE_TOOLCHAIN_FILE=$ANDROID_NDK_TOOLCHAIN_FILE" "-DANDROID_SDK_ROOT=$ANDROID_SDK_ROOT" "-DANDROID_NDK_ROOT=$ANDROID_NDK_ROOT" "-DANDROID_PLATFORM=$ANDROID_TARGET_PLATFORM" "-DCMAKE_ANDROID_NDK=$ANDROID_NDK_ROOT" -DANDROID_ABI=arm64-v8a -DCMAKE_ANDROID_ARCH_ABI=arm64-v8a'
+          build_flags: '"-DCMAKE_TOOLCHAIN_FILE=$ANDROID_NDK_TOOLCHAIN_FILE" "-DANDROID_PLATFORM=$ANDROID_TARGET_PLATFORM" "-DANDROID_TARGET_SDK_VERSION=$ANDROID_TARGET_SDK_VERSION" "-DANDROID_MIN_SDK_VERSION=$ANDROID_MIN_SDK_VERSION" "-DANDROID_SDK_BUILD_TOOLS_REVISION=$ANDROID_BUILD_TOOLS_VERSION" "-DCMAKE_ANDROID_NDK=$ANDROID_NDK_ROOT" -DANDROID_ABI=arm64-v8a -DCMAKE_ANDROID_ARCH_ABI=arm64-v8a -DCMAKE_FIND_ROOT_PATH_MODE_PACKAGE=on -DCMAKE_FIND_ROOT_PATH_MODE_INCLUDE=BOTH -DCMAKE_FIND_ROOT_PATH_MODE_LIBRARY=BOTH -DCMAKE_FIND_ROOT_PATH_MODE_PROGRAM=BOTH'
+          qt_pre_build: 'sudo apt-get update && sudo apt-get install --no-install-recommends libatspi2.0-dev libmtdev-dev libts-dev libgtk-3-dev libgl1-mesa-dev libglu1-mesa-dev libxi-dev libdrm-dev libgbm-dev libgl-dev libgles-dev libegl-dev libegl1-mesa-dev libxext-dev libxfixes-dev libxrender-dev libx11-dev libxcb1-dev libx11-xcb-dev libxcb-glx0-dev libxcb-util0-dev libxkbcommon-dev libxkbcommon-x11-dev libxcb-keysyms1-dev libxcb-image0-dev libxcb-shm0-dev libxcb-icccm4-dev libxcb-sync-dev libxcb-xfixes0-dev libxcb-shape0-dev libxcb-randr0-dev libxcb-render0-dev libxcb-render-util0-dev libxcb-util-dev libinput-dev libvulkan-dev libxcb-xinerama0-dev libxcb-xkb-dev libxcb-xinput-dev libclang-12-dev libasound2-dev libpulse-dev libcups2-dev libssl-dev libfontconfig1-dev && echo "Clang_ROOT=/usr/lib/llvm-12" >> $GITHUB_ENV
+
+            '
+          ffmpeg_pre_build: 'sudo apt-get update && sudo apt-get install --no-install-recommends yasm
+
+            '
+          other_pre_build: 'sudo apt-get update && sudo apt-get install --no-install-recommends libsecret-1-dev
+
+            '
+        - os: ubuntu-22.04
+          cross_os: Android
+          component: ''
+          qt: 5.K4b3b2a81b7a285e5705e70d11e5535fddc89b3e1
+          arch: arm64
+          android_sdk_versions: 23-23
+          sccache_triplet: x86_64-unknown-linux-musl
+          build_type: Release
+          collect_symbols: false
+          signpath: false
+          packager: cmake --install build --config Release --prefix .
+          cross_qt_args: '"-DANDROID_SDK_ROOT=$ANDROID_SDK_ROOT" "-DANDROID_NDK_ROOT=$ANDROID_NDK_ROOT" "-DANDROID_PLATFORM=$ANDROID_TARGET_PLATFORM" "-DCMAKE_ANDROID_NDK=$ANDROID_NDK_ROOT" -DANDROID_ABI=arm64-v8a -DCMAKE_ANDROID_ARCH_ABI=arm64-v8a "-DOPENSSL_SOURCE_DATE_EPOCH=$(git show ''--format=%at'' --no-patch)"'
+          cross_ffmpeg_args: '"-DCMAKE_TOOLCHAIN_FILE=$ANDROID_NDK_TOOLCHAIN_FILE" "-DANDROID_SDK_ROOT=$ANDROID_SDK_ROOT" "-DANDROID_NDK_ROOT=$ANDROID_NDK_ROOT" "-DANDROID_PLATFORM=$ANDROID_TARGET_PLATFORM" "-DCMAKE_ANDROID_NDK=$ANDROID_NDK_ROOT" -DANDROID_ABI=arm64-v8a -DCMAKE_ANDROID_ARCH_ABI=arm64-v8a'
+          cross_other_args: '"-DCMAKE_TOOLCHAIN_FILE=$ANDROID_NDK_TOOLCHAIN_FILE" "-DANDROID_SDK_ROOT=$ANDROID_SDK_ROOT" "-DANDROID_NDK_ROOT=$ANDROID_NDK_ROOT" "-DANDROID_PLATFORM=$ANDROID_TARGET_PLATFORM" "-DCMAKE_ANDROID_NDK=$ANDROID_NDK_ROOT" -DANDROID_ABI=arm64-v8a -DCMAKE_ANDROID_ARCH_ABI=arm64-v8a'
+          build_flags: '"-DCMAKE_TOOLCHAIN_FILE=$ANDROID_NDK_TOOLCHAIN_FILE" "-DANDROID_PLATFORM=$ANDROID_TARGET_PLATFORM" "-DANDROID_TARGET_SDK_VERSION=$ANDROID_TARGET_SDK_VERSION" "-DANDROID_MIN_SDK_VERSION=$ANDROID_MIN_SDK_VERSION" "-DANDROID_SDK_BUILD_TOOLS_REVISION=$ANDROID_BUILD_TOOLS_VERSION" "-DCMAKE_ANDROID_NDK=$ANDROID_NDK_ROOT" -DANDROID_ABI=arm64-v8a -DCMAKE_ANDROID_ARCH_ABI=arm64-v8a -DCMAKE_FIND_ROOT_PATH_MODE_PACKAGE=on -DCMAKE_FIND_ROOT_PATH_MODE_INCLUDE=BOTH -DCMAKE_FIND_ROOT_PATH_MODE_LIBRARY=BOTH -DCMAKE_FIND_ROOT_PATH_MODE_PROGRAM=BOTH'
+          qt_pre_build: 'sudo apt-get update && sudo apt-get install --no-install-recommends libatspi2.0-dev libmtdev-dev libts-dev libgtk-3-dev libgl1-mesa-dev libglu1-mesa-dev libxi-dev libdrm-dev libgbm-dev libgl-dev libgles-dev libegl-dev libegl1-mesa-dev libxext-dev libxfixes-dev libxrender-dev libx11-dev libxcb1-dev libx11-xcb-dev libxcb-glx0-dev libxcb-util0-dev libxkbcommon-dev libxkbcommon-x11-dev libxcb-keysyms1-dev libxcb-image0-dev libxcb-shm0-dev libxcb-icccm4-dev libxcb-sync-dev libxcb-xfixes0-dev libxcb-shape0-dev libxcb-randr0-dev libxcb-render0-dev libxcb-render-util0-dev libxcb-util-dev libinput-dev libvulkan-dev libxcb-xinerama0-dev libxcb-xkb-dev libxcb-xinput-dev libclang-12-dev libasound2-dev libpulse-dev libcups2-dev libssl-dev libfontconfig1-dev && echo "Clang_ROOT=/usr/lib/llvm-12" >> $GITHUB_ENV
+
+            '
+          ffmpeg_pre_build: 'sudo apt-get update && sudo apt-get install --no-install-recommends yasm
+
+            '
+          other_pre_build: 'sudo apt-get update && sudo apt-get install --no-install-recommends libsecret-1-dev
+
+            '
+    steps:
+    - name: Check out code
+      uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      with:
+        fetch-depth: 0
+        submodules: true
+    - uses: actions/setup-java@17f84c3641ba7b8f6deff6309fc4c864478f5d62
+      with:
+        distribution: temurin
+        java-version: '17'
+      if: matrix.cross_os == 'Android'
+    - name: Set Android environment variables
+      run: "min_sdk_version=\"$(echo \"$ANDROID_SDK_VERSIONS\" | cut -f1 -d-)\"\ntarget_sdk_version=\"$(echo \"$ANDROID_SDK_VERSIONS\" | cut -f2 -d-)\"\nif [ \"$target_sdk_version\" -gt 35 ]; then\n  target_platform_version=35\nelse\n  target_platform_version=\"$target_sdk_version\"\nfi\necho \"SDK=$ANDROID_SDK_VERSIONS min=$min_sdk_version target=$target_sdk_version platform=$target_platform_version\"\nbuild_tools_version=36.0.0\nndk_version=27.3.13750724\nndk_root=\"$ANDROID_SDK_ROOT/ndk/$ndk_version\"\nndk_toolchain_file=\"$ndk_root/build/cmake/android.toolchain.cmake\"\nplatform=android-36\necho \"ANDROID_BUILD_TOOLS_VERSION=$build_tools_version\" >> \"$GITHUB_ENV\"\necho \"ANDROID_NDK_VERSION=$ndk_version\" >> \"$GITHUB_ENV\"\necho \"ANDROID_NDK_ROOT=$ndk_root\" >> \"$GITHUB_ENV\"\necho \"ANDROID_NDK_TOOLCHAIN_FILE=$ndk_toolchain_file\" >> \"$GITHUB_ENV\"\necho \"ANDROID_PLATFORM=$platform\" >> \"$GITHUB_ENV\"\necho \"ANDROID_TARGET_PLATFORM=android-$target_platform_version\" >> \"\
+        $GITHUB_ENV\"\necho \"ANDROID_TARGET_SDK_VERSION=$target_sdk_version\" >> \"$GITHUB_ENV\"\necho \"ANDROID_MIN_SDK_VERSION=$min_sdk_version\" >> \"$GITHUB_ENV\"\n"
+      if: matrix.cross_os == 'Android'
+      env:
+        ANDROID_SDK_VERSIONS: ${{ matrix.android_sdk_versions }}
+    - name: Install correct Android SDK packages, remove wrong ones
+      run: "sdkmanager=\"$ANDROID_SDK_ROOT/cmdline-tools/latest/bin/sdkmanager\"\npackages_to_uninstall=\"$(\"$sdkmanager\" --list_installed 2>&1 | perl -nae 'print \"$F[0]\\n\" if $F[0] =~ /^(build-tools|ndk|platforms);/ && $F[0] ne \"build-tools;$ENV{ANDROID_BUILD_TOOLS_VERSION}\" && $F[0] ne \"ndk;$ENV{ANDROID_NDK_VERSION}\" && $F[0] ne \"platforms;$ENV{ANDROID_PLATFORM}\"')\"\necho\necho \"Packages to uninstall:\"\necho \"$packages_to_uninstall\" | perl -pe 's/^/ * /'\necho\nif [ -n \"$packages_to_uninstall\" ]; then\n  echo \"$packages_to_uninstall\" | xargs \"$sdkmanager\" --uninstall\nfi\nset -x\nyes | \"$sdkmanager\" \"build-tools;$ANDROID_BUILD_TOOLS_VERSION\" \"ndk;$ANDROID_NDK_VERSION\" \"platforms;$ANDROID_PLATFORM\"\n"
+      if: matrix.cross_os == 'Android'
+    - name: Check Java version
+      run: "java_version_output=\"$(java -version 2>&1)\"\necho \"$java_version_output\"\njava_version=\"$(echo \"$java_version_output\" | perl -0777 -ne '/version\\s+\"([0-9]+)\\./ && print $1')\"\nexpected_java_version='17'\nif [ \"$java_version\" = \"$expected_java_version\" ]; then\n  echo \"Java version $java_version matches expected version $expected_java_version\"\nelse\n  echo \"Java version $java_version does NOT match expected version $expected_java_version\" 1>&2\n  exit 1\nfi\n"
+      if: matrix.cross_os == 'Android'
+    - name: Configure Linux system dependencies
+      uses: ./.github/actions/restore-linux
+      if: runner.os == 'Linux'
+    - name: Build dependencies
+      uses: ./.github/actions/build-deps
+      id: deps
+      with:
+        build_type: ${{ matrix.build_type }}
+        cache_key: ${{ matrix.build_type != 'Release' && format('{0}-', matrix.build_type) || '' }}${{ runner.os }}-${{ matrix.arch }}
+        path: .github/deps
+        target_arch: ${{ matrix.arch }}
+        qt: ${{ matrix.qt }}
+        qt_pre_build: ${{ matrix.qt_pre_build }}
+        qt_args: ${{ matrix.qt_args }}
+        ffmpeg_pre_build: ${{ matrix.ffmpeg_pre_build }}
+        ffmpeg_args: ${{ matrix.ffmpeg_args }}
+        other_pre_build: ${{ matrix.other_pre_build }}
+        other_args: ${{ matrix.other_args }}
+      if: '!matrix.cross_os'
+    - name: Build cross-compiler dependencies
+      uses: ./.github/actions/build-deps
+      id: cross-deps
+      with:
+        build_type: ${{ matrix.build_type }}
+        cache_key: ${{ matrix.build_type != 'Release' && format('{0}-', matrix.build_type) || '' }}${{ runner.os }}+${{ matrix.cross_os }}${{ matrix.android_sdk_versions && format('-{0}', matrix.android_sdk_versions) }}-${{ matrix.arch }}
+        path: .github/cross-deps
+        target_arch: ${{ matrix.arch }}
+        qt: ${{ matrix.qt }}
+        qt_pre_build: ${{ matrix.cross_qt_pre_build }}
+        qt_args: ${{ matrix.cross_qt_args }}
+        ffmpeg_pre_build: ${{ matrix.cross_ffmpeg_pre_build }}
+        ffmpeg_args: ${{ matrix.cross_ffmpeg_args }}
+        other_pre_build: ${{ matrix.cross_other_pre_build }}
+        other_args: ${{ matrix.cross_other_args }}
+      if: matrix.cross_os
+    - name: Set up compiler cache
+      uses: ./.github/actions/pre-sccache
+      id: sccache
+      with:
+        triplet: ${{ matrix.sccache_triplet }}
+        cache_key: ${{ matrix.build_type != 'Release' && format('{0}-', matrix.build_type) || '' }}${{ runner.os }}${{ matrix.component }}-${{ matrix.arch }}${{ matrix.cross_os && format('+{0}', matrix.cross_os) }}${{ matrix.android_sdk_versions && format('-{0}', matrix.android_sdk_versions) }}-${{ matrix.qt }}
+    - name: Cache gradle
+      uses: actions/cache@d4323d4df104b026a6aa633fdb11d772146be0bf
+      with:
+        path: '~/.gradle/wrapper/dists/gradle-*/*/gradle-*
+
+          !~/.gradle/wrapper/dists/gradle-*/*/gradle-*.zip'
+        key: gradle-${{ runner.os }}-${{ matrix.arch }}+${{ matrix.cross_os }}-${{ matrix.qt }}
+      if: matrix.cross_os == 'Android'
+    - name: Generate project
+      run: "cmake -S . -B build --log-level=VERBOSE -DCMAKE_BUILD_TYPE=${{ matrix.build_type }} -DCMAKE_C_COMPILER_LAUNCHER=sccache -DCMAKE_CXX_COMPILER_LAUNCHER=sccache -DCMAKE_OBJC_COMPILER_LAUNCHER=sccache -DCMAKE_OBJCXX_COMPILER_LAUNCHER=sccache -DCLIENT=${{ matrix.component == 'Tools' && 'off' || 'on' }} -DSERVER=${{ runner.os == 'Windows' && !matrix.component && 'off' || 'on' }} -DSERVERGUI=${{ runner.os == 'Windows' && !matrix.component && 'off' || 'on' }} -DTOOLS=${{ runner.os == 'Windows' && !matrix.component && 'off' || 'on' }} -DTESTS=on -DUSE_GENERATORS=off \"-DCMAKE_PREFIX_PATH=${{ matrix.cross_os && format('{0};', steps.cross-deps.outputs.path) }}${{ steps.deps.outputs.path }}\" -DCMAKE_INSTALL_PREFIX=out -DCLANG_TIDY=off -DDIST_BUILD=${{ matrix.packager && 'on' }} -DSOURCE_ASSETS=off -DCMAKE_INTERPROCEDURAL_OPTIMIZATION=${{\n  matrix.packager\n  && startsWith(github.ref, 'refs/tags/')\n  && 'on'\n}} -DBUILD_VERSION='${{\n  matrix.packager\n  && startsWith(github.ref, 'refs/tags/')\n\
+        \  && github.ref_name\n}}' -DBUILD_PACKAGE_COMPONENT='${{ matrix.component }}' ${{ matrix.build_flags }}\n"
+    - name: Prepare APK signing
+      run: "if [ -n \"$ANDROID_KEYSTORE\" ] && [ -n \"$ANDROID_KEYSTORE_PASS\" ]; then\n  keystore_path=\"$GITHUB_WORKSPACE/drawpile.keystore\"\n  echo \"$ANDROID_KEYSTORE\" | base64 -d > \"$keystore_path\"\n  echo \"Using the signing key from the repository secrets.\"\n  echo QT_ANDROID_KEYSTORE_PATH=\"$keystore_path\" >> \"$GITHUB_ENV\"\n  echo MOBILEUI_KEYSTORE_PASS=\"$ANDROID_KEYSTORE_PASS\" >> \"$GITHUB_ENV\"\nelse\n  # No key configured: sign with a throwaway key so the APK is still\n  # installable. Updating requires uninstalling first when the key changes.\n  echo \"::warning::No ANDROID_KEYSTORE secret set, signing with a temporary key.\"\n  keystore_path=\"$GITHUB_WORKSPACE/temporary.keystore\"\n  keytool -genkeypair -v -keystore \"$keystore_path\" -alias drawpile \\\n    -keyalg RSA -keysize 4096 -validity 10000 -storepass android \\\n    -keypass android -dname \"CN=Drawpile Mobile fork test build\"\n  echo QT_ANDROID_KEYSTORE_PATH=\"$keystore_path\" >> \"$GITHUB_ENV\"\n  echo\
+        \ MOBILEUI_KEYSTORE_PASS=android >> \"$GITHUB_ENV\"\nfi\n"
+      env:
+        ANDROID_KEYSTORE: ${{ secrets.ANDROID_KEYSTORE }}
+        ANDROID_KEYSTORE_PASS: ${{ secrets.ANDROID_KEYSTORE_PASS }}
+      if: matrix.cross_os == 'Android' && matrix.packager
+    - name: Build project
+      run: cmake --build build --parallel $(nproc || sysctl -n hw.ncpu || echo 2) --config ${{ matrix.build_type }}
+      env:
+        RUSTC_WRAPPER: sccache
+        SCCACHE_CACHE_SIZE: 200M
+        SCCACHE_DIR: ${{ steps.sccache.outputs.path }}/cache
+        QT_ANDROID_KEYSTORE_ALIAS: drawpile
+        QT_ANDROID_KEYSTORE_STORE_PASS: ${{ env.MOBILEUI_KEYSTORE_PASS }}
+        QT_ANDROID_KEYSTORE_KEY_PASS: ${{ env.MOBILEUI_KEYSTORE_PASS }}
+    - name: Run C++ tests
+      run: ctest -C ${{ matrix.build_type }} --output-on-failure
+      working-directory: build
+      if: '!matrix.cross_os'
+    - name: Run packaging
+      run: ${{ matrix.packager }}
+      if: matrix.packager
+    - name: Upload artifact
+      uses: actions/upload-artifact@4cec3d8aa04e39d1a68397de0c4cd6fb9dce8ec1
+      if: matrix.packager
+      with:
+        name: DrawpileMobile-Android-${{ matrix.android_sdk_versions }}-${{ matrix.arch }}
+        path: Drawpile-*.apk
+    - name: Upload error logs and artefacts
+      uses: actions/upload-artifact@4cec3d8aa04e39d1a68397de0c4cd6fb9dce8ec1
+      if: failure()
+      with:
+        name: Logs${{ matrix.component && format('-{0}', matrix.component) }}-${{ matrix.cross_os || runner.os }}${{ matrix.android_sdk_versions && format('-{0}', matrix.android_sdk_versions) }}-${{ matrix.arch }}-Qt${{ matrix.qt }}
+        path: '**/*.log
+
+          **/*.wxs
+
+          build/**/android-build/build.gradle
+
+          build/**/android-build/*.properties
+
+          build/**/android_deployment_settings.json
+
+          '
+    - name: Save sccache
+      uses: ./.github/actions/post-sccache
+      with:
+        cache-hit: ${{ steps.sccache.outputs.cache-hit }}
+        cache_key: ${{ steps.sccache.outputs.cache_key }}
+      if: success() || failure()
+      continue-on-error: true
+    - name: sccache stats
+      run: sccache --show-stats
+      if: success() || failure()
+      continue-on-error: true
