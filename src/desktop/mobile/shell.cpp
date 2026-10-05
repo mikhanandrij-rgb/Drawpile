@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
 #include "desktop/mobile/shell.h"
 #include "desktop/chat/chatbox.h"
+#include "desktop/dialogs/startdialog/recover.h"
 #include "desktop/docks/dockbase.h"
 #include "desktop/docks/toolsettingsdock.h"
 #include "desktop/mainwindow.h"
@@ -187,6 +188,21 @@ void Shell::closePanel()
 	}
 }
 
+void Shell::fitRecoveryEntry(QWidget *entry)
+{
+	QBoxLayout *layout = qobject_cast<QBoxLayout *>(entry->layout());
+	if(!layout || layout->direction() != QBoxLayout::LeftToRight) {
+		return;
+	}
+	if(m_mw->width() >= dp(600)) {
+		return;
+	}
+	layout->setDirection(QBoxLayout::TopToBottom);
+	if(QLayoutItem *first = layout->itemAt(0); first && first->widget()) {
+		layout->setAlignment(first->widget(), Qt::AlignHCenter);
+	}
+}
+
 void Shell::beforeInterfaceModeChange(bool smallScreenMode)
 {
 	if(!smallScreenMode && m_active) {
@@ -229,6 +245,16 @@ bool Shell::eventFilter(QObject *watched, QEvent *event)
 
 	if(!m_active || !m_mw) {
 		return QObject::eventFilter(watched, event);
+	}
+
+	// Upstream's autorecovery entries put a 200px thumbnail next to the text,
+	// which doesn't fit a phone in portrait. Stack them vertically instead.
+	if(type == QEvent::Polish) {
+		if(auto *entry = qobject_cast<dialogs::startdialog::RecoveryEntryWidget *>(
+			   watched)) {
+			fitRecoveryEntry(entry);
+		}
+		return false;
 	}
 
 	if(watched == m_mw) {

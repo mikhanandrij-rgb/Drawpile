@@ -93,6 +93,7 @@ private:
 	void reapplyTheme();
 	void updateLayout();
 	void updateOverlays();
+	void fitRecoveryEntry(QWidget *entry);
 	void updateTitle();
 	void updateConnection();
 	void updateColors();

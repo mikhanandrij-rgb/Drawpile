@@ -333,6 +333,37 @@ void Pill::paintEvent(QPaintEvent *)
 		Qt::AlignVCenter | Qt::AlignLeft, text());
 }
 
+namespace {
+// Greedy word wrap into at most two lines, eliding the second one.
+QStringList wrapTwoLines(const QString &text, const QFontMetrics &fm, int width)
+{
+	if(fm.horizontalAdvance(text) <= width) {
+		return {text};
+	}
+	QStringList words = text.split(QLatin1Char(' '), Qt::SkipEmptyParts);
+	QString first;
+	int i = 0;
+	for(; i < words.size(); ++i) {
+		QString candidate =
+			first.isEmpty() ? words[i] : first + QLatin1Char(' ') + words[i];
+		if(!first.isEmpty() && fm.horizontalAdvance(candidate) > width) {
+			break;
+		}
+		first = candidate;
+	}
+	QStringList restWords;
+	for(int j = i; j < words.size(); ++j) {
+		restWords.append(words[j]);
+	}
+	QString rest = restWords.join(QLatin1Char(' '));
+	QStringList lines = {fm.elidedText(first, Qt::ElideRight, width)};
+	if(!rest.isEmpty()) {
+		lines.append(fm.elidedText(rest, Qt::ElideRight, width));
+	}
+	return lines;
+}
+}
+
 ActionCard::ActionCard(
 	const QString &iconName, const QString &title, const QString &subtitle,
 	QWidget *parent)
@@ -440,23 +471,29 @@ void ActionCard::paintEvent(QPaintEvent *)
 		painter.setFont(titleFont);
 		painter.setPen(isEnabled() ? t.text : t.textDim);
 		QFontMetrics tfm(titleFont);
-		if(m_subtitle.isEmpty()) {
-			painter.drawText(
-				textRect, Qt::AlignVCenter | Qt::AlignLeft,
-				tfm.elidedText(text(), Qt::ElideRight, int(textRect.width())));
-		} else {
-			QFontMetrics sfm(subFont);
-			qreal total = tfm.height() + dp(2) + sfm.height();
-			qreal y = (height() - total) / 2.0;
+		// Long titles (common in translations) wrap onto a second line
+		// instead of being cut off after a few letters.
+		QStringList lines = wrapTwoLines(text(), tfm, int(textRect.width()));
+		QFontMetrics sfm(subFont);
+		bool showSubtitle = !m_subtitle.isEmpty();
+		qreal total = tfm.height() * lines.size() +
+					  (showSubtitle ? dp(2) + sfm.height() : 0);
+		if(showSubtitle && total > height() - dp(8)) {
+			showSubtitle = false;
+			total = tfm.height() * lines.size();
+		}
+		qreal y = (height() - total) / 2.0;
+		for(const QString &line : lines) {
 			painter.drawText(
 				QRectF(x, y, textRect.width(), tfm.height()),
-				Qt::AlignLeft | Qt::AlignVCenter,
-				tfm.elidedText(text(), Qt::ElideRight, int(textRect.width())));
+				Qt::AlignLeft | Qt::AlignVCenter, line);
+			y += tfm.height();
+		}
+		if(showSubtitle) {
 			painter.setFont(subFont);
 			painter.setPen(t.textDim);
 			painter.drawText(
-				QRectF(x, y + tfm.height() + dp(2), textRect.width(),
-					   sfm.height()),
+				QRectF(x, y + dp(2), textRect.width(), sfm.height()),
 				Qt::AlignLeft | Qt::AlignVCenter,
 				sfm.elidedText(
 					m_subtitle, Qt::ElideRight, int(textRect.width())));
