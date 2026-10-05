@@ -14,6 +14,10 @@ on:
     - mobile-ui
     - mobile-ui-*
   workflow_dispatch:
+# Drawpile Mobile (fork): write access lets the job attach the APKs to a
+# release, so they can be downloaded without logging in to GitHub.
+permissions:
+  contents: write
 env:
   CARGO_TERM_COLOR: always
   CMAKE_COLOR_DIAGNOSTICS: true
@@ -185,6 +189,21 @@ jobs:
       with:
         name: DrawpileMobile-Android-${{ matrix.android_sdk_versions }}-${{ matrix.arch }}
         path: Drawpile-*.apk
+    - name: Publish APKs as a pre-release
+      run: |
+        tag="mobileui-build-${GITHUB_RUN_NUMBER}"
+        if ! gh release view "$tag" >/dev/null 2>&1; then
+          # Both matrix jobs get here; whichever is second just uploads.
+          gh release create "$tag" --target "$GITHUB_SHA" --prerelease \
+            --title "Drawpile Mobile (fork) build ${GITHUB_RUN_NUMBER}" \
+            --notes "Unofficial Drawpile Mobile fork, branch ${GITHUB_REF_NAME}, commit ${GITHUB_SHA}. The 30-36 APK is for Android 11 and newer, 23-23 for Android 6 to 10." \
+            || true
+        fi
+        gh release upload "$tag" Drawpile-*.apk --clobber
+      env:
+        GH_TOKEN: ${{ github.token }}
+        GH_REPO: ${{ github.repository }}
+      if: matrix.packager && github.event_name != 'pull_request'
     - name: Upload error logs and artefacts
       uses: actions/upload-artifact@4cec3d8aa04e39d1a68397de0c4cd6fb9dce8ec1
       if: failure()
