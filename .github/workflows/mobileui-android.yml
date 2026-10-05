@@ -3,10 +3,14 @@
 # end-of-life variant for Android 6-10). Derived from main.yml, trimmed to the
 # Android jobs. Set the ANDROID_KEYSTORE (base64 of a keystore whose key alias
 # is "drawpile") and ANDROID_KEYSTORE_PASS secrets to sign with a stable key.
+# Without them the APK is signed with a generated test key that is cached per
+# branch, so successive builds of the same branch install over each other.
 name: Drawpile Mobile (fork) Android APK
 on:
   push:
     branches:
+    - mobileui
+    - mobileui-*
     - mobile-ui
     - mobile-ui-*
   workflow_dispatch:
@@ -145,8 +149,15 @@ jobs:
     - name: Generate project
       run: "cmake -S . -B build --log-level=VERBOSE -DCMAKE_BUILD_TYPE=${{ matrix.build_type }} -DCMAKE_C_COMPILER_LAUNCHER=sccache -DCMAKE_CXX_COMPILER_LAUNCHER=sccache -DCMAKE_OBJC_COMPILER_LAUNCHER=sccache -DCMAKE_OBJCXX_COMPILER_LAUNCHER=sccache -DCLIENT=${{ matrix.component == 'Tools' && 'off' || 'on' }} -DSERVER=${{ runner.os == 'Windows' && !matrix.component && 'off' || 'on' }} -DSERVERGUI=${{ runner.os == 'Windows' && !matrix.component && 'off' || 'on' }} -DTOOLS=${{ runner.os == 'Windows' && !matrix.component && 'off' || 'on' }} -DTESTS=on -DUSE_GENERATORS=off \"-DCMAKE_PREFIX_PATH=${{ matrix.cross_os && format('{0};', steps.cross-deps.outputs.path) }}${{ steps.deps.outputs.path }}\" -DCMAKE_INSTALL_PREFIX=out -DCLANG_TIDY=off -DDIST_BUILD=${{ matrix.packager && 'on' }} -DSOURCE_ASSETS=off -DCMAKE_INTERPROCEDURAL_OPTIMIZATION=${{\n  matrix.packager\n  && startsWith(github.ref, 'refs/tags/')\n  && 'on'\n}} -DBUILD_VERSION='${{\n  matrix.packager\n  && startsWith(github.ref, 'refs/tags/')\n\
         \  && github.ref_name\n}}' -DBUILD_PACKAGE_COMPONENT='${{ matrix.component }}' ${{ matrix.build_flags }}\n"
+    - name: Restore test signing key
+      uses: actions/cache@d4323d4df104b026a6aa633fdb11d772146be0bf
+      with:
+        path: mobileui-test.keystore
+        key: mobileui-test-keystore-v1-${{ github.ref_name }}
+        restore-keys: mobileui-test-keystore-v1-
+      if: matrix.cross_os == 'Android' && matrix.packager
     - name: Prepare APK signing
-      run: "if [ -n \"$ANDROID_KEYSTORE\" ] && [ -n \"$ANDROID_KEYSTORE_PASS\" ]; then\n  keystore_path=\"$GITHUB_WORKSPACE/drawpile.keystore\"\n  echo \"$ANDROID_KEYSTORE\" | base64 -d > \"$keystore_path\"\n  echo \"Using the signing key from the repository secrets.\"\n  echo QT_ANDROID_KEYSTORE_PATH=\"$keystore_path\" >> \"$GITHUB_ENV\"\n  echo MOBILEUI_KEYSTORE_PASS=\"$ANDROID_KEYSTORE_PASS\" >> \"$GITHUB_ENV\"\nelse\n  # No key configured: sign with a throwaway key so the APK is still\n  # installable. Updating requires uninstalling first when the key changes.\n  echo \"::warning::No ANDROID_KEYSTORE secret set, signing with a temporary key.\"\n  keystore_path=\"$GITHUB_WORKSPACE/temporary.keystore\"\n  keytool -genkeypair -v -keystore \"$keystore_path\" -alias drawpile \\\n    -keyalg RSA -keysize 4096 -validity 10000 -storepass android \\\n    -keypass android -dname \"CN=Drawpile Mobile fork test build\"\n  echo QT_ANDROID_KEYSTORE_PATH=\"$keystore_path\" >> \"$GITHUB_ENV\"\n  echo\
+      run: "if [ -n \"$ANDROID_KEYSTORE\" ] && [ -n \"$ANDROID_KEYSTORE_PASS\" ]; then\n  keystore_path=\"$GITHUB_WORKSPACE/drawpile.keystore\"\n  echo \"$ANDROID_KEYSTORE\" | base64 -d > \"$keystore_path\"\n  echo \"Using the signing key from the repository secrets.\"\n  echo QT_ANDROID_KEYSTORE_PATH=\"$keystore_path\" >> \"$GITHUB_ENV\"\n  echo MOBILEUI_KEYSTORE_PASS=\"$ANDROID_KEYSTORE_PASS\" >> \"$GITHUB_ENV\"\nelse\n  # No key configured: sign with a test key so the APK is still\n  # installable. The key is generated once and kept in the Actions cache,\n  # so later builds of this branch can be installed as updates.\n  echo \"::warning::No ANDROID_KEYSTORE secret set, signing with a test key.\"\n  keystore_path=\"$GITHUB_WORKSPACE/mobileui-test.keystore\"\n  if [ ! -s \"$keystore_path\" ]; then\n    keytool -genkeypair -v -keystore \"$keystore_path\" -alias drawpile \\\n      -keyalg RSA -keysize 4096 -validity 10000 -storepass android \\\n      -keypass android -dname \"CN=Drawpile Mobile fork test build\"\n  else\n    echo \"Reusing the cached test key.\"\n  fi\n  echo QT_ANDROID_KEYSTORE_PATH=\"$keystore_path\" >> \"$GITHUB_ENV\"\n  echo\
         \ MOBILEUI_KEYSTORE_PASS=android >> \"$GITHUB_ENV\"\nfi\n"
       env:
         ANDROID_KEYSTORE: ${{ secrets.ANDROID_KEYSTORE }}

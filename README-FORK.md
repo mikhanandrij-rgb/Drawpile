@@ -67,11 +67,13 @@ Desktop (for development and testing), Linux:
 
 Android: follow upstream's instructions at
 <https://docs.drawpile.net/help/development/buildingfromsource> using
-`pkg/android/build.bash`, or push this branch to a GitHub fork and let the
-"Drawpile Mobile (fork) Android APK" workflow build the APKs. Add the secrets
-`ANDROID_KEYSTORE` (base64-encoded keystore with a key alias `drawpile`) and
-`ANDROID_KEYSTORE_PASS` to sign with a stable key; without them a temporary key
-is used.
+`pkg/android/build.bash`, or push this branch to a GitHub fork as `mobileui`
+(or `mobile-ui`) and let the "Drawpile Mobile (fork) Android APK" workflow
+build the APKs. Add the repository secrets `ANDROID_KEYSTORE` (base64-encoded
+keystore with a key alias `drawpile`) and `ANDROID_KEYSTORE_PASS` to sign with
+your own key. Without them the APKs are signed with a test key that the
+workflow generates once and keeps in the Actions cache; never commit a
+keystore to the repository. The upstream `main.yml` CI skips these branches.
 
 ## Translations
 

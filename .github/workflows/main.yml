@@ -5,6 +5,12 @@ on:
   push:
     branches:
       - '**'
+      # Drawpile Mobile (fork): these branches are built by mobileui-android.yml
+      # only, so pushing them doesn't run the full multi-platform CI as well.
+      - '!mobileui'
+      - '!mobileui-*'
+      - '!mobile-ui'
+      - '!mobile-ui-*'
     tags-ignore:
       # This tag is (re)created when a build on main succeeds, it'd be
       # pointless to trigger yet another build in response to it.
