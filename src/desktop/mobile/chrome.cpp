@@ -349,7 +349,7 @@ void ToolRail::rebuild()
 		// Tapping the tool that's already active opens its settings, just
 		// like in most mobile painting apps. The check happens on press,
 		// before the click activates the tool.
-		connect(button, &ChromeButton::pressed, this, [this, button] {
+		connect(button, &ChromeButton::pressed, this, [button] {
 			button->setProperty("wasActive", button->isChecked());
 		});
 		connect(button, &ChromeButton::clicked, this, [this, button] {
