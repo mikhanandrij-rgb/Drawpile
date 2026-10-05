@@ -31,6 +31,7 @@
 #include <QMenuBar>
 #include <QMessageBox>
 #include <QScopedValueRollback>
+#include <QScrollArea>
 #include <QSettings>
 #include <QSplitter>
 #include <QStatusBar>
@@ -830,12 +831,60 @@ void Shell::adoptDocks()
 			}
 		}
 	}
+	for(HostedDock &hd : m_docks) {
+		wrapTitleBar(hd);
+	}
 	// Panel titles follow the dock titles where there's only one dock.
 	for(const HostedDock &hd : m_docks) {
 		if(hd.panelId == QStringLiteral("layers") && hd.dock) {
 			m_sheet->setPanelTitle(hd.panelId, hd.dock->windowTitle());
 		}
 	}
+}
+
+void Shell::wrapTitleBar(HostedDock &hd)
+{
+	QDockWidget *dock = hd.dock;
+	QWidget *title = dock ? dock->titleBarWidget() : nullptr;
+	if(!title || hd.titleWrapper) {
+		return;
+	}
+	QScrollArea *scroll = new QScrollArea;
+	scroll->setObjectName(QStringLiteral("mobileTitleScroll"));
+	scroll->setFrameShape(QFrame::NoFrame);
+	scroll->setWidgetResizable(true);
+	scroll->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+	scroll->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+	scroll->setSizePolicy(QSizePolicy::Ignored, QSizePolicy::Fixed);
+	scroll->setFixedHeight(title->sizeHint().height());
+	utils::bindKineticScrollingWith(
+		scroll, Qt::ScrollBarAlwaysOff, Qt::ScrollBarAlwaysOff);
+	// Replacing the title bar widget hides the old one without deleting it,
+	// upstream's arrange mode does the same.
+	dock->setTitleBarWidget(scroll);
+	scroll->setWidget(title);
+	title->show();
+	hd.titleWrapper = scroll;
+	hd.originalTitle = title;
+}
+
+void Shell::unwrapTitleBar(HostedDock &hd)
+{
+	QDockWidget *dock = hd.dock;
+	QScrollArea *scroll = qobject_cast<QScrollArea *>(hd.titleWrapper.data());
+	// If something else swapped the title bar in the meantime (upstream's
+	// arrange mode keeps a pointer to the current one), leave the wrapper in
+	// place: it still contains the working original title bar.
+	if(dock && scroll && dock->titleBarWidget() == scroll) {
+		QWidget *title = scroll->takeWidget();
+		dock->setTitleBarWidget(title);
+		if(title) {
+			title->show();
+		}
+		scroll->deleteLater();
+	}
+	hd.titleWrapper = nullptr;
+	hd.originalTitle = nullptr;
 }
 
 void Shell::releaseDocks()
@@ -845,6 +894,7 @@ void Shell::releaseDocks()
 	for(const HostedDock &hd : m_docks) {
 		if(QDockWidget *dock = hd.dock) {
 			dock->removeEventFilter(this);
+			unwrapTitleBar(const_cast<HostedDock &>(hd));
 			for(QAbstractItemView *view : dock->findChildren<QAbstractItemView *>()) {
 				LayerCardDelegate::uninstall(view);
 				QVariant original = view->property("mobileOriginalFont");

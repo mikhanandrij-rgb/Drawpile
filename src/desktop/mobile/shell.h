@@ -68,6 +68,10 @@ private:
 		QString panelId;
 		QString tabId;
 		QDockWidget::DockWidgetFeatures features;
+		// Wide title bars (e.g. the timeline's) get wrapped into a
+		// horizontally scrollable strip while hosted.
+		QPointer<QWidget> titleWrapper;
+		QPointer<QWidget> originalTitle;
 	};
 
 	struct ParkedToolBar {
@@ -94,6 +98,8 @@ private:
 	void updateLayout();
 	void updateOverlays();
 	void fitRecoveryEntry(QWidget *entry);
+	static void wrapTitleBar(HostedDock &hd);
+	static void unwrapTitleBar(HostedDock &hd);
 	void updateTitle();
 	void updateConnection();
 	void updateColors();
