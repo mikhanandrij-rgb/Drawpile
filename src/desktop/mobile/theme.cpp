@@ -278,12 +278,14 @@ QString chromeStyleSheet()
 			 " background: %1; color: %2; border: 1px solid %3;"
 			 " border-radius: %4px; padding: 0px %5px; min-height: %6px; }"
 			 "QToolButton[mobileChip=\"true\"]:checked {"
-			 " background: %7; color: %8; border-color: %8; }"
+			 " background: %7; color: %2; border: 2px solid %8; }"
 			 "QToolButton[mobileChip=\"true\"]:pressed { background: %9; }")
 			 .arg(css(t.surface2), css(t.text), css(t.outline))
 			 .arg(dp(18))
 			 .arg(dp(12))
 			 .arg(dp(36))
+			 // Selected chips keep full-contrast text; the accent is shown by
+			 // the thicker border and tinted background.
 			 .arg(css(t.accentSoft), css(t.accent), css(t.surface3));
 	// Buttons.
 	s += QStringLiteral(

@@ -1283,6 +1283,13 @@ void Hub::createCanvas()
 							contextId,
 							DP_MSG_SET_METADATA_INT_FIELD_FRAMERATE_FRACTION,
 							0),
+						// A blank canvas has one layer (id 1) and one track
+						// (id 1) but no key frame, so the first drawing would
+						// not show up in the animation. Put the layer on frame
+						// 1, like "Set key frame to layer" in the timeline.
+						net::makeKeyFrameSetMessage(
+							contextId, 1, 0, 1, 0,
+							DP_MSG_KEY_FRAME_SET_SOURCE_LAYER),
 					};
 					guardedDoc->client()->sendCommands(
 						int(sizeof(msgs) / sizeof(msgs[0])), msgs);

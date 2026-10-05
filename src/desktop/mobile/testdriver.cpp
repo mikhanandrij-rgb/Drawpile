@@ -91,6 +91,9 @@ public:
 	}
 
 private:
+	QString m_followPath;
+	qint64 m_followPos = 0;
+
 	void log(const QString &text)
 	{
 		QString line = QStringLiteral("[%1] %2\n")
@@ -154,6 +157,26 @@ private:
 			return;
 		}
 		if(m_index >= m_lines.size()) {
+			if(!m_followPath.isEmpty()) {
+				// Interactive mode: pick up lines appended to the follow file.
+				QFile file(m_followPath);
+				if(file.open(QIODevice::ReadOnly | QIODevice::Text)) {
+					file.seek(m_followPos);
+					while(!file.atEnd()) {
+						QByteArray raw = file.readLine();
+						if(!raw.endsWith('\n')) {
+							break;
+						}
+						m_followPos += raw.size();
+						QString line = QString::fromUtf8(raw).trimmed();
+						if(!line.isEmpty() && !line.startsWith(QLatin1Char('#'))) {
+							m_lines.append(line);
+						}
+					}
+				}
+				QTimer::singleShot(200, this, &TestDriver::next);
+				return;
+			}
 			log(QStringLiteral("script finished"));
 			return;
 		}
@@ -165,6 +188,10 @@ private:
 
 		if(cmd == QStringLiteral("wait")) {
 			delay = args.value(0).toInt();
+		} else if(cmd == QStringLiteral("follow")) {
+			m_followPath = args.value(0);
+			m_followPos = 0;
+			log(QStringLiteral("following %1").arg(m_followPath));
 		} else if(cmd == QStringLiteral("resize")) {
 			m_mw->showNormal();
 			m_mw->setGeometry(
