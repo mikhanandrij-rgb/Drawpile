@@ -36,12 +36,14 @@ extern "C" {
 #include "libclient/net/client.h"
 #include <QAbstractButton>
 #include <QDialog>
+#include <QMenu>
 #include <QLineEdit>
 #include <QDialogButtonBox>
 #include <QPushButton>
 #include <QMessageBox>
 #include <QScrollArea>
 #include <QSpinBox>
+#include "desktop/mobile/commandsheet.h"
 #include "desktop/mobile/mobileui.h"
 #include "desktop/mobile/shell.h"
 #include <QAction>
@@ -461,6 +463,10 @@ private:
 					log(QStringLiteral("  dialog shot %1 (%2)").arg(path, QString::fromLatin1(w->metaObject()->className())));
 				}
 			}
+		} else if(cmd == QStringLiteral("smoke") && shell && shell->commandBrowser()) {
+			// Activates every listed menu command through the command sheet,
+			// closing whatever dialog it opens, and records what happened.
+			runSmokeTest(shell, args.value(0));
 		} else if(cmd == QStringLiteral("host")) {
 			HostParams params;
 			params.title = QStringLiteral("Mobile fork test");
@@ -499,6 +505,100 @@ private:
 			log(QStringLiteral("unknown command: %1").arg(line));
 		}
 		QTimer::singleShot(delay, this, &TestDriver::next);
+	}
+
+	void runSmokeTest(Shell *shell, const QString &outPath)
+	{
+		static const QStringList skip = {
+			// Would end the test run or the process.
+			QStringLiteral("exitprogram"), QStringLiteral("macexitprogram"),
+			QStringLiteral("causecrash"), QStringLiteral("closedocument"),
+			// Network, external browser or developer-only side effects.
+			QStringLiteral("artificiallag"), QStringLiteral("artificialdisconnect"),
+			QStringLiteral("checkforupdates"), QStringLiteral("homepage"),
+			QStringLiteral("donate"), QStringLiteral("help"),
+			QStringLiteral("debugdump"), QStringLiteral("opendebugdump"),
+			QStringLiteral("profile"), QStringLiteral("tableteventlog"),
+			QStringLiteral("retainprojectrecordings"),
+			// Changes the window state, tested separately.
+			QStringLiteral("fullscreen"),
+		};
+		QFile out(outPath);
+		out.open(QIODevice::WriteOnly | QIODevice::Truncate | QIODevice::Text);
+		// Modal dialogs run their own event loop, so close them from a timer
+		// that keeps firing inside it.
+		QTimer killer;
+		killer.setInterval(700);
+		QStringList killed;
+		connect(&killer, &QTimer::timeout, this, [this, &killed] {
+			for(QWidget *w : QApplication::topLevelWidgets()) {
+				if(w->isVisible() && w != m_mw && !qobject_cast<QMenu *>(w)) {
+					killed.append(QString::fromLatin1(w->metaObject()->className()));
+					if(QDialog *d = qobject_cast<QDialog *>(w)) {
+						d->reject();
+					} else {
+						w->close();
+					}
+				}
+			}
+		});
+		killer.start();
+		QVector<CommandBrowser::Entry> entries = shell->commandBrowser()->allEntries();
+		int ran = 0, skipped = 0, disabled = 0;
+		for(const CommandBrowser::Entry &entry : entries) {
+			QPointer<QAction> action = entry.action;
+			if(!action) {
+				continue;
+			}
+			QString name = action->objectName();
+			QString result;
+			if(skip.contains(name) || (name.isEmpty() && entry.path.contains(QStringLiteral("›")) == false)) {
+				result = QStringLiteral("skipped");
+				++skipped;
+			} else if(!action->isEnabled()) {
+				result = QStringLiteral("disabled");
+				++disabled;
+			} else {
+				bool checkable = action->isCheckable();
+				bool before = action->isChecked();
+				shell->openPanel(QStringLiteral("menu"));
+				pump(50);
+				shell->commandBrowser()->activateForTest(action);
+				pump(500);
+				QStringList windows = killed;
+				killed.clear();
+				for(QWidget *w : QApplication::topLevelWidgets()) {
+					if(w->isVisible() && w != m_mw && !qobject_cast<QMenu *>(w)) {
+						windows.append(QString::fromLatin1(w->metaObject()->className()));
+						if(QDialog *d = qobject_cast<QDialog *>(w)) {
+							d->reject();
+						} else {
+							w->close();
+						}
+					}
+				}
+				pump(200);
+				if(shell->isActive() && !windows.isEmpty()) {
+					result = QStringLiteral("opened %1").arg(windows.join(QLatin1Char(',')));
+				} else if(checkable && action && action->isChecked() != before) {
+					result = QStringLiteral("toggled");
+					action->trigger(); // restore
+					pump(200);
+				} else {
+					result = QStringLiteral("triggered");
+				}
+				// Some actions show the hub (start page); go back to the canvas.
+				shell->hideHub();
+				shell->closePanel();
+				pump(100);
+				++ran;
+			}
+			out.write(QStringLiteral("%1\t%2\t%3\n")
+						  .arg(name, entry.path + QStringLiteral(" › ") + action->text().remove(QLatin1Char('&')), result)
+						  .toUtf8());
+			out.flush();
+		}
+		log(QStringLiteral("smoke: %1 ran, %2 disabled, %3 skipped").arg(ran).arg(disabled).arg(skipped));
 	}
 
 	QPointer<MainWindow> m_mw;

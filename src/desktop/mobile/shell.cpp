@@ -18,6 +18,7 @@
 #include "libclient/document.h"
 #include "libclient/net/client.h"
 #include "libclient/tools/tool.h"
+#include <QAbstractItemView>
 #include <QAbstractScrollArea>
 #include <QAction>
 #include <QActionGroup>
@@ -172,6 +173,11 @@ void Shell::openPanel(const QString &panelId, const QString &tabId)
 	if(m_sheet) {
 		m_sheet->open(panelId, tabId);
 	}
+}
+
+CommandBrowser *Shell::commandBrowser() const
+{
+	return m_commands;
 }
 
 void Shell::closePanel()
@@ -782,6 +788,19 @@ void Shell::adoptDocks()
 			m_docks.append(hd);
 		}
 	}
+	// Taller rows in the layer list: its delegate derives the row height from
+	// the font, so a larger font gives finger-sized rows.
+	for(const HostedDock &hd : m_docks) {
+		if(hd.panelId == QStringLiteral("layers") && hd.dock) {
+			for(QAbstractItemView *view :
+				hd.dock->findChildren<QAbstractItemView *>()) {
+				view->setProperty("mobileOriginalFont", view->font());
+				QFont font = view->font();
+				font.setPixelSize(dp(17));
+				view->setFont(font);
+			}
+		}
+	}
 	// Panel titles follow the dock titles where there's only one dock.
 	for(const HostedDock &hd : m_docks) {
 		if(hd.panelId == QStringLiteral("layers") && hd.dock) {
@@ -797,6 +816,13 @@ void Shell::releaseDocks()
 	for(const HostedDock &hd : m_docks) {
 		if(QDockWidget *dock = hd.dock) {
 			dock->removeEventFilter(this);
+			for(QAbstractItemView *view : dock->findChildren<QAbstractItemView *>()) {
+				QVariant original = view->property("mobileOriginalFont");
+				if(original.isValid()) {
+					view->setFont(original.value<QFont>());
+					view->setProperty("mobileOriginalFont", QVariant());
+				}
+			}
 			if(m_sheet) {
 				m_sheet->takeTabContent(hd.panelId, hd.tabId);
 			}

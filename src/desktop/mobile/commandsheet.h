@@ -40,6 +40,10 @@ public:
 	};
 	QVector<Entry> allEntries() const;
 
+	// Activates an action exactly like tapping its row does. Used by the
+	// automated smoke test.
+	void activateForTest(QAction *action) { activate(action); }
+
 public slots:
 	void reset();
 	void leave();

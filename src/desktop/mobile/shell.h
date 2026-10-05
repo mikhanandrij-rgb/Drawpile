@@ -57,6 +57,8 @@ public:
 	// Writes the action inventory (Markdown and JSON) used for verification.
 	void dumpInventory(const QString &path);
 
+	CommandBrowser *commandBrowser() const;
+
 protected:
 	bool eventFilter(QObject *watched, QEvent *event) override;
 
