@@ -10,6 +10,8 @@ target_sources(drawpile PRIVATE
 	mobile/hub.cpp
 	mobile/hub.h
 	mobile/inventory.cpp
+	mobile/layercards.cpp
+	mobile/layercards.h
 	mobile/mobileui.cpp
 	mobile/mobileui.h
 	mobile/mobileui.qrc

@@ -8,6 +8,7 @@
 #include "desktop/mobile/chrome.h"
 #include "desktop/mobile/commandsheet.h"
 #include "desktop/mobile/hub.h"
+#include "desktop/mobile/layercards.h"
 #include "desktop/mobile/panels.h"
 #include "desktop/mobile/sheet.h"
 #include "desktop/mobile/theme.h"
@@ -824,6 +825,8 @@ void Shell::adoptDocks()
 				QFont font = view->font();
 				font.setPixelSize(dp(17));
 				view->setFont(font);
+				// Card rows with layer thumbnails and finger-sized toggles.
+				LayerCardDelegate::install(mw, view);
 			}
 		}
 	}
@@ -843,6 +846,7 @@ void Shell::releaseDocks()
 		if(QDockWidget *dock = hd.dock) {
 			dock->removeEventFilter(this);
 			for(QAbstractItemView *view : dock->findChildren<QAbstractItemView *>()) {
+				LayerCardDelegate::uninstall(view);
 				QVariant original = view->property("mobileOriginalFont");
 				if(original.isValid()) {
 					view->setFont(original.value<QFont>());
